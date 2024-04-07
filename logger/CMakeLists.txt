@@ -4,7 +4,7 @@ project(mp_os_lggr
         DESCRIPTION "logger libraries"
         LANGUAGES CXX)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 23)
 
 add_subdirectory(client_logger)
 add_subdirectory(logger)

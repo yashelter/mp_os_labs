@@ -1,11 +1,20 @@
 #ifndef MATH_PRACTICE_AND_OPERATING_SYSTEMS_CLIENT_LOGGER_BUILDER_H
 #define MATH_PRACTICE_AND_OPERATING_SYSTEMS_CLIENT_LOGGER_BUILDER_H
 
+#include "client_logger.h"
 #include <logger_builder.h>
+
+#include <map>
+#include <forward_list>
+#include <unordered_map>
 
 class client_logger_builder final:
     public logger_builder
 {
+private:
+    std::unordered_map<logger::severity, std::pair<std::forward_list<client_logger::custom_stream>, bool>> _files;
+
+    std::unordered_map<client_logger::severity, client_logger::logger_subscription> subscriptions;
 
 public:
 
@@ -40,7 +49,7 @@ public:
 
     logger_builder *clear() override;
 
-    [[nodiscard]] logger *build() const override;
+    [[nodiscard]] client_logger*build() const override;
 
 };
 

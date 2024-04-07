@@ -1,5 +1,6 @@
 #include "../include/logger.h"
 #include <iomanip>
+#include <sstream>
 
 logger const *logger::trace(
     std::string const &message) const noexcept
