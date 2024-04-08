@@ -8,10 +8,16 @@
 #include <vector>
 #include <string>
 #include <set>
+#include <filesystem>
+#include <nlohmann/json.hpp>
+
+using json = nlohmann::json;
 
 class client_logger final:
     public logger
 {
+private:
+    std::string _format;
 public:
     class logger_subscription final
     {
@@ -25,13 +31,12 @@ public:
 
 private:
     std::unordered_map<severity, logger_subscription> subscriptions;
-
-private:
     static std::unordered_map<std::string, std::pair<std::ofstream, size_t>> _all_streams;
-
+private:
+    std::string make_format(const std::string& message, logger::severity severity) const;
 
 public:
-    client_logger(std::unordered_map<severity, logger_subscription>);
+    client_logger(std::unordered_map<severity, logger_subscription>, std::string);
     client_logger(
         client_logger const &other);
 

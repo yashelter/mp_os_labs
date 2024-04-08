@@ -39,3 +39,4 @@ set_target_properties(
         CXX_EXTENSIONS OFF
         VERSION 1.0
         DESCRIPTION "client logger implementation library tests")
+configure_file(config.json ${CMAKE_CURRENT_BINARY_DIR}/config.json COPYONLY)

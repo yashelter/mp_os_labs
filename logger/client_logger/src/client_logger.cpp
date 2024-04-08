@@ -7,7 +7,7 @@
 
 std::unordered_map<std::string, std::pair<std::ofstream, size_t>> client_logger::_all_streams;
 
-client_logger::client_logger(std::unordered_map<severity, logger_subscription> subs):subscriptions(subs)
+client_logger::client_logger(std::unordered_map<severity, logger_subscription> subs, std::string format):subscriptions(subs), _format(format)
 {
     for (const auto& pair : subscriptions)
     {
@@ -31,9 +31,11 @@ client_logger::client_logger(std::unordered_map<severity, logger_subscription> s
 }
 
 logger const* client_logger::log(
-    const std::string& text,
+    const std::string& mes,
     logger::severity severity) const noexcept
 {
+    std::string text = make_format(mes, severity);
+
     auto iter = subscriptions.find(severity);
     if (iter == subscriptions.end())
     {
@@ -54,6 +56,53 @@ logger const* client_logger::log(
    
 
     return this;
+}
+
+
+std::string client_logger::make_format(const std::string& message, logger::severity severity) const
+{
+
+    std::stringstream res;
+    bool next_checkable = false;
+    for (int i = 0; i < _format.size(); ++i)
+    { 
+        char symb = _format[i];
+        if (symb == '%' && !next_checkable)
+        {
+            next_checkable = true;
+            continue;
+        }
+        if (next_checkable)
+        {
+            next_checkable = false;
+            if (symb == 'd')
+            {
+                res << current_date_to_string();
+            }
+            else if (symb == 't')
+            {
+                res << current_date_to_string();
+            }
+            else if(symb == 'm')
+            {
+                res << message;
+            }
+            else if (symb == 's')
+            {
+                res << severity_to_string(severity);
+            }
+            else
+            {
+                res << '%';
+                next_checkable = true;
+            }
+
+        } else
+        {
+            res << symb;
+        }
+    }
+    return res.str();
 }
 
 
