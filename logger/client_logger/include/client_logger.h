@@ -31,32 +31,6 @@ private:
 
 
 public:
-    class custom_stream final
-    {
-
-    public:
-
-        std::pair<std::string, std::ofstream*> _stream;
-
-    public:
-
-        explicit custom_stream(const std::string& path);
-
-        custom_stream(custom_stream const& other);
-
-        custom_stream& operator=(custom_stream const& other);
-
-        custom_stream(custom_stream&& other) noexcept;
-
-        custom_stream& operator=(custom_stream&& other) noexcept;
-
-        ~custom_stream();
-
-    };
-
-
-
-public:
     client_logger(std::unordered_map<severity, logger_subscription>);
     client_logger(
         client_logger const &other);

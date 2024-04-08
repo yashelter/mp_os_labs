@@ -83,47 +83,21 @@ client_logger &client_logger::operator=(
 
 client_logger::~client_logger()
 {
-    //throw not_implemented("client_logger::~client_logger() noexcept", "your code should be here...");
-}
-
-
-
-client_logger::custom_stream::custom_stream(const std::string& path) : _stream(std::make_pair(path, nullptr)) {}
-
-client_logger::custom_stream::custom_stream(const client_logger::custom_stream& other) : _stream(std::make_pair(other._stream.first, nullptr))
-{
-   
-
-}
-
-client_logger::custom_stream& client_logger::custom_stream::operator=(const client_logger::custom_stream& other)
-{
-   
-    return *this;
-
-
-}
-
-client_logger::custom_stream::custom_stream(client_logger::custom_stream&& other) noexcept
-{
-   
-}
-
-client_logger::custom_stream& client_logger::custom_stream::operator=(client_logger::custom_stream&& other) noexcept
-{
-    if (this == &other)
+    for (auto &k_w : subscriptions)
     {
-        return *this;
+        for (std::string path: k_w.second._paths)
+        {
+            auto iter = _all_streams.find(path);
+            if (iter != _all_streams.end())
+            {
+                iter->second.second -= 1;
+                if (iter->second.second <= 0)
+                {
+                    iter->second.first.close();
+                    _all_streams.erase(iter->first);
+                }
+            }
+        }
+        
     }
-
-    std::swap(_stream.first, other._stream.first);
-    std::swap(_stream.second, other._stream.second);
-
-    return *this;
-
-}
-
-client_logger::custom_stream::~custom_stream()
-{
-   
 }

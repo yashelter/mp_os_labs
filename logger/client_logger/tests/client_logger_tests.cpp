@@ -18,6 +18,11 @@ int main(
 
     client_logger *logger = builder.build();
     logger->log("test", logger::severity::trace);
-    std::cout << '1';
+
+    client_logger* logger2 = builder.build();
+    delete logger;
+    delete logger2;
+
+    std::cout << "\nend of file\n";
     return RUN_ALL_TESTS();
 }

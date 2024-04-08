@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "allocator/allocator_sorted_list/tests/mp_os_allctr_allctr_srtd_lst_tests.exe"
+			"path" : "allocator/allocator_buddies_system/tests/mp_os_allctr_allctr_bdds_sstm_tests.exe"
 		},
 		{
-			"path" : "allocator/allocator_sorted_list/tests/mp_os_allctr_allctr_srtd_lst_tests.pdb"
+			"path" : "allocator/allocator_buddies_system/tests/mp_os_allctr_allctr_bdds_sstm_tests.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -18,7 +18,7 @@
 		],
 		"files" : 
 		[
-			"allocator/allocator_sorted_list/tests/CMakeLists.txt",
+			"allocator/allocator_buddies_system/tests/CMakeLists.txt",
 			"out/build/x64-Debug/_deps/googletest-src/googletest/CMakeLists.txt",
 			"logger/client_logger/CMakeLists.txt"
 		],
@@ -116,7 +116,7 @@
 				},
 				{
 					"backtrace" : 6,
-					"path" : "E:/proj/mp_os_labs/allocator/allocator_sorted_list/./include"
+					"path" : "E:/proj/mp_os_labs/allocator/allocator_buddies_system/./include"
 				},
 				{
 					"backtrace" : 2,
@@ -153,19 +153,15 @@
 		},
 		{
 			"backtrace" : 2,
-			"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f"
-		},
-		{
-			"backtrace" : 2,
 			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
 		},
 		{
-			"backtrace" : 6,
-			"id" : "mp_os_allctr_allctr_srtd_lst::@4702340b8f18f13d4df3"
+			"backtrace" : 2,
+			"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f"
 		},
 		{
-			"backtrace" : 4,
-			"id" : "mp_os_lggr_clnt_lggr::@1192419ba09c9016d213"
+			"backtrace" : 6,
+			"id" : "mp_os_allctr_allctr_bdds_sstm::@c9a9cf57e8abda1f3e48"
 		},
 		{
 			"backtrace" : 3,
@@ -173,10 +169,14 @@
 		},
 		{
 			"backtrace" : 4,
+			"id" : "mp_os_lggr_clnt_lggr::@1192419ba09c9016d213"
+		},
+		{
+			"backtrace" : 4,
 			"id" : "mp_os_lggr_lggr::@af94273c3084cfb43adb"
 		}
 	],
-	"id" : "mp_os_allctr_allctr_srtd_lst_tests::@9768f5af66b947045b7a",
+	"id" : "mp_os_allctr_allctr_bdds_sstm_tests::@fbceba4a0dca6ccc0d5c",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -211,7 +211,7 @@
 			},
 			{
 				"backtrace" : 6,
-				"fragment" : "allocator\\allocator_sorted_list\\mp_os_allctr_allctr_srtd_lst.lib",
+				"fragment" : "allocator\\allocator_buddies_system\\mp_os_allctr_allctr_bdds_sstm.lib",
 				"role" : "libraries"
 			},
 			{
@@ -241,12 +241,12 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "mp_os_allctr_allctr_srtd_lst_tests",
-	"nameOnDisk" : "mp_os_allctr_allctr_srtd_lst_tests.exe",
+	"name" : "mp_os_allctr_allctr_bdds_sstm_tests",
+	"nameOnDisk" : "mp_os_allctr_allctr_bdds_sstm_tests.exe",
 	"paths" : 
 	{
-		"build" : "allocator/allocator_sorted_list/tests",
-		"source" : "allocator/allocator_sorted_list/tests"
+		"build" : "allocator/allocator_buddies_system/tests",
+		"source" : "allocator/allocator_buddies_system/tests"
 	},
 	"sourceGroups" : 
 	[
@@ -270,7 +270,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "allocator/allocator_sorted_list/tests/allocator_sorted_list_tests.cpp",
+			"path" : "allocator/allocator_buddies_system/tests/allocator_buddies_system_tests.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

@@ -177,19 +177,19 @@
 		},
 		{
 			"backtrace" : 2,
-			"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f"
-		},
-		{
-			"backtrace" : 2,
 			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
 		},
 		{
-			"backtrace" : 6,
-			"id" : "mp_os_assctv_cntnr_srch_tr::@32bbdc00ff9a6995c868"
+			"backtrace" : 2,
+			"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f"
 		},
 		{
 			"backtrace" : 5,
 			"id" : "mp_os_assctv_cntnr::@eceec357cdd12af20473"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "mp_os_assctv_cntnr_srch_tr::@32bbdc00ff9a6995c868"
 		},
 		{
 			"backtrace" : 7,
@@ -197,11 +197,11 @@
 		},
 		{
 			"backtrace" : 4,
-			"id" : "mp_os_lggr_clnt_lggr::@1192419ba09c9016d213"
+			"id" : "mp_os_cmmn::@bfc844598bd03e848b3c"
 		},
 		{
 			"backtrace" : 4,
-			"id" : "mp_os_cmmn::@bfc844598bd03e848b3c"
+			"id" : "mp_os_lggr_clnt_lggr::@1192419ba09c9016d213"
 		},
 		{
 			"backtrace" : 3,

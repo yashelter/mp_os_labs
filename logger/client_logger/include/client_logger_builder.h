@@ -12,8 +12,6 @@ class client_logger_builder final:
     public logger_builder
 {
 private:
-    std::unordered_map<logger::severity, std::pair<std::forward_list<client_logger::custom_stream>, bool>> _files;
-
     std::unordered_map<client_logger::severity, client_logger::logger_subscription> subscriptions;
 
 public:
