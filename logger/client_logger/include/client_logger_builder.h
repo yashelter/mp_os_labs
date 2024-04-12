@@ -5,7 +5,6 @@
 #include <logger_builder.h>
 
 #include <map>
-#include <forward_list>
 #include <unordered_map>
 #include <iostream>
 #include <fstream>

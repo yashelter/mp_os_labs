@@ -99,7 +99,7 @@ void client_logger_builder::parsing_severity(logger::severity severity, json& js
         return;
     }
     auto console_iter = js.find("console");
-    if (console_iter != js.end() && console_iter->is_boolean())
+    if (console_iter != js.end() && console_iter->is_boolean() && console_iter->get<bool>())
     {
         add_console_stream(severity);
     }

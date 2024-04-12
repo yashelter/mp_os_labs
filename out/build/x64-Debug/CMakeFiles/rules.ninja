@@ -605,6 +605,34 @@ rule CXX_STATIC_LIBRARY_LINKER__mp_os_lggr_lggr_Debug
 
 
 #############################################
+# Rule for generating CXX dependencies.
+
+rule CXX_SCAN__mp_os_lggr_srvr_lggr_Debug
+  deps = msvc
+  command = C:\PROGRA~1\MICROS~2\2022\ENTERP~1\VC\Tools\MSVC\1439~1.335\bin\Hostx64\x64\cl.exe $DEFINES $INCLUDES $FLAGS $in -nologo -TP -showIncludes -scanDependencies $DYNDEP_INTERMEDIATE_FILE -Fo$OBJ_FILE
+  description = Scanning $in for CXX dependencies
+
+
+#############################################
+# Rule to generate ninja dyndep files for CXX.
+
+rule CXX_DYNDEP__mp_os_lggr_srvr_lggr_Debug
+  command = "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E cmake_ninja_dyndep --tdi=logger\server_logger\CMakeFiles\mp_os_lggr_srvr_lggr.dir\CXXDependInfo.json --lang=CXX --modmapfmt=msvc --dd=$out @$out.rsp
+  description = Generating CXX dyndep file $out
+  rspfile = $out.rsp
+  rspfile_content = $in
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__mp_os_lggr_srvr_lggr_scanned_Debug
+  deps = msvc
+  command = ${LAUNCHER}${CODE_CHECK}C:\PROGRA~1\MICROS~2\2022\ENTERP~1\VC\Tools\MSVC\1439~1.335\bin\Hostx64\x64\cl.exe  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes @$DYNDEP_MODULE_MAP_FILE /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  description = Building CXX object $out
+
+
+#############################################
 # Rule for compiling CXX files.
 
 rule CXX_COMPILER__mp_os_lggr_srvr_lggr_unscanned_Debug
@@ -620,6 +648,34 @@ rule CXX_STATIC_LIBRARY_LINKER__mp_os_lggr_srvr_lggr_Debug
   command = C:\Windows\system32\cmd.exe /C "$PRE_LINK && C:\PROGRA~1\MICROS~2\2022\ENTERP~1\VC\Tools\MSVC\1439~1.335\bin\Hostx64\x64\lib.exe /nologo $LINK_FLAGS /out:$TARGET_FILE $in  && $POST_BUILD"
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
+
+
+#############################################
+# Rule for generating CXX dependencies.
+
+rule CXX_SCAN__mp_os_lggr_srvr_lggr_tests_Debug
+  deps = msvc
+  command = C:\PROGRA~1\MICROS~2\2022\ENTERP~1\VC\Tools\MSVC\1439~1.335\bin\Hostx64\x64\cl.exe $DEFINES $INCLUDES $FLAGS $in -nologo -TP -showIncludes -scanDependencies $DYNDEP_INTERMEDIATE_FILE -Fo$OBJ_FILE
+  description = Scanning $in for CXX dependencies
+
+
+#############################################
+# Rule to generate ninja dyndep files for CXX.
+
+rule CXX_DYNDEP__mp_os_lggr_srvr_lggr_tests_Debug
+  command = "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E cmake_ninja_dyndep --tdi=logger\server_logger\tests\CMakeFiles\mp_os_lggr_srvr_lggr_tests.dir\CXXDependInfo.json --lang=CXX --modmapfmt=msvc --dd=$out @$out.rsp
+  description = Generating CXX dyndep file $out
+  rspfile = $out.rsp
+  rspfile_content = $in
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__mp_os_lggr_srvr_lggr_tests_scanned_Debug
+  deps = msvc
+  command = ${LAUNCHER}${CODE_CHECK}C:\PROGRA~1\MICROS~2\2022\ENTERP~1\VC\Tools\MSVC\1439~1.335\bin\Hostx64\x64\cl.exe  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes @$DYNDEP_MODULE_MAP_FILE /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  description = Building CXX object $out
 
 
 #############################################
@@ -641,6 +697,52 @@ rule CXX_EXECUTABLE_LINKER__mp_os_lggr_srvr_lggr_tests_Debug
 
 
 #############################################
+# Rule for generating CXX dependencies.
+
+rule CXX_SCAN__mp_os_lggr_srvr_server_Debug
+  deps = msvc
+  command = C:\PROGRA~1\MICROS~2\2022\ENTERP~1\VC\Tools\MSVC\1439~1.335\bin\Hostx64\x64\cl.exe $DEFINES $INCLUDES $FLAGS $in -nologo -TP -showIncludes -scanDependencies $DYNDEP_INTERMEDIATE_FILE -Fo$OBJ_FILE
+  description = Scanning $in for CXX dependencies
+
+
+#############################################
+# Rule to generate ninja dyndep files for CXX.
+
+rule CXX_DYNDEP__mp_os_lggr_srvr_server_Debug
+  command = "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E cmake_ninja_dyndep --tdi=logger\server_logger\tests\CMakeFiles\mp_os_lggr_srvr_server.dir\CXXDependInfo.json --lang=CXX --modmapfmt=msvc --dd=$out @$out.rsp
+  description = Generating CXX dyndep file $out
+  rspfile = $out.rsp
+  rspfile_content = $in
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__mp_os_lggr_srvr_server_scanned_Debug
+  deps = msvc
+  command = ${LAUNCHER}${CODE_CHECK}C:\PROGRA~1\MICROS~2\2022\ENTERP~1\VC\Tools\MSVC\1439~1.335\bin\Hostx64\x64\cl.exe  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes @$DYNDEP_MODULE_MAP_FILE /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__mp_os_lggr_srvr_server_unscanned_Debug
+  deps = msvc
+  command = ${LAUNCHER}${CODE_CHECK}C:\PROGRA~1\MICROS~2\2022\ENTERP~1\VC\Tools\MSVC\1439~1.335\bin\Hostx64\x64\cl.exe  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__mp_os_lggr_srvr_server_Debug
+  command = C:\Windows\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100226~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100226~1.0\x64\mt.exe --manifests $MANIFESTS -- C:\PROGRA~1\MICROS~2\2022\ENTERP~1\VC\Tools\MSVC\1439~1.335\bin\Hostx64\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:1.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
@@ -653,7 +755,7 @@ rule RERUN_CMAKE
 # Rule for cleaning all built files.
 
 rule CLEAN
-  command = C:\PROGRA~1\MICROS~2\2022\ENTERP~1\Common7\IDE\COMMON~1\MICROS~1\CMake\Ninja\ninja.exe $FILE_ARG -t clean $TARGETS
+  command = "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\Ninja\ninja.exe" $FILE_ARG -t clean $TARGETS
   description = Cleaning all built files...
 
 
@@ -661,6 +763,6 @@ rule CLEAN
 # Rule for printing all primary targets available.
 
 rule HELP
-  command = C:\PROGRA~1\MICROS~2\2022\ENTERP~1\Common7\IDE\COMMON~1\MICROS~1\CMake\Ninja\ninja.exe -t targets
+  command = "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\Ninja\ninja.exe" -t targets
   description = All primary targets available:
 

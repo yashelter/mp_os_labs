@@ -206,6 +206,7 @@ E:/proj/mp_os_labs/out/build/x64-Debug/logger/server_logger/CMakeFiles/list_inst
 E:/proj/mp_os_labs/out/build/x64-Debug/logger/server_logger/CMakeFiles/install.dir
 E:/proj/mp_os_labs/out/build/x64-Debug/logger/server_logger/CMakeFiles/install/local.dir
 E:/proj/mp_os_labs/out/build/x64-Debug/logger/server_logger/tests/CMakeFiles/mp_os_lggr_srvr_lggr_tests.dir
+E:/proj/mp_os_labs/out/build/x64-Debug/logger/server_logger/tests/CMakeFiles/mp_os_lggr_srvr_server.dir
 E:/proj/mp_os_labs/out/build/x64-Debug/logger/server_logger/tests/CMakeFiles/edit_cache.dir
 E:/proj/mp_os_labs/out/build/x64-Debug/logger/server_logger/tests/CMakeFiles/rebuild_cache.dir
 E:/proj/mp_os_labs/out/build/x64-Debug/logger/server_logger/tests/CMakeFiles/list_install_components.dir

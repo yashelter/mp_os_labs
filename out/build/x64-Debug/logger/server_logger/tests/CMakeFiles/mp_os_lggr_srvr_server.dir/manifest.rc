@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "E:/proj/mp_os_labs/out/build/x64-Debug/logger/server_logger/tests/CMakeFiles/mp_os_lggr_srvr_server.dir/embed.manifest"

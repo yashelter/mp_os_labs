@@ -58,6 +58,7 @@ protected:
 
 public: 
     static std::string severity_to_string(logger::severity severity);
+    static logger::severity string_to_severity(const std::string& str);
 
 };
 

@@ -2,11 +2,19 @@
 #define MATH_PRACTICE_AND_OPERATING_SYSTEMS_SERVER_LOGGER_BUILDER_H
 
 #include <logger_builder.h>
+#include "server_logger.h"
+
+#include <map>
+#include <unordered_map>
+#include <iostream>
+#include <fstream>
+
 
 class server_logger_builder final:
     public logger_builder
 {
-
+private:
+    std::unordered_map<server_logger::severity, server_logger::logger_subscription> subscriptions;
 public:
 
     server_logger_builder();
