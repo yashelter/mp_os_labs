@@ -11,9 +11,9 @@ TEST(allocatorGlobalHeapTests, test1)
     
     logger *logger_instance = logger_builder_instance
         ->add_file_stream("gh_alc_test1_logs.txt", logger::severity::debug)
+        ->add_console_stream(logger::severity::error)
         ->build();
     delete logger_builder_instance;
-    
     allocator *allocator_instance = new allocator_global_heap(logger_instance);
     auto block = reinterpret_cast<int *>(allocator_instance->allocate(sizeof(unsigned char), 0));
     delete allocator_instance;

@@ -15,6 +15,7 @@ class allocator_global_heap final:
 private:
     
     logger *_logger;
+    static constexpr const size_t _size_meta = sizeof(allocator*);
 
 public:
     

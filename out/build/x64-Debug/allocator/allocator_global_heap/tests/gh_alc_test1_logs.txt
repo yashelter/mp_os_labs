@@ -1,0 +1,7 @@
+[debug] Builded allocator_global_heap
+[debug] allocator_global_heapstarted allocate 8 bytes
+[debug] allocator_global_heapfinished allocate 8 bytes
+[debug] Destroyed allocator_global_heap
+[debug] Builded allocator_global_heap
+deallocate finished
+[debug] Destroyed allocator_global_heap
