@@ -1,0 +1,11 @@
+Created allocator_boundary_tags
+Started allocate process of 72 bytes
+Started allocate process of 72 bytes
+Succesfully allocated 40 bytes with meta with size 32
+Started allocate process of 72 bytes
+Succesfully allocated 40 bytes with meta with size 32
+Started allocate process of 36 bytes
+Succesfully allocated 4 bytes with meta with size 32
+Started allocate process of 36 bytes
+Succesfully allocated 4 bytes with meta with size 32
+Called allocator destructor

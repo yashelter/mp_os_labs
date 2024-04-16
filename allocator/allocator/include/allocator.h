@@ -2,6 +2,7 @@
 #define MATH_PRACTICE_AND_OPERATING_SYSTEMS_ALLOCATOR_H
 
 #include <cstddef>
+#include <utility>
 
 class allocator
 {
@@ -48,7 +49,7 @@ inline void allocator::construct(
     T *at,
     args... constructor_arguments)
 {
-    new(at) T(constructor_arguments...);
+    new(at) T(std::forward<args>(constructor_arguments)...);
 }
 
 template<

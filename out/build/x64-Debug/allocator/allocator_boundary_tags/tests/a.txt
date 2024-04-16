@@ -1,0 +1,210 @@
+Created allocator_boundary_tags
+Started allocate process of 1032 bytes
+Started allocate process of 532 bytes
+Succesfully allocated 500 bytes with meta with size 32
+Started allocate process of 2032 bytes
+Succesfully allocated 2000 bytes with meta with size 32
+Started allocate process of 1012 bytes
+Succesfully allocated 980 bytes with meta with size 32
+Created allocator_boundary_tags
+Started allocate process of 576 bytes
+Started allocate process of 624 bytes
+Succesfully allocated 592 bytes with meta with size 32
+Started allocate process of 928 bytes
+Succesfully allocated 896 bytes with meta with size 32
+Started allocate process of 496 bytes
+Succesfully allocated 464 bytes with meta with size 32
+Started allocate process of 1632 bytes
+Succesfully allocated 1600 bytes with meta with size 32
+Started allocate process of 592 bytes
+Succesfully allocated 560 bytes with meta with size 32
+Started allocate process of 1304 bytes
+Error with allocating 1272 bytes with meta with size 32
+Started allocate process of 1392 bytes
+Error with allocating 1360 bytes with meta with size 32
+Started allocate process of 1088 bytes
+Error with allocating 1056 bytes with meta with size 32
+Started allocate process of 1040 bytes
+Error with allocating 1008 bytes with meta with size 32
+Started allocate process of 656 bytes
+Error with allocating 624 bytes with meta with size 32
+Started allocate process of 1168 bytes
+Error with allocating 1136 bytes with meta with size 32
+Started allocate process of 2296 bytes
+Error with allocating 2264 bytes with meta with size 32
+Started allocate process of 776 bytes
+Error with allocating 744 bytes with meta with size 32
+Started allocate process of 1504 bytes
+Error with allocating 1472 bytes with meta with size 32
+Started allocate process of 2248 bytes
+Error with allocating 2216 bytes with meta with size 32
+Started allocate process of 1408 bytes
+Error with allocating 1376 bytes with meta with size 32
+Started allocate process of 2000 bytes
+Error with allocating 1968 bytes with meta with size 32
+Started allocate process of 784 bytes
+Error with allocating 752 bytes with meta with size 32
+Started allocate process of 2392 bytes
+Error with allocating 2360 bytes with meta with size 32
+Started allocate process of 616 bytes
+Error with allocating 584 bytes with meta with size 32
+Started allocate process of 528 bytes
+Error with allocating 496 bytes with meta with size 32
+Started allocate process of 1088 bytes
+Error with allocating 1056 bytes with meta with size 32
+Started allocate process of 512 bytes
+Error with allocating 480 bytes with meta with size 32
+Started allocate process of 472 bytes
+Error with allocating 440 bytes with meta with size 32
+Started allocate process of 768 bytes
+Error with allocating 736 bytes with meta with size 32
+Started allocate process of 1928 bytes
+Error with allocating 1896 bytes with meta with size 32
+Started allocate process of 856 bytes
+Error with allocating 824 bytes with meta with size 32
+Started allocate process of 1360 bytes
+Error with allocating 1328 bytes with meta with size 32
+Started allocate process of 752 bytes
+Error with allocating 720 bytes with meta with size 32
+Started allocate process of 2280 bytes
+Error with allocating 2248 bytes with meta with size 32
+Started allocate process of 640 bytes
+Error with allocating 608 bytes with meta with size 32
+Started allocate process of 1408 bytes
+Error with allocating 1376 bytes with meta with size 32
+Started allocate process of 1000 bytes
+Error with allocating 968 bytes with meta with size 32
+Started allocate process of 1672 bytes
+Error with allocating 1640 bytes with meta with size 32
+Started allocate process of 680 bytes
+Error with allocating 648 bytes with meta with size 32
+Started allocate process of 2296 bytes
+Error with allocating 2264 bytes with meta with size 32
+Started allocate process of 1768 bytes
+Error with allocating 1736 bytes with meta with size 32
+Started allocate process of 2040 bytes
+Error with allocating 2008 bytes with meta with size 32
+Started allocate process of 632 bytes
+Error with allocating 600 bytes with meta with size 32
+Started allocate process of 1672 bytes
+Error with allocating 1640 bytes with meta with size 32
+Started allocate process of 1776 bytes
+Error with allocating 1744 bytes with meta with size 32
+Started allocate process of 1216 bytes
+Error with allocating 1184 bytes with meta with size 32
+Started allocate process of 2360 bytes
+Error with allocating 2328 bytes with meta with size 32
+Started allocate process of 1280 bytes
+Error with allocating 1248 bytes with meta with size 32
+Started allocate process of 744 bytes
+Error with allocating 712 bytes with meta with size 32
+Started allocate process of 2376 bytes
+Error with allocating 2344 bytes with meta with size 32
+Started allocate process of 2064 bytes
+Error with allocating 2032 bytes with meta with size 32
+Started allocate process of 840 bytes
+Error with allocating 808 bytes with meta with size 32
+Started allocate process of 1576 bytes
+Error with allocating 1544 bytes with meta with size 32
+Started allocate process of 1104 bytes
+Error with allocating 1072 bytes with meta with size 32
+Started allocate process of 624 bytes
+Error with allocating 592 bytes with meta with size 32
+Started allocate process of 1824 bytes
+Error with allocating 1792 bytes with meta with size 32
+Started allocate process of 1216 bytes
+Error with allocating 1184 bytes with meta with size 32
+Started allocate process of 536 bytes
+Error with allocating 504 bytes with meta with size 32
+Started allocate process of 592 bytes
+Error with allocating 560 bytes with meta with size 32
+Started allocate process of 1224 bytes
+Error with allocating 1192 bytes with meta with size 32
+Started allocate process of 1216 bytes
+Error with allocating 1184 bytes with meta with size 32
+Started allocate process of 848 bytes
+Error with allocating 816 bytes with meta with size 32
+Started allocate process of 1024 bytes
+Error with allocating 992 bytes with meta with size 32
+Started allocate process of 912 bytes
+Error with allocating 880 bytes with meta with size 32
+Started allocate process of 1408 bytes
+Error with allocating 1376 bytes with meta with size 32
+Started allocate process of 1528 bytes
+Error with allocating 1496 bytes with meta with size 32
+Started allocate process of 2192 bytes
+Error with allocating 2160 bytes with meta with size 32
+Started allocate process of 1952 bytes
+Error with allocating 1920 bytes with meta with size 32
+Started allocate process of 976 bytes
+Error with allocating 944 bytes with meta with size 32
+Started allocate process of 600 bytes
+Error with allocating 568 bytes with meta with size 32
+Started allocate process of 1024 bytes
+Error with allocating 992 bytes with meta with size 32
+Started allocate process of 2096 bytes
+Error with allocating 2064 bytes with meta with size 32
+Started allocate process of 1576 bytes
+Error with allocating 1544 bytes with meta with size 32
+Started allocate process of 832 bytes
+Error with allocating 800 bytes with meta with size 32
+Started allocate process of 1048 bytes
+Error with allocating 1016 bytes with meta with size 32
+Started allocate process of 616 bytes
+Error with allocating 584 bytes with meta with size 32
+Started allocate process of 528 bytes
+Error with allocating 496 bytes with meta with size 32
+Started allocate process of 1008 bytes
+Error with allocating 976 bytes with meta with size 32
+Started allocate process of 2256 bytes
+Error with allocating 2224 bytes with meta with size 32
+Started allocate process of 1728 bytes
+Error with allocating 1696 bytes with meta with size 32
+Started allocate process of 1408 bytes
+Error with allocating 1376 bytes with meta with size 32
+Started allocate process of 2336 bytes
+Error with allocating 2304 bytes with meta with size 32
+Started allocate process of 912 bytes
+Error with allocating 880 bytes with meta with size 32
+Started allocate process of 2064 bytes
+Error with allocating 2032 bytes with meta with size 32
+Started allocate process of 1304 bytes
+Error with allocating 1272 bytes with meta with size 32
+Started allocate process of 1416 bytes
+Error with allocating 1384 bytes with meta with size 32
+Started allocate process of 1832 bytes
+Error with allocating 1800 bytes with meta with size 32
+Started allocate process of 1064 bytes
+Error with allocating 1032 bytes with meta with size 32
+Started allocate process of 2120 bytes
+Error with allocating 2088 bytes with meta with size 32
+Started allocate process of 1080 bytes
+Error with allocating 1048 bytes with meta with size 32
+Started allocate process of 504 bytes
+Error with allocating 472 bytes with meta with size 32
+Started allocate process of 624 bytes
+Error with allocating 592 bytes with meta with size 32
+Started allocate process of 2240 bytes
+Error with allocating 2208 bytes with meta with size 32
+Started allocate process of 1304 bytes
+Error with allocating 1272 bytes with meta with size 32
+Started allocate process of 1816 bytes
+Error with allocating 1784 bytes with meta with size 32
+Started allocate process of 704 bytes
+Error with allocating 672 bytes with meta with size 32
+Started allocate process of 1856 bytes
+Error with allocating 1824 bytes with meta with size 32
+Started allocate process of 728 bytes
+Error with allocating 696 bytes with meta with size 32
+Started allocate process of 600 bytes
+Error with allocating 568 bytes with meta with size 32
+Started allocate process of 1240 bytes
+Error with allocating 1208 bytes with meta with size 32
+Started allocate process of 680 bytes
+Error with allocating 648 bytes with meta with size 32
+Started allocate process of 1496 bytes
+Error with allocating 1464 bytes with meta with size 32
+Started allocate process of 1272 bytes
+Error with allocating 1240 bytes with meta with size 32
+Called allocator destructor
+Called allocator destructor

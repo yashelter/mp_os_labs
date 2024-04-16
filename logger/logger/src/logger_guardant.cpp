@@ -9,7 +9,6 @@ logger_guardant const *logger_guardant::log_with_guard(
     {
         got_logger->log(message, severity);
     }
-
     return this;
 }
 
