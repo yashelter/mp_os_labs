@@ -30,7 +30,7 @@ public:
 
 public:
     
-    virtual std::vector<block_info> get_blocks_info() const noexcept = 0;
+    virtual std::vector<block_info> get_blocks_info(size_t &) const = 0;
     
 };
 

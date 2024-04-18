@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "associative_container/search_tree/binary_search_tree/splay_tree/tests/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests.exe"
+			"path" : "associative_container/search_tree/binary_search_tree/scapegoat_tree/tests/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr_tests.exe"
 		},
 		{
-			"path" : "associative_container/search_tree/binary_search_tree/splay_tree/tests/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests.pdb"
+			"path" : "associative_container/search_tree/binary_search_tree/scapegoat_tree/tests/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr_tests.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -18,9 +18,9 @@
 		],
 		"files" : 
 		[
-			"associative_container/search_tree/binary_search_tree/splay_tree/tests/CMakeLists.txt",
+			"associative_container/search_tree/binary_search_tree/scapegoat_tree/tests/CMakeLists.txt",
 			"out/build/x64-Debug/_deps/googletest-src/googletest/CMakeLists.txt",
-			"associative_container/search_tree/binary_search_tree/splay_tree/CMakeLists.txt",
+			"associative_container/search_tree/binary_search_tree/scapegoat_tree/CMakeLists.txt",
 			"associative_container/search_tree/binary_search_tree/CMakeLists.txt",
 			"logger/client_logger/CMakeLists.txt"
 		],
@@ -156,7 +156,7 @@
 				},
 				{
 					"backtrace" : 8,
-					"path" : "E:/proj/mp_os_labs/associative_container/search_tree/binary_search_tree/splay_tree/./include"
+					"path" : "E:/proj/mp_os_labs/associative_container/search_tree/binary_search_tree/scapegoat_tree/./include"
 				},
 				{
 					"backtrace" : 8,
@@ -201,11 +201,11 @@
 		},
 		{
 			"backtrace" : 2,
-			"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f"
+			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
+			"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f"
 		},
 		{
 			"backtrace" : 6,
@@ -217,15 +217,15 @@
 		},
 		{
 			"backtrace" : 8,
-			"id" : "mp_os_assctv_cntnr_srch_tr::@32bbdc00ff9a6995c868"
-		},
-		{
-			"backtrace" : 8,
 			"id" : "mp_os_assctv_cntnr_srch_tr_bnr_srch_tr::@af874379a609ad2410a4"
 		},
 		{
 			"backtrace" : 8,
-			"id" : "mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr::@4b48895249e31d4f47f2"
+			"id" : "mp_os_assctv_cntnr_srch_tr::@32bbdc00ff9a6995c868"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr::@3d7d22394745a5733330"
 		},
 		{
 			"backtrace" : 3,
@@ -240,7 +240,7 @@
 			"id" : "mp_os_lggr_lggr::@af94273c3084cfb43adb"
 		}
 	],
-	"id" : "mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests::@eef5e586594917a9df1a",
+	"id" : "mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr_tests::@ac1d556bc4a32380bc9c",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -285,7 +285,7 @@
 			},
 			{
 				"backtrace" : 8,
-				"fragment" : "associative_container\\search_tree\\binary_search_tree\\splay_tree\\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr.lib",
+				"fragment" : "associative_container\\search_tree\\binary_search_tree\\scapegoat_tree\\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr.lib",
 				"role" : "libraries"
 			},
 			{
@@ -330,12 +330,12 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests",
-	"nameOnDisk" : "mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests.exe",
+	"name" : "mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr_tests",
+	"nameOnDisk" : "mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr_tests.exe",
 	"paths" : 
 	{
-		"build" : "associative_container/search_tree/binary_search_tree/splay_tree/tests",
-		"source" : "associative_container/search_tree/binary_search_tree/splay_tree/tests"
+		"build" : "associative_container/search_tree/binary_search_tree/scapegoat_tree/tests",
+		"source" : "associative_container/search_tree/binary_search_tree/scapegoat_tree/tests"
 	},
 	"sourceGroups" : 
 	[
@@ -359,7 +359,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "associative_container/search_tree/binary_search_tree/splay_tree/tests/splay_tree_tests.cpp",
+			"path" : "associative_container/search_tree/binary_search_tree/scapegoat_tree/tests/scapegoat_tree_tests.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

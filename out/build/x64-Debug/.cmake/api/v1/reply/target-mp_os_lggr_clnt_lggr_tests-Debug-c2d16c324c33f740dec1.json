@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "allocator/allocator_sorted_list/tests/mp_os_allctr_allctr_srtd_lst_tests.exe"
+			"path" : "logger/client_logger/tests/mp_os_lggr_clnt_lggr_tests.exe"
 		},
 		{
-			"path" : "allocator/allocator_sorted_list/tests/mp_os_allctr_allctr_srtd_lst_tests.pdb"
+			"path" : "logger/client_logger/tests/mp_os_lggr_clnt_lggr_tests.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -18,9 +18,8 @@
 		],
 		"files" : 
 		[
-			"allocator/allocator_sorted_list/tests/CMakeLists.txt",
-			"out/build/x64-Debug/_deps/googletest-src/googletest/CMakeLists.txt",
-			"logger/client_logger/CMakeLists.txt"
+			"logger/client_logger/tests/CMakeLists.txt",
+			"out/build/x64-Debug/_deps/googletest-src/googletest/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -58,28 +57,13 @@
 				"parent" : 0
 			},
 			{
-				"command" : 1,
-				"file" : 0,
-				"line" : 34,
-				"parent" : 0
-			},
-			{
 				"file" : 1
 			},
 			{
 				"command" : 1,
 				"file" : 1,
 				"line" : 161,
-				"parent" : 7
-			},
-			{
-				"file" : 2
-			},
-			{
-				"command" : 1,
-				"file" : 2,
-				"line" : 21,
-				"parent" : 9
+				"parent" : 6
 			}
 		]
 	},
@@ -89,7 +73,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++14 -MDd"
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++latest -MDd"
 				}
 			],
 			"includes" : 
@@ -100,23 +84,15 @@
 				},
 				{
 					"backtrace" : 4,
-					"path" : "E:/proj/mp_os_labs/logger/client_logger/./include"
-				},
-				{
-					"backtrace" : 4,
 					"path" : "E:/proj/mp_os_labs/logger/logger/./include"
 				},
 				{
-					"backtrace" : 4,
-					"path" : "E:/proj/mp_os_labs/out/build/x64-Debug/_deps/json-src/include"
+					"backtrace" : 5,
+					"path" : "E:/proj/mp_os_labs/logger/client_logger/./include"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "E:/proj/mp_os_labs/allocator/allocator/./include"
-				},
-				{
-					"backtrace" : 6,
-					"path" : "E:/proj/mp_os_labs/allocator/allocator_sorted_list/./include"
+					"path" : "E:/proj/mp_os_labs/out/build/x64-Debug/_deps/json-src/include"
 				},
 				{
 					"backtrace" : 2,
@@ -135,9 +111,9 @@
 				"backtraces" : 
 				[
 					2,
-					4
+					5
 				],
-				"standard" : "14"
+				"standard" : "23"
 			},
 			"sourceIndexes" : 
 			[
@@ -148,27 +124,19 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 5,
-			"id" : "mp_os_allctr_allctr::@67a2d12acd41ed6b0bc3"
+			"backtrace" : 2,
+			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
 		},
 		{
 			"backtrace" : 2,
 			"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f"
 		},
 		{
-			"backtrace" : 2,
-			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
-		},
-		{
-			"backtrace" : 6,
-			"id" : "mp_os_allctr_allctr_srtd_lst::@4702340b8f18f13d4df3"
-		},
-		{
 			"backtrace" : 3,
 			"id" : "mp_os_cmmn::@bfc844598bd03e848b3c"
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 5,
 			"id" : "mp_os_lggr_clnt_lggr::@1192419ba09c9016d213"
 		},
 		{
@@ -176,7 +144,7 @@
 			"id" : "mp_os_lggr_lggr::@af94273c3084cfb43adb"
 		}
 	],
-	"id" : "mp_os_allctr_allctr_srtd_lst_tests::@9768f5af66b947045b7a",
+	"id" : "mp_os_lggr_clnt_lggr_tests::@6a2e72c4a132e9fdd966",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -201,21 +169,16 @@
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "logger\\client_logger\\mp_os_lggr_clnt_lggr.lib",
+				"fragment" : "logger\\logger\\mp_os_lggr_lggr.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 5,
-				"fragment" : "allocator\\allocator\\mp_os_allctr_allctr.lib",
+				"fragment" : "logger\\client_logger\\mp_os_lggr_clnt_lggr.lib",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 6,
-				"fragment" : "allocator\\allocator_sorted_list\\mp_os_allctr_allctr_srtd_lst.lib",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 8,
+				"backtrace" : 7,
 				"fragment" : "lib\\gtest.lib",
 				"role" : "libraries"
 			},
@@ -225,12 +188,7 @@
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 5,
-				"fragment" : "allocator\\allocator\\mp_os_allctr_allctr.lib",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 10,
+				"backtrace" : 4,
 				"fragment" : "logger\\logger\\mp_os_lggr_lggr.lib",
 				"role" : "libraries"
 			},
@@ -241,12 +199,12 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "mp_os_allctr_allctr_srtd_lst_tests",
-	"nameOnDisk" : "mp_os_allctr_allctr_srtd_lst_tests.exe",
+	"name" : "mp_os_lggr_clnt_lggr_tests",
+	"nameOnDisk" : "mp_os_lggr_clnt_lggr_tests.exe",
 	"paths" : 
 	{
-		"build" : "allocator/allocator_sorted_list/tests",
-		"source" : "allocator/allocator_sorted_list/tests"
+		"build" : "logger/client_logger/tests",
+		"source" : "logger/client_logger/tests"
 	},
 	"sourceGroups" : 
 	[
@@ -270,11 +228,11 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "allocator/allocator_sorted_list/tests/allocator_sorted_list_tests.cpp",
+			"path" : "logger/client_logger/tests/client_logger_tests.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 5,
 			"path" : "out/build/x64-Debug/_deps/json-src/nlohmann_json.natvis",
 			"sourceGroupIndex" : 1
 		}

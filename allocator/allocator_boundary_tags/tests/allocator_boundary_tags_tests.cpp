@@ -65,6 +65,7 @@ TEST(positiveTests, test1)
 
     auto* first_block = reinterpret_cast<int*>(subject->allocate(sizeof(int), 10));
     auto* second_block = reinterpret_cast<int*>(subject->allocate(sizeof(int), 10));
+    *second_block = 1;
     auto* third_block = reinterpret_cast<int*>(subject->allocate(sizeof(int), 10));
 
     ASSERT_EQ(reinterpret_cast<int*>(reinterpret_cast<std::byte*>(first_block + 10) + sizeof(size_t) + sizeof(void*) * 3), second_block);
@@ -93,63 +94,61 @@ TEST(positiveTests, test1)
 
 TEST(positiveTests, test2)
 {
-    //logger* logger_instance = create_logger(std::vector<std::pair<std::string, logger::severity>>
-    //{
-    //    {
-    //        "allocator_boundary_tags_tests_logs_false_positive_test_1.txt",
-    //            logger::severity::information
-    //    },
-    //        {
-    //                "allocator_boundary_tags_tests_logs_false_positive_test_1.txt",
-    //                logger::severity::debug
-    //        },
-    //        {
-    //                "allocator_boundary_tags_tests_logs_false_positive_test_1.txt",
-    //                logger::severity::trace
-    //        },
-    //        {
-    //                "allocator_boundary_tags_tests_logs_false_positive_test_1.txt",
-    //                logger::severity::warning
-    //        },
-    //        {
-    //                "allocator_boundary_tags_tests_logs_false_positive_test_1.txt",
-    //                logger::severity::error
-    //        },
-    //        {
-    //                "allocator_boundary_tags_tests_logs_false_positive_test_1.txt",
-    //                logger::severity::critical
-    //        }
-    //});
-    //allocator* allocator_instance = new allocator_boundary_tags(sizeof(unsigned char) * 3000, nullptr, logger_instance, allocator_with_fit_mode::fit_mode::first_fit);
+    logger* logger_instance = create_logger(std::vector<std::pair<std::string, logger::severity>>
+    {
+        {
+            "allocator_boundary_tags_tests_logs_false_positive_test_1.txt",
+                logger::severity::information
+        },
+            {
+                    "allocator_boundary_tags_tests_logs_false_positive_test_1.txt",
+                    logger::severity::debug
+            },
+            {
+                    "allocator_boundary_tags_tests_logs_false_positive_test_1.txt",
+                    logger::severity::trace
+            },
+            {
+                    "allocator_boundary_tags_tests_logs_false_positive_test_1.txt",
+                    logger::severity::warning
+            },
+            {
+                    "allocator_boundary_tags_tests_logs_false_positive_test_1.txt",
+                    logger::severity::error
+            },
+            {
+                    "allocator_boundary_tags_tests_logs_false_positive_test_1.txt",
+                    logger::severity::critical
+            }
+    });
+    allocator* allocator_instance = new allocator_boundary_tags(sizeof(unsigned char) * 3000, nullptr, logger_instance, allocator_with_fit_mode::fit_mode::first_fit);
 
-    //char* first_block = reinterpret_cast<char*>(allocator_instance->allocate(sizeof(char), 1000));
-    //char* second_block = reinterpret_cast<char*>(allocator_instance->allocate(sizeof(char), 0));
-    //allocator_instance->deallocate(first_block);
-    //first_block = reinterpret_cast<char*>(allocator_instance->allocate(sizeof(char), 999));
-    //size_t tmp;
-    //auto actual_blocks_state = dynamic_cast<allocator_test_utils*>(allocator_instance)->get_blocks_info(tmp);
-    //
-    //std::vector<allocator_test_utils::block_info> expected_blocks_state
-    //{
-    //    //            { .block_size = 1000 + sizeof(allocator::block_size_t) + sizeof(allocator::block_pointer_t) * 2, .is_block_occupied = true },
-    //    //            { .block_size = 1000 + sizeof(allocator::block_size_t) + sizeof(allocator::block_pointer_t) * 2, .is_block_occupied = true },
-    //    //            { .block_size = 3000 - (1000 + sizeof(allocator::block_size_t) + sizeof(allocator::block_pointer_t)) * 2, .is_block_occupied = false }
-    //                {.block_size = 1000, .is_block_occupied = true },
-    //                {.block_size = 0 , .is_block_occupied = true },
-    //                {.block_size = 3000 - (1032 + 32), .is_block_occupied = false }
-    //};
+    char* first_block = reinterpret_cast<char*>(allocator_instance->allocate(sizeof(char), 1000));
+    char* second_block = reinterpret_cast<char*>(allocator_instance->allocate(sizeof(char), 0));
+    allocator_instance->deallocate(first_block);
+    first_block = reinterpret_cast<char*>(allocator_instance->allocate(sizeof(char), 999));
+    size_t tmp;
+    auto actual_blocks_state = dynamic_cast<allocator_test_utils*>(allocator_instance)->get_blocks_info(tmp);
+    
+    std::vector<allocator_test_utils::block_info> expected_blocks_state
+    {
+                    {.block_size = 999, .is_block_occupied = true },
+                    {.block_size = 1 , .is_block_occupied = false },
+                    {.block_size = 0 , .is_block_occupied = true },
+                    {.block_size = 3000 - (1064), .is_block_occupied = false }
+    };
 
-    //ASSERT_EQ(actual_blocks_state.size(), expected_blocks_state.size());
-    //for (int i = 0; i < actual_blocks_state.size(); i++)
-    //{
-    //    ASSERT_EQ(actual_blocks_state[i], expected_blocks_state[i]);
-    //}
+    ASSERT_EQ(actual_blocks_state.size(), expected_blocks_state.size());
+    for (int i = 0; i < actual_blocks_state.size(); i++)
+    {
+        ASSERT_EQ(actual_blocks_state[i], expected_blocks_state[i]);
+    }
 
-    //allocator_instance->deallocate(first_block);
-    //allocator_instance->deallocate(second_block);
+    allocator_instance->deallocate(first_block);
+    allocator_instance->deallocate(second_block);
 
-    //delete allocator_instance;
-    //delete logger_instance;
+    delete allocator_instance;
+    delete logger_instance;
 }
 
 TEST(falsePositiveTests, test5)
@@ -269,37 +268,8 @@ int main(
 {
     testing::InitGoogleTest(&argc, argv);
 
-    //logger_builder* logger_builder_instance = new client_logger_builder;
-
-    //logger_builder_instance->add_console_stream(logger::severity::trace);
-    //logger_builder_instance->add_console_stream(logger::severity::debug);
-    //logger_builder_instance->add_console_stream(logger::severity::warning);
-    //logger_builder_instance->add_console_stream(logger::severity::error);
-
-    //logger* logger_instance = logger_builder_instance->build();
-
-    //delete logger_builder_instance;
-
-    //allocator* alloc = new allocator_boundary_tags(3000, nullptr, logger_instance, allocator_with_fit_mode::fit_mode::the_best_fit);
-    //   
-    //int *first_block = reinterpret_cast<int*>(alloc->allocate(sizeof(int), 10));
-    //int* second = (reinterpret_cast<int*>(alloc->allocate(sizeof(int), 10)));
-
-
-    //std::cout << first_block << std::endl;
-    //std::cout << second << std::endl;
-
-    //alloc->deallocate(second);
-
-    //first_block = reinterpret_cast<int*>(alloc->allocate(sizeof(int), 10));
-
-    ////std::cout << first_block << std::endl;
-    //reinterpret_cast<int*>(alloc->allocate(sizeof(int), 10));
-    //*first_block = 1;
-
-    //logger_instance->warning("Int : " + std::to_string(*first_block));
-
-    // сделать провеку на вставку в первый блок как в allocate_best_fit
-    // всякие дампы и прикрутки логгера
     return RUN_ALL_TESTS();
 }
+
+
+

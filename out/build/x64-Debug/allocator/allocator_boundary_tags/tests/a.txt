@@ -1,210 +1,2160 @@
-Created allocator_boundary_tags
 Started allocate process of 1032 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 4000
+<avail><4000> | 
+started getting size
+ended getting size
+started setting meta data
+started setting meta data
 Started allocate process of 532 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 2968
+<occup><1000> | <avail><2968> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+started getting size
+ended getting size
+started setting meta data
+started setting meta data
+Ended allocate with first fit
 Succesfully allocated 500 bytes with meta with size 32
+started getting blocks info
+started getting size
+ended getting size
+Availiable free memory to allocate (at all) : 2436
 Started allocate process of 2032 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 2436
+<occup><1000> | <occup><500> | <avail><2436> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+started getting size
+ended getting size
+started setting meta data
+started setting meta data
+Ended allocate with first fit
 Succesfully allocated 2000 bytes with meta with size 32
+started getting blocks info
+started getting size
+ended getting size
+Availiable free memory to allocate (at all) : 404
+Started deallocate
+started getting mutex
+ended getting mutex
+-842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -2137236432 666 500 0 -2137236316 666 -2137234752 666 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -2137236432 666 2000 0 -2137235284 666 0 0 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -33686019 -940536880 201365856 -2137236480 666 -2137266224 666 -115355592 
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Free size is 404
+<occup><1000> | <occup><500> | <occup><2000> | <avail><404> | 
+Ended deallocate
 Started allocate process of 1012 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 18446744073709550456
+<avail><18446744073709550052> | <occup><500> | <occup><2000> | <avail><404> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started setting meta data
+started setting meta data
+Ended allocate with first fit
 Succesfully allocated 980 bytes with meta with size 32
-Created allocator_boundary_tags
-Started allocate process of 576 bytes
-Started allocate process of 624 bytes
-Succesfully allocated 592 bytes with meta with size 32
-Started allocate process of 928 bytes
-Succesfully allocated 896 bytes with meta with size 32
-Started allocate process of 496 bytes
-Succesfully allocated 464 bytes with meta with size 32
-Started allocate process of 1632 bytes
-Succesfully allocated 1600 bytes with meta with size 32
-Started allocate process of 592 bytes
-Succesfully allocated 560 bytes with meta with size 32
-Started allocate process of 1304 bytes
-Error with allocating 1272 bytes with meta with size 32
-Started allocate process of 1392 bytes
-Error with allocating 1360 bytes with meta with size 32
-Started allocate process of 1088 bytes
-Error with allocating 1056 bytes with meta with size 32
-Started allocate process of 1040 bytes
-Error with allocating 1008 bytes with meta with size 32
-Started allocate process of 656 bytes
-Error with allocating 624 bytes with meta with size 32
-Started allocate process of 1168 bytes
-Error with allocating 1136 bytes with meta with size 32
-Started allocate process of 2296 bytes
-Error with allocating 2264 bytes with meta with size 32
-Started allocate process of 776 bytes
-Error with allocating 744 bytes with meta with size 32
-Started allocate process of 1504 bytes
-Error with allocating 1472 bytes with meta with size 32
-Started allocate process of 2248 bytes
-Error with allocating 2216 bytes with meta with size 32
-Started allocate process of 1408 bytes
-Error with allocating 1376 bytes with meta with size 32
-Started allocate process of 2000 bytes
-Error with allocating 1968 bytes with meta with size 32
-Started allocate process of 784 bytes
-Error with allocating 752 bytes with meta with size 32
-Started allocate process of 2392 bytes
-Error with allocating 2360 bytes with meta with size 32
-Started allocate process of 616 bytes
-Error with allocating 584 bytes with meta with size 32
-Started allocate process of 528 bytes
-Error with allocating 496 bytes with meta with size 32
-Started allocate process of 1088 bytes
-Error with allocating 1056 bytes with meta with size 32
-Started allocate process of 512 bytes
-Error with allocating 480 bytes with meta with size 32
-Started allocate process of 472 bytes
-Error with allocating 440 bytes with meta with size 32
-Started allocate process of 768 bytes
-Error with allocating 736 bytes with meta with size 32
-Started allocate process of 1928 bytes
-Error with allocating 1896 bytes with meta with size 32
-Started allocate process of 856 bytes
-Error with allocating 824 bytes with meta with size 32
-Started allocate process of 1360 bytes
-Error with allocating 1328 bytes with meta with size 32
-Started allocate process of 752 bytes
-Error with allocating 720 bytes with meta with size 32
-Started allocate process of 2280 bytes
-Error with allocating 2248 bytes with meta with size 32
-Started allocate process of 640 bytes
-Error with allocating 608 bytes with meta with size 32
-Started allocate process of 1408 bytes
-Error with allocating 1376 bytes with meta with size 32
+started getting blocks info
+started getting size
+ended getting size
+Availiable free memory to allocate (at all) : 424
+started setting fit mode
+ended setting fit mode
+Started allocate process of 2200 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 5000
+<avail><5000> | 
+started getting size
+ended getting size
+started setting meta data
+started setting meta data
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1864 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 2800
+<occup><2168> | <avail><2800> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+started getting size
+ended getting size
+started setting meta data
+started setting meta data
+Ended allocate with first fit
+Succesfully allocated 1832 bytes with meta with size 32
+started getting blocks info
+started getting size
+ended getting size
+Availiable free memory to allocate (at all) : 936
+started setting fit mode
+ended setting fit mode
 Started allocate process of 1000 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 936
+<occup><2168> | <occup><1832> | <avail><936> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
 Error with allocating 968 bytes with meta with size 32
-Started allocate process of 1672 bytes
-Error with allocating 1640 bytes with meta with size 32
-Started allocate process of 680 bytes
-Error with allocating 648 bytes with meta with size 32
-Started allocate process of 2296 bytes
-Error with allocating 2264 bytes with meta with size 32
-Started allocate process of 1768 bytes
-Error with allocating 1736 bytes with meta with size 32
-Started allocate process of 2040 bytes
-Error with allocating 2008 bytes with meta with size 32
-Started allocate process of 632 bytes
-Error with allocating 600 bytes with meta with size 32
-Started allocate process of 1672 bytes
-Error with allocating 1640 bytes with meta with size 32
-Started allocate process of 1776 bytes
-Error with allocating 1744 bytes with meta with size 32
-Started allocate process of 1216 bytes
-Error with allocating 1184 bytes with meta with size 32
-Started allocate process of 2360 bytes
-Error with allocating 2328 bytes with meta with size 32
-Started allocate process of 1280 bytes
-Error with allocating 1248 bytes with meta with size 32
-Started allocate process of 744 bytes
-Error with allocating 712 bytes with meta with size 32
-Started allocate process of 2376 bytes
-Error with allocating 2344 bytes with meta with size 32
-Started allocate process of 2064 bytes
-Error with allocating 2032 bytes with meta with size 32
-Started allocate process of 840 bytes
-Error with allocating 808 bytes with meta with size 32
-Started allocate process of 1576 bytes
-Error with allocating 1544 bytes with meta with size 32
-Started allocate process of 1104 bytes
-Error with allocating 1072 bytes with meta with size 32
-Started allocate process of 624 bytes
-Error with allocating 592 bytes with meta with size 32
-Started allocate process of 1824 bytes
-Error with allocating 1792 bytes with meta with size 32
-Started allocate process of 1216 bytes
-Error with allocating 1184 bytes with meta with size 32
-Started allocate process of 536 bytes
-Error with allocating 504 bytes with meta with size 32
-Started allocate process of 592 bytes
-Error with allocating 560 bytes with meta with size 32
-Started allocate process of 1224 bytes
-Error with allocating 1192 bytes with meta with size 32
-Started allocate process of 1216 bytes
-Error with allocating 1184 bytes with meta with size 32
-Started allocate process of 848 bytes
-Error with allocating 816 bytes with meta with size 32
-Started allocate process of 1024 bytes
-Error with allocating 992 bytes with meta with size 32
-Started allocate process of 912 bytes
-Error with allocating 880 bytes with meta with size 32
-Started allocate process of 1408 bytes
-Error with allocating 1376 bytes with meta with size 32
-Started allocate process of 1528 bytes
-Error with allocating 1496 bytes with meta with size 32
-Started allocate process of 2192 bytes
-Error with allocating 2160 bytes with meta with size 32
-Started allocate process of 1952 bytes
-Error with allocating 1920 bytes with meta with size 32
-Started allocate process of 976 bytes
-Error with allocating 944 bytes with meta with size 32
-Started allocate process of 600 bytes
-Error with allocating 568 bytes with meta with size 32
-Started allocate process of 1024 bytes
-Error with allocating 992 bytes with meta with size 32
-Started allocate process of 2096 bytes
-Error with allocating 2064 bytes with meta with size 32
-Started allocate process of 1576 bytes
-Error with allocating 1544 bytes with meta with size 32
-Started allocate process of 832 bytes
-Error with allocating 800 bytes with meta with size 32
-Started allocate process of 1048 bytes
-Error with allocating 1016 bytes with meta with size 32
-Started allocate process of 616 bytes
-Error with allocating 584 bytes with meta with size 32
-Started allocate process of 528 bytes
-Error with allocating 496 bytes with meta with size 32
-Started allocate process of 1008 bytes
-Error with allocating 976 bytes with meta with size 32
-Started allocate process of 2256 bytes
-Error with allocating 2224 bytes with meta with size 32
-Started allocate process of 1728 bytes
-Error with allocating 1696 bytes with meta with size 32
-Started allocate process of 1408 bytes
-Error with allocating 1376 bytes with meta with size 32
-Started allocate process of 2336 bytes
-Error with allocating 2304 bytes with meta with size 32
-Started allocate process of 912 bytes
-Error with allocating 880 bytes with meta with size 32
-Started allocate process of 2064 bytes
-Error with allocating 2032 bytes with meta with size 32
-Started allocate process of 1304 bytes
-Error with allocating 1272 bytes with meta with size 32
-Started allocate process of 1416 bytes
-Error with allocating 1384 bytes with meta with size 32
-Started allocate process of 1832 bytes
-Error with allocating 1800 bytes with meta with size 32
-Started allocate process of 1064 bytes
-Error with allocating 1032 bytes with meta with size 32
-Started allocate process of 2120 bytes
-Error with allocating 2088 bytes with meta with size 32
-Started allocate process of 1080 bytes
-Error with allocating 1048 bytes with meta with size 32
-Started allocate process of 504 bytes
-Error with allocating 472 bytes with meta with size 32
-Started allocate process of 624 bytes
-Error with allocating 592 bytes with meta with size 32
-Started allocate process of 2240 bytes
-Error with allocating 2208 bytes with meta with size 32
-Started allocate process of 1304 bytes
-Error with allocating 1272 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1552 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 936
+<occup><2168> | <occup><1832> | <avail><936> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1520 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
 Started allocate process of 1816 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 936
+<occup><2168> | <occup><1832> | <avail><936> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
 Error with allocating 1784 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1320 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 936
+<occup><2168> | <occup><1832> | <avail><936> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1288 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 800 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 936
+<occup><2168> | <occup><1832> | <avail><936> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+started getting size
+ended getting size
+started setting meta data
+started setting meta data
+Ended allocate with first fit
+Succesfully allocated 768 bytes with meta with size 32
+started getting blocks info
+started getting size
+ended getting size
+Availiable free memory to allocate (at all) : 136
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1840 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1808 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1152 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1120 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 2088 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 2056 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1472 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1440 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 2352 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 2320 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1096 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1064 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1120 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1088 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 2072 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 2040 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 2368 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 2336 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 552 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 520 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 984 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 952 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 520 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 488 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 2224 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 2192 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 592 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 560 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1528 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1496 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 888 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 856 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 2400 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 2368 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 584 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 552 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 2432 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 2400 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
 Started allocate process of 704 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
 Error with allocating 672 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 848 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 816 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1928 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1896 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1736 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1704 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 2024 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1992 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1216 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1184 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
 Started allocate process of 1856 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
 Error with allocating 1824 bytes with meta with size 32
-Started allocate process of 728 bytes
-Error with allocating 696 bytes with meta with size 32
-Started allocate process of 600 bytes
-Error with allocating 568 bytes with meta with size 32
-Started allocate process of 1240 bytes
-Error with allocating 1208 bytes with meta with size 32
-Started allocate process of 680 bytes
-Error with allocating 648 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 2224 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 2192 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 2104 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 2072 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1896 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1864 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1592 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1560 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1688 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1656 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1032 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1000 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1408 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1376 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 2088 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 2056 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
 Started allocate process of 1496 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
 Error with allocating 1464 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1320 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1288 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 2208 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 2176 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1512 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1480 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1264 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1232 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1288 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1256 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1832 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1800 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1432 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1400 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 904 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 872 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1392 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1360 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 2296 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 2264 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1280 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1248 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 2200 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 2168 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1200 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1168 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 976 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 944 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 592 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 560 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 624 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 592 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1088 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1056 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 656 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 624 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1432 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1400 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1832 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1800 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 2104 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 2072 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1024 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 992 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 2320 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 2288 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1072 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1040 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 960 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 928 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 584 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 552 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1208 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1176 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 776 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 744 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 2024 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1992 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 2296 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 2264 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1528 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1496 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 2072 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 2040 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 920 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 888 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 472 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 440 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1152 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1120 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1088 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1056 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1592 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1560 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 904 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 872 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 2248 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 2216 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 2128 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 2096 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 2376 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 2344 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1416 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1384 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 992 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 960 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 480 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 448 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1976 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1944 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1488 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1456 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1216 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1184 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1288 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1256 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 2400 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 2368 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
 Started allocate process of 1272 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
 Error with allocating 1240 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 2424 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 2392 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1376 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1344 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1304 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1272 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 592 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 560 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 640 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 608 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 1096 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 1064 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 776 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 744 bytes with meta with size 32
+started setting fit mode
+ended setting fit mode
+Started allocate process of 464 bytes
+started getting mutex
+ended getting mutex
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Memory state : 
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+started getting fit mode
+ended getting fit mode
+Started allocate with first fit
+started getting size
+ended getting size
+Ended allocate with first fit
+Error with allocating 432 bytes with meta with size 32
+Started deallocate
+started getting mutex
+ended getting mutex
+-842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -2137228096 666 768 0 -2137225780 666 0 0 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -33686019 -572662307 -572662307 1576110409 39201 -2137199024 666 -2137282976 666 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 540095796 842283053 875574577 757084469 825373752 892612661 942481457 892416564 825570352 876096800 808792370 540095796 842283053 875574577 757084469 825373752 892612661 942481457 892416564 825570352 876096800 808792370 540095796 842283053 875574577 757084469 825373752 892612661 942481457 892416564 825570352 876096800 808792370 540095796 842283053 875574577 757084469 825373752 892612661 942481457 892416564 825570352 876096800 808792370 540095796 842283053 875574577 757084469 825373752 892612661 942481457 892416564 825570352 876096800 808792370 540095796 842283053 875574577 757084469 825373752 892612661 942481457 892416564 825570352 876096800 808792370 540095796 842283053 875574577 757084469 825373752 892612661 942481457 892416564 825570352 876096800 808792370 540095796 842283053 875574577 757084469 825373752 892612661 942481457 892416564 825570352 876096800 808792370 540095796 842283053 875574577 757084469 825373752 892612661 942481457 892416564 825570352 876096800 808792370 540095796 842283053 875574577 757084469 825373752 892612661 942481457 892416564 825570352 876096800 808792370 540095796 842283053 875574577 757084469 825373752 892612661 942481457 892416564 825570352 876096800 808792370 540095796 842283053 875574577 757084469 825373752 892612661 942481457 892416564 825570352 876096800 808792370 540095796 842283053 875574577 757084469 825373752 892612661 942481457 892416564 825570352 876096800 808792370 540095796 842283053 875574577 757084469 825373752 892612661 942481457 892416564 825570352 876096800 808792370 540095796 842283053 875574577 757084469 825373752 892612661 942481457 892416564 825570352 876096800 808792370 540095796 842283053 875574577 757084469 825373752 892612661 942481457 892416564 825570352 876096800 808792370 540095796 842283053 875574577 757084469 825373752 892612661 942481457 892416564 825570352 876096800 808792370 540095796 842283053 875574577 757084469 825373752 892612661 942481457 892416564 825570352 876096800 808792370 540095796 842283053 875574577 757084469 825373752 892612661 942481457 892416564 825570352 876096800 808792370 540095796 842283053 875574577 757084469 825373752 892612661 942481457 892416564 825570352 876096800 808792370 540095796 842283053 875574577 757084469 825373752 892612661 942481457 892416564 825570352 876096800 808792370 540095796 842283053 875574577 757084469 825373752 892612661 942481457 892416564 825570352 876096800 808792370 540095796 842283053 875574577 757084469 825373752 892612661 942481457 892416564 825570352 876096800 808792370 540095796 842283053 875574577 757084469 825373752 892612661 942481457 892416564 825570352 876096800 808792370 540095796 842283053 875574577 757084469 825373752 892612661 942481457 892416564 825570352 876096800 808792370 540095796 842283053 875574577 757084469 825373752 892612661 942481457 892416564 825570352 876096800 808792370 540095796 842283053 875574577 757084469 825373752 892612661 942481457 892416564 825570352 876096800 808792370 540095796 842283053 875574577 757084469 825373752 892612661 942481457 892416564 825570352 876096800 808792370 540095796 842283053 875574577 757084469 825373752 892612661 942481457 892416564 825570352 876096800 808792370 540095796 842283053 875574577 757084469 825373752 892612661 942481457 892416564 825570352 876096800 808792370 540095796 842283053 875574577 757084469 825373752 892612661 942481457 892416564 825570352 876096800 808792370 540095796 842283053 875574577 757084469 825373752 892612661 942481457 892416564 825570352 876096800 808792370 540095796 842283053 875574577 757084469 825373752 892612661 942481457 892416564 825570352 876096800 808792370 540095796 842283053 875574577 757084469 825373752 892612661 942481457 892416564 825570352 876096800 808792370 540095796 842283053 875574577 757084469 825373752 892612661 942481457 892416564 825570352 876096800 808792370 540095796 842283053 875574577 757084469 825373752 892612661 942481457 892416564 825570352 876096800 808792370 540095796 842283053 875574577 757084469 825373752 892612661 942481457 892416564 825570352 876096800 808792370 540095796 842283053 875574577 757084469 825373752 892612661 942481457 892416564 825570352 876096800 808792370 540095796 842283053 875574577 757084469 825373752 892612661 942481457 892416564 825570352 876096800 808792370 540095796 842283053 875574577 757084469 825373752 892612661 942481457 892416564 825570352 876096800 808792370 540095796 842283053 875574577 757084469 825373752 892612661 942481457 892416564 825570352 876096800 808792370 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Free size is 136
+<occup><2168> | <occup><1832> | <occup><768> | <avail><136> | 
+Ended deallocate
+Started deallocate
+started getting mutex
+ended getting mutex
+-842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -33686019 -572662307 -572662307 -1208907104 39201 -2137282976 666 -2137284208 666 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -1442774869 167811089 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Free size is 2000
+<occup><2168> | <avail><1864> | <occup><768> | <avail><136> | 
+Ended deallocate
+Started deallocate
+started getting mutex
+ended getting mutex
+-842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -2137228096 666 1832 0 -2137227980 666 -2137223916 666 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -2137228096 666 768 0 -2137227980 666 0 0 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -842150451 -33686019 -572662307 -572662307 -1779332735 39201 -2137188912 666 -2137282976 666 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 -572662307 
+started loging info
+started getting blocks info
+started getting size
+ended getting size
+ended loging info
+Free size is 2800
+<occup><2168> | <avail><2800> | 
+Ended deallocate
 Called allocator destructor
+started getting mutex
+ended getting mutex
+started getting allocator
+ended getting allocator
 Called allocator destructor
+started getting mutex
+ended getting mutex
+started getting allocator
+ended getting allocator

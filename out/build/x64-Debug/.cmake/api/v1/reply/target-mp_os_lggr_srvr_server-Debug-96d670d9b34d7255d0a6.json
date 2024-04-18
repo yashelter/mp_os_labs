@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "logger/client_logger/tests/mp_os_lggr_clnt_lggr_tests.exe"
+			"path" : "logger/server_logger/tests/mp_os_lggr_srvr_server.exe"
 		},
 		{
-			"path" : "logger/client_logger/tests/mp_os_lggr_clnt_lggr_tests.pdb"
+			"path" : "logger/server_logger/tests/mp_os_lggr_srvr_server.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -18,7 +18,7 @@
 		],
 		"files" : 
 		[
-			"logger/client_logger/tests/CMakeLists.txt",
+			"logger/server_logger/tests/CMakeLists.txt",
 			"out/build/x64-Debug/_deps/googletest-src/googletest/CMakeLists.txt"
 		],
 		"nodes" : 
@@ -29,31 +29,31 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 15,
+				"line" : 43,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 18,
+				"line" : 46,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 22,
+				"line" : 50,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 26,
+				"line" : 54,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 30,
+				"line" : 58,
 				"parent" : 0
 			},
 			{
@@ -88,7 +88,7 @@
 				},
 				{
 					"backtrace" : 5,
-					"path" : "E:/proj/mp_os_labs/logger/client_logger/./include"
+					"path" : "E:/proj/mp_os_labs/logger/server_logger/./include"
 				},
 				{
 					"backtrace" : 5,
@@ -125,11 +125,11 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f"
+			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
+			"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f"
 		},
 		{
 			"backtrace" : 3,
@@ -137,14 +137,14 @@
 		},
 		{
 			"backtrace" : 5,
-			"id" : "mp_os_lggr_clnt_lggr::@1192419ba09c9016d213"
+			"id" : "mp_os_lggr_srvr_lggr::@e2d18bf6ba660b583df8"
 		},
 		{
 			"backtrace" : 4,
 			"id" : "mp_os_lggr_lggr::@af94273c3084cfb43adb"
 		}
 	],
-	"id" : "mp_os_lggr_clnt_lggr_tests::@6a2e72c4a132e9fdd966",
+	"id" : "mp_os_lggr_srvr_server::@760034cb329c9a22b06f",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -174,7 +174,7 @@
 			},
 			{
 				"backtrace" : 5,
-				"fragment" : "logger\\client_logger\\mp_os_lggr_clnt_lggr.lib",
+				"fragment" : "logger\\server_logger\\mp_os_lggr_srvr_lggr.lib",
 				"role" : "libraries"
 			},
 			{
@@ -199,12 +199,12 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "mp_os_lggr_clnt_lggr_tests",
-	"nameOnDisk" : "mp_os_lggr_clnt_lggr_tests.exe",
+	"name" : "mp_os_lggr_srvr_server",
+	"nameOnDisk" : "mp_os_lggr_srvr_server.exe",
 	"paths" : 
 	{
-		"build" : "logger/client_logger/tests",
-		"source" : "logger/client_logger/tests"
+		"build" : "logger/server_logger/tests",
+		"source" : "logger/server_logger/tests"
 	},
 	"sourceGroups" : 
 	[
@@ -228,7 +228,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "logger/client_logger/tests/client_logger_tests.cpp",
+			"path" : "logger/server_logger/tests/server.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

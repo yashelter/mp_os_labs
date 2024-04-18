@@ -70,7 +70,9 @@ private:
 
 public:
 
-    std::vector<allocator_test_utils::block_info> get_blocks_info() const noexcept override;
+    std::vector<allocator_test_utils::block_info> get_blocks_info(size_t& full_free_size) const override;
+    std::string get_dump(int* at, size_t size);
+    std::string get_info_in_string() noexcept;
 
 private:
 
@@ -88,20 +90,22 @@ private:
 
     inline allocator_with_fit_mode::fit_mode get_fit_mode() const;
 
-    void* get_next_existing_block(void* left_side);
+    void* get_next_existing_block(void* left_side) const;
 
     void* allocate_first_fit(void*, size_t);
     void* allocate_best_fit(void* left_elem, size_t size);
     void* allocate_worst_fit(void* left_elem, size_t size);
 
     inline void* create_block_meta(void* block, size_t size, void* left, void* right);
-    inline void* slide_block_for(void* block, size_t bytes);
-    inline void* get_prev_existing_block(void* right_elem);
+    inline void* slide_block_for(void* block, size_t bytes) const;
+    inline void* get_prev_existing_block(void* right_elem) const; 
     inline void** get_first_block_ptr() const noexcept;
     inline void* get_first_block() const noexcept;
 
-    inline size_t get_block_data_size(void* right_elem);
-    inline size_t get_block_distance(void*, void*);
+    inline size_t get_block_data_size(void* right_elem) const;
+    inline size_t get_block_distance(void*, void*) const;
+
+    
 };
 
 #endif //MATH_PRACTICE_AND_OPERATING_SYSTEMS_ALLOCATOR_ALLOCATOR_BOUNDARY_TAGS_H
