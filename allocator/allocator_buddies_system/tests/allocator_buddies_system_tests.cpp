@@ -20,7 +20,7 @@ logger* create_logger(
         //logger_builder_instance->add_console_stream(logger::severity::debug);
         //logger_builder_instance->add_console_stream(logger::severity::trace);
         logger_builder_instance->add_console_stream(logger::severity::error);
-//logger_builder_instance->add_console_stream(logger::severity::warning);
+        //logger_builder_instance->add_console_stream(logger::severity::warning);
         //logger_builder_instance->add_console_stream(logger::severity::information);
         //logger_builder_instance->add_console_stream(logger::severity::critical);
     }

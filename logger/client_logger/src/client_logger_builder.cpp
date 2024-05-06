@@ -9,28 +9,35 @@ client_logger_builder::client_logger_builder()
 }
 
 client_logger_builder::client_logger_builder(
-    client_logger_builder const &other)
+    client_logger_builder const& other) : subscriptions(other.subscriptions), _format(other._format)
 {
-    throw not_implemented("logger_build)", "your code should be here...");
+   
 }
 
 client_logger_builder &client_logger_builder::operator=(
     client_logger_builder const &other)
 {
-    throw not_implemented("logger_build)", "your code should be here...");
+    subscriptions = other.subscriptions;
+    _format = other._format;
+    return *this;
 }
 
 client_logger_builder::client_logger_builder(
     client_logger_builder&& other) noexcept
 {
-    throw not_implemented("logger_build)", "your code should be here...");
+    subscriptions = std::move(other.subscriptions);
+    _format = std::move(other._format);
 }
 
 client_logger_builder &client_logger_builder::operator=(
     client_logger_builder &&other) noexcept
 {
-    throw not_implemented("logger_build)", "your code should be here...");
-  
+    if (this != &other)
+    {
+        subscriptions = std::move(other.subscriptions);
+        _format = std::move(other._format);
+    }
+    return *this;
 }
 
 client_logger_builder::~client_logger_builder() noexcept
