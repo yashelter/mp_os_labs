@@ -793,7 +793,7 @@ build _deps\googletest-build\googletest\install\local: phony _deps\googletest-bu
 build cmake_object_order_depends_target_mp_os_allctr_allctr_bdds_sstm: phony || cmake_object_order_depends_target_mp_os_allctr_allctr cmake_object_order_depends_target_mp_os_cmmn cmake_object_order_depends_target_mp_os_lggr_lggr
 
 build allocator\allocator_buddies_system\CMakeFiles\mp_os_allctr_allctr_bdds_sstm.dir\src\allocator_buddies_system.cpp.obj: CXX_COMPILER__mp_os_allctr_allctr_bdds_sstm_unscanned_Debug E$:\proj\mp_os_labs\allocator\allocator_buddies_system\src\allocator_buddies_system.cpp || cmake_object_order_depends_target_mp_os_allctr_allctr_bdds_sstm
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++14 -MDd
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++latest -MDd
   INCLUDES = -IE:\proj\mp_os_labs\allocator\allocator_buddies_system\.\include -IE:\proj\mp_os_labs\common\.\include -IE:\proj\mp_os_labs\logger\logger\.\include -IE:\proj\mp_os_labs\allocator\allocator\.\include
   OBJECT_DIR = allocator\allocator_buddies_system\CMakeFiles\mp_os_allctr_allctr_bdds_sstm.dir
   OBJECT_FILE_DIR = allocator\allocator_buddies_system\CMakeFiles\mp_os_allctr_allctr_bdds_sstm.dir\src
@@ -886,7 +886,7 @@ build allocator\allocator_buddies_system\install\local: phony allocator\allocato
 build cmake_object_order_depends_target_mp_os_allctr_allctr_bdds_sstm_tests: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main cmake_object_order_depends_target_mp_os_allctr_allctr cmake_object_order_depends_target_mp_os_allctr_allctr_bdds_sstm cmake_object_order_depends_target_mp_os_cmmn cmake_object_order_depends_target_mp_os_lggr_clnt_lggr cmake_object_order_depends_target_mp_os_lggr_lggr
 
 build allocator\allocator_buddies_system\tests\CMakeFiles\mp_os_allctr_allctr_bdds_sstm_tests.dir\allocator_buddies_system_tests.cpp.obj: CXX_COMPILER__mp_os_allctr_allctr_bdds_sstm_tests_unscanned_Debug E$:\proj\mp_os_labs\allocator\allocator_buddies_system\tests\allocator_buddies_system_tests.cpp || cmake_object_order_depends_target_mp_os_allctr_allctr_bdds_sstm_tests
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++14 -MDd
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++latest -MDd
   INCLUDES = -IE:\proj\mp_os_labs\common\.\include -IE:\proj\mp_os_labs\logger\client_logger\.\include -IE:\proj\mp_os_labs\logger\logger\.\include -IE:\proj\mp_os_labs\out\build\x64-Debug\_deps\json-src\include -IE:\proj\mp_os_labs\allocator\allocator\.\include -IE:\proj\mp_os_labs\allocator\allocator_buddies_system\.\include -external:IE:\proj\mp_os_labs\out\build\x64-Debug\_deps\googletest-src\googletest\include -external:IE:\proj\mp_os_labs\out\build\x64-Debug\_deps\googletest-src\googletest -external:W0
   OBJECT_DIR = allocator\allocator_buddies_system\tests\CMakeFiles\mp_os_allctr_allctr_bdds_sstm_tests.dir
   OBJECT_FILE_DIR = allocator\allocator_buddies_system\tests\CMakeFiles\mp_os_allctr_allctr_bdds_sstm_tests.dir

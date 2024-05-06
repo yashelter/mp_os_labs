@@ -14,14 +14,13 @@ allocator_global_heap::~allocator_global_heap()
     debug_with_guard("[debug] Destroyed " +  get_typename());
 }
 
-allocator_global_heap::allocator_global_heap(//конструктор перемещения 
-    allocator_global_heap &&other) noexcept
+allocator_global_heap::allocator_global_heap(allocator_global_heap &&other) noexcept
 {
-    throw not_implemented("allocator_global_heap::allocator_global_heap(allocator_global_heap &&) noexcept", "your code should be here...");
+    _logger = other._logger;
 }
 
 allocator_global_heap &allocator_global_heap::operator=(
-    allocator_global_heap &&other) noexcept // оператор перемещающего присваивания
+    allocator_global_heap &&other) noexcept
 {
     if (this == &other)
     {

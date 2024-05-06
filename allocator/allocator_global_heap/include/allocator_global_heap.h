@@ -44,12 +44,6 @@ public:
     
     void deallocate(
         void *at) override;
-
-public:
-    
-    void foo()
-    {};
-
 private:
     
     inline logger *get_logger() const override;

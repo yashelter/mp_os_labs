@@ -1,0 +1,42 @@
+[INFORMATION] Allocator before allocated: current condition of blocks: <avail> <4096> | 
+
+[INFORMATION] Free memory to allocate: 4096
+
+[INFORMATION] Condition of blocks after allocation: <occup> <1024> | <avail> <1024> | <avail> <2048> | 
+
+[INFORMATION] Available free space: 3072
+
+[INFORMATION] Allocator before allocated: current condition of blocks: <occup> <1024> | <avail> <1024> | <avail> <2048> | 
+
+[INFORMATION] Free memory to allocate: 3072
+
+[INFORMATION] Condition of blocks after allocation: <occup> <1024> | <occup> <512> | <avail> <512> | <avail> <2048> | 
+
+[INFORMATION] Available free space: 2560
+
+[INFORMATION] Allocator before allocated: current condition of blocks: <occup> <1024> | <occup> <512> | <avail> <512> | <avail> <2048> | 
+
+[INFORMATION] Free memory to allocate: 2560
+
+[INFORMATION] Condition of blocks after allocation: <occup> <1024> | <occup> <512> | <avail> <512> | <occup> <2048> | 
+
+[INFORMATION] Available free space: 512
+
+[INFORMATION] Blocks condition before deallocate: 
+<occup> <1024> | <occup> <512> | <avail> <512> | <occup> <2048> | 
+
+[INFORMATION] Available free space: 512
+
+[INFORMATION] Blocks condition after deallocate: 
+<avail> <1024> | <occup> <512> | <avail> <512> | <occup> <2048> | 
+
+[INFORMATION] Available free space: 1536
+
+[INFORMATION] Allocator before allocated: current condition of blocks: <avail> <1024> | <occup> <512> | <avail> <512> | <occup> <2048> | 
+
+[INFORMATION] Free memory to allocate: 1536
+
+[INFORMATION] Condition of blocks after allocation: <occup> <1024> | <occup> <512> | <avail> <512> | <occup> <2048> | 
+
+[INFORMATION] Available free space: 512
+

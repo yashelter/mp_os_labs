@@ -12,7 +12,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "associative_container/search_tree/binary_search_tree/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.lib"
+			"path" : "associative_container/search_tree/binary_search_tree/AVL_tree/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr.lib"
 		}
 	],
 	"backtrace" : 1,
@@ -25,7 +25,7 @@
 		],
 		"files" : 
 		[
-			"associative_container/search_tree/binary_search_tree/CMakeLists.txt"
+			"associative_container/search_tree/binary_search_tree/AVL_tree/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -35,19 +35,25 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 9,
-				"parent" : 0
-			},
-			{
-				"command" : 1,
-				"file" : 0,
-				"line" : 20,
+				"line" : 5,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
 				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 12,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 20,
 				"parent" : 0
 			}
 		]
@@ -59,12 +65,16 @@
 			"id" : "mp_os_allctr_allctr::@67a2d12acd41ed6b0bc3"
 		},
 		{
+			"backtrace" : 2,
+			"id" : "mp_os_assctv_cntnr_srch_tr::@32bbdc00ff9a6995c868"
+		},
+		{
 			"backtrace" : 3,
 			"id" : "mp_os_assctv_cntnr::@eceec357cdd12af20473"
 		},
 		{
-			"backtrace" : 2,
-			"id" : "mp_os_assctv_cntnr_srch_tr::@32bbdc00ff9a6995c868"
+			"backtrace" : 4,
+			"id" : "mp_os_assctv_cntnr_srch_tr_bnr_srch_tr::@af874379a609ad2410a4"
 		},
 		{
 			"backtrace" : 3,
@@ -75,13 +85,13 @@
 			"id" : "mp_os_lggr_lggr::@af94273c3084cfb43adb"
 		}
 	],
-	"id" : "mp_os_assctv_cntnr_srch_tr_bnr_srch_tr::@af874379a609ad2410a4",
-	"name" : "mp_os_assctv_cntnr_srch_tr_bnr_srch_tr",
-	"nameOnDisk" : "mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.lib",
+	"id" : "mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr::@2366b3e891cff899f730",
+	"name" : "mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr",
+	"nameOnDisk" : "mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr.lib",
 	"paths" : 
 	{
-		"build" : "associative_container/search_tree/binary_search_tree",
-		"source" : "associative_container/search_tree/binary_search_tree"
+		"build" : "associative_container/search_tree/binary_search_tree/AVL_tree",
+		"source" : "associative_container/search_tree/binary_search_tree/AVL_tree"
 	},
 	"sourceGroups" : 
 	[
@@ -97,7 +107,7 @@
 	[
 		{
 			"backtrace" : 1,
-			"path" : "associative_container/search_tree/binary_search_tree/include/binary_search_tree.h",
+			"path" : "associative_container/search_tree/binary_search_tree/AVL_tree/include/AVL_tree.h",
 			"sourceGroupIndex" : 0
 		}
 	],

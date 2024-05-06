@@ -1,0 +1,18 @@
+[INFORMATION] Allocator before allocated: current condition of blocks: <avail> <256> | 
+
+[INFORMATION] Free memory to allocate: 256
+
+[INFORMATION] Condition of blocks after allocation: <occup> <64> | <avail> <64> | <avail> <128> | 
+
+[INFORMATION] Available free space: 192
+
+[INFORMATION] Blocks condition before deallocate: 
+<occup> <64> | <avail> <64> | <avail> <128> | 
+
+[INFORMATION] Available free space: 192
+
+[INFORMATION] Blocks condition after deallocate: 
+<avail> <256> | 
+
+[INFORMATION] Available free space: 256
+

@@ -12,27 +12,23 @@ allocator_boundary_tags::~allocator_boundary_tags()
 }
 
 allocator_boundary_tags::allocator_boundary_tags(
-    allocator_boundary_tags const &other)
-{
-    throw not_implemented("allocator_boundary_tags::allocator_boundary_tags(allocator_boundary_tags const &)", "your code should be here...");
-}
-
-allocator_boundary_tags &allocator_boundary_tags::operator=(
-    allocator_boundary_tags const &other)
-{
-    throw not_implemented("allocator_boundary_tags &allocator_boundary_tags::operator=(allocator_boundary_tags const &)", "your code should be here...");
-}
-
-allocator_boundary_tags::allocator_boundary_tags(
     allocator_boundary_tags &&other) noexcept
 {
-    throw not_implemented("allocator_boundary_tags::allocator_boundary_tags(allocator_boundary_tags &&) noexcept", "your code should be here...");
+    debug_with_guard("move copy start");
+    _trusted_memory = std::exchange(other._trusted_memory, nullptr);
+    debug_with_guard("move copy finish");
 }
 
 allocator_boundary_tags &allocator_boundary_tags::operator=(
     allocator_boundary_tags &&other) noexcept
 {
-    throw not_implemented("allocator_boundary_tags &allocator_boundary_tags::operator=(allocator_boundary_tags &&) noexcept", "your code should be here...");
+    debug_with_guard("assign move start");
+    if (this != &other)
+    {
+        std::swap(_trusted_memory, other._trusted_memory);
+    }
+    debug_with_guard("assign move finish");
+    return *this;
 }
 
 allocator_boundary_tags::allocator_boundary_tags(
