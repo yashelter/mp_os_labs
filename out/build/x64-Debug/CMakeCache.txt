@@ -491,6 +491,114 @@ mp_os_allctr_allctr_srtd_lst_tests_IS_TOP_LEVEL:STATIC=OFF
 mp_os_allctr_allctr_srtd_lst_tests_SOURCE_DIR:STATIC=E:/proj/mp_os_labs/allocator/allocator_sorted_list/tests
 
 //Value Computed by CMake
+mp_os_arthmtc_BINARY_DIR:STATIC=E:/proj/mp_os_labs/out/build/x64-Debug/arithmetic
+
+//Value Computed by CMake
+mp_os_arthmtc_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_arthmtc_SOURCE_DIR:STATIC=E:/proj/mp_os_labs/arithmetic
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_BINARY_DIR:STATIC=E:/proj/mp_os_labs/out/build/x64-Debug/arithmetic/big_integer
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_SOURCE_DIR:STATIC=E:/proj/mp_os_labs/arithmetic/big_integer
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_BINARY_DIR:STATIC=E:/proj/mp_os_labs/out/build/x64-Debug/arithmetic/big_integer/tests
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_Burnikel_Ziegler_dvsn_BINARY_DIR:STATIC=E:/proj/mp_os_labs/out/build/x64-Debug/arithmetic/big_integer/tests/Burnikel_Ziegler_division
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_Burnikel_Ziegler_dvsn_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_Burnikel_Ziegler_dvsn_SOURCE_DIR:STATIC=E:/proj/mp_os_labs/arithmetic/big_integer/tests/Burnikel_Ziegler_division
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_Karatsuba_mltplctn_BINARY_DIR:STATIC=E:/proj/mp_os_labs/out/build/x64-Debug/arithmetic/big_integer/tests/Karatsuba_multiplication
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_Karatsuba_mltplctn_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_Karatsuba_mltplctn_SOURCE_DIR:STATIC=E:/proj/mp_os_labs/arithmetic/big_integer/tests/Karatsuba_multiplication
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_Newton_dvsn_BINARY_DIR:STATIC=E:/proj/mp_os_labs/out/build/x64-Debug/arithmetic/big_integer/tests/Newton_division
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_Newton_dvsn_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_Newton_dvsn_SOURCE_DIR:STATIC=E:/proj/mp_os_labs/arithmetic/big_integer/tests/Newton_division
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_SOURCE_DIR:STATIC=E:/proj/mp_os_labs/arithmetic/big_integer/tests
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_Schonhage_Strassen_mltplctn_BINARY_DIR:STATIC=E:/proj/mp_os_labs/out/build/x64-Debug/arithmetic/big_integer/tests/Schonhage_Strassen_multiplication
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_Schonhage_Strassen_mltplctn_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_Schonhage_Strassen_mltplctn_SOURCE_DIR:STATIC=E:/proj/mp_os_labs/arithmetic/big_integer/tests/Schonhage_Strassen_multiplication
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_bgnt_BINARY_DIR:STATIC=E:/proj/mp_os_labs/out/build/x64-Debug/arithmetic/big_integer/tests/big_integer
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_bgnt_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_bgnt_SOURCE_DIR:STATIC=E:/proj/mp_os_labs/arithmetic/big_integer/tests/big_integer
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_trvl_dvsn_BINARY_DIR:STATIC=E:/proj/mp_os_labs/out/build/x64-Debug/arithmetic/big_integer/tests/trivial_division
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_trvl_dvsn_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_trvl_dvsn_SOURCE_DIR:STATIC=E:/proj/mp_os_labs/arithmetic/big_integer/tests/trivial_division
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_trvl_mltplctn_BINARY_DIR:STATIC=E:/proj/mp_os_labs/out/build/x64-Debug/arithmetic/big_integer/tests/trivial_multiplication
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_trvl_mltplctn_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_trvl_mltplctn_SOURCE_DIR:STATIC=E:/proj/mp_os_labs/arithmetic/big_integer/tests/trivial_multiplication
+
+//Value Computed by CMake
+mp_os_arthmtc_cntnd_frctn_BINARY_DIR:STATIC=E:/proj/mp_os_labs/out/build/x64-Debug/arithmetic/continued_fraction
+
+//Value Computed by CMake
+mp_os_arthmtc_cntnd_frctn_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_arthmtc_cntnd_frctn_SOURCE_DIR:STATIC=E:/proj/mp_os_labs/arithmetic/continued_fraction
+
+//Value Computed by CMake
+mp_os_arthmtc_frctn_BINARY_DIR:STATIC=E:/proj/mp_os_labs/out/build/x64-Debug/arithmetic/fraction
+
+//Value Computed by CMake
+mp_os_arthmtc_frctn_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_arthmtc_frctn_SOURCE_DIR:STATIC=E:/proj/mp_os_labs/arithmetic/fraction
+
+//Value Computed by CMake
 mp_os_assctv_cntnr_BINARY_DIR:STATIC=E:/proj/mp_os_labs/out/build/x64-Debug/associative_container
 
 //Value Computed by CMake
@@ -498,6 +606,24 @@ mp_os_assctv_cntnr_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 mp_os_assctv_cntnr_SOURCE_DIR:STATIC=E:/proj/mp_os_labs/associative_container
+
+//Value Computed by CMake
+mp_os_assctv_cntnr_hsh_tbl_BINARY_DIR:STATIC=E:/proj/mp_os_labs/out/build/x64-Debug/associative_container/hash_table
+
+//Value Computed by CMake
+mp_os_assctv_cntnr_hsh_tbl_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_assctv_cntnr_hsh_tbl_SOURCE_DIR:STATIC=E:/proj/mp_os_labs/associative_container/hash_table
+
+//Value Computed by CMake
+mp_os_assctv_cntnr_hsh_tbl_tests_BINARY_DIR:STATIC=E:/proj/mp_os_labs/out/build/x64-Debug/associative_container/hash_table/tests
+
+//Value Computed by CMake
+mp_os_assctv_cntnr_hsh_tbl_tests_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_assctv_cntnr_hsh_tbl_tests_SOURCE_DIR:STATIC=E:/proj/mp_os_labs/associative_container/hash_table/tests
 
 //Value Computed by CMake
 mp_os_assctv_cntnr_srch_tr_BINARY_DIR:STATIC=E:/proj/mp_os_labs/out/build/x64-Debug/associative_container/search_tree
@@ -597,6 +723,87 @@ mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests_SOURCE_DIR:STATIC=E:/proj/mp_os_labs/associative_container/search_tree/binary_search_tree/tests
+
+//Value Computed by CMake
+mp_os_assctv_cntnr_srch_tr_indxng_tr_BINARY_DIR:STATIC=E:/proj/mp_os_labs/out/build/x64-Debug/associative_container/search_tree/indexing_tree
+
+//Value Computed by CMake
+mp_os_assctv_cntnr_srch_tr_indxng_tr_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_assctv_cntnr_srch_tr_indxng_tr_SOURCE_DIR:STATIC=E:/proj/mp_os_labs/associative_container/search_tree/indexing_tree
+
+//Value Computed by CMake
+mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_BINARY_DIR:STATIC=E:/proj/mp_os_labs/out/build/x64-Debug/associative_container/search_tree/indexing_tree/b_plus_tree
+
+//Value Computed by CMake
+mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_SOURCE_DIR:STATIC=E:/proj/mp_os_labs/associative_container/search_tree/indexing_tree/b_plus_tree
+
+//Value Computed by CMake
+mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests_BINARY_DIR:STATIC=E:/proj/mp_os_labs/out/build/x64-Debug/associative_container/search_tree/indexing_tree/b_plus_tree/tests
+
+//Value Computed by CMake
+mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests_SOURCE_DIR:STATIC=E:/proj/mp_os_labs/associative_container/search_tree/indexing_tree/b_plus_tree/tests
+
+//Value Computed by CMake
+mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_BINARY_DIR:STATIC=E:/proj/mp_os_labs/out/build/x64-Debug/associative_container/search_tree/indexing_tree/b_star_plus_tree
+
+//Value Computed by CMake
+mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_SOURCE_DIR:STATIC=E:/proj/mp_os_labs/associative_container/search_tree/indexing_tree/b_star_plus_tree
+
+//Value Computed by CMake
+mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests_BINARY_DIR:STATIC=E:/proj/mp_os_labs/out/build/x64-Debug/associative_container/search_tree/indexing_tree/b_star_plus_tree/tests
+
+//Value Computed by CMake
+mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests_SOURCE_DIR:STATIC=E:/proj/mp_os_labs/associative_container/search_tree/indexing_tree/b_star_plus_tree/tests
+
+//Value Computed by CMake
+mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_BINARY_DIR:STATIC=E:/proj/mp_os_labs/out/build/x64-Debug/associative_container/search_tree/indexing_tree/b_star_tree
+
+//Value Computed by CMake
+mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_SOURCE_DIR:STATIC=E:/proj/mp_os_labs/associative_container/search_tree/indexing_tree/b_star_tree
+
+//Value Computed by CMake
+mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests_BINARY_DIR:STATIC=E:/proj/mp_os_labs/out/build/x64-Debug/associative_container/search_tree/indexing_tree/b_star_tree/tests
+
+//Value Computed by CMake
+mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests_SOURCE_DIR:STATIC=E:/proj/mp_os_labs/associative_container/search_tree/indexing_tree/b_star_tree/tests
+
+//Value Computed by CMake
+mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_BINARY_DIR:STATIC=E:/proj/mp_os_labs/out/build/x64-Debug/associative_container/search_tree/indexing_tree/b_tree
+
+//Value Computed by CMake
+mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_SOURCE_DIR:STATIC=E:/proj/mp_os_labs/associative_container/search_tree/indexing_tree/b_tree
+
+//Value Computed by CMake
+mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests_BINARY_DIR:STATIC=E:/proj/mp_os_labs/out/build/x64-Debug/associative_container/search_tree/indexing_tree/b_tree/tests
+
+//Value Computed by CMake
+mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests_SOURCE_DIR:STATIC=E:/proj/mp_os_labs/associative_container/search_tree/indexing_tree/b_tree/tests
 
 //Value Computed by CMake
 mp_os_cmmn_BINARY_DIR:STATIC=E:/proj/mp_os_labs/out/build/x64-Debug/common
@@ -799,7 +1006,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MT
 CMAKE_MT-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=36
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=61
 //Platform information initialized
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //noop for ranlib
