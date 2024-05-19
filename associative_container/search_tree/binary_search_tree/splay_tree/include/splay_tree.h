@@ -85,10 +85,10 @@ void splay_tree<tkey, tvalue>::splay(std::stack<node**> path)
 
         path.pop();
 
-        bool is_last_lift_left;
+        bool trip_left;
 
-        is_last_lift_left = binary_search_tree<tkey, tvalue>::is_left_subtree(current_node, *path.top());
-        if (is_last_lift_left)
+        trip_left = binary_search_tree<tkey, tvalue>::is_left_subtree(current_node, *path.top());
+        if (trip_left)
         {
             binary_search_tree<tkey, tvalue>::small_right_rotation(*path.top());
         } else
@@ -106,7 +106,7 @@ tvalue splay_tree<tkey, tvalue>::dispose_inner(std::stack<node**>& node_path)
     std::stack<node**> path;
 
     auto res = binary_search_tree<tkey, tvalue>::_root->value;
-    node* root = binary_search_tree<tkey, tvalue>::_root
+    node* root = binary_search_tree<tkey, tvalue>::_root;
     node* right_at_root_st = binary_search_tree<tkey, tvalue>::_root->right_subtree;
 
     // took max right in left

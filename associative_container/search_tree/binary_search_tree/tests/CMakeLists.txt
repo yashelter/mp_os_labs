@@ -30,11 +30,23 @@ target_link_libraries(
 target_link_libraries(
         mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests
         PUBLIC
-        mp_os_assctv_cntnr)
+        mp_os_allctr_allctr_srtd_lst)
 target_link_libraries(
         mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests
         PUBLIC
-        mp_os_allctr_allctr_srtd_lst)
+        mp_os_allctr_allctr_bdds_sstm)
+target_link_libraries(
+        mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests
+        PUBLIC
+        mp_os_allctr_allctr_glbl_hp)
+target_link_libraries(
+        mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests
+        PUBLIC
+        mp_os_allctr_allctr_bndr_tgs)
+target_link_libraries(
+        mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests
+        PUBLIC
+        mp_os_assctv_cntnr)
 target_link_libraries(
         mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests
         PUBLIC

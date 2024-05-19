@@ -2805,6 +2805,186 @@ build associative_container\install\local: phony associative_container\CMakeFile
 # =============================================================================
 
 # =============================================================================
+# Object build statements for STATIC_LIBRARY target mp_os_assctv_cntnr_hsh_tbl
+
+
+#############################################
+# Order-only phony target for mp_os_assctv_cntnr_hsh_tbl
+
+build cmake_object_order_depends_target_mp_os_assctv_cntnr_hsh_tbl: phony || cmake_object_order_depends_target_mp_os_allctr_allctr cmake_object_order_depends_target_mp_os_assctv_cntnr cmake_object_order_depends_target_mp_os_cmmn cmake_object_order_depends_target_mp_os_lggr_lggr
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target mp_os_assctv_cntnr_hsh_tbl
+
+
+#############################################
+# Link the static library associative_container\hash_table\mp_os_assctv_cntnr_hsh_tbl.lib
+
+build associative_container\hash_table\mp_os_assctv_cntnr_hsh_tbl.lib: CXX_STATIC_LIBRARY_LINKER__mp_os_assctv_cntnr_hsh_tbl_Debug || allocator\allocator\mp_os_allctr_allctr.lib associative_container\mp_os_assctv_cntnr.lib common\mp_os_cmmn.lib logger\logger\mp_os_lggr_lggr.lib
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64
+  OBJECT_DIR = associative_container\hash_table\CMakeFiles\mp_os_assctv_cntnr_hsh_tbl.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = associative_container\hash_table\CMakeFiles\mp_os_assctv_cntnr_hsh_tbl.dir\mp_os_assctv_cntnr_hsh_tbl.pdb
+  TARGET_FILE = associative_container\hash_table\mp_os_assctv_cntnr_hsh_tbl.lib
+  TARGET_PDB = associative_container\hash_table\mp_os_assctv_cntnr_hsh_tbl.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build associative_container\hash_table\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\hash_table && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build associative_container\hash_table\edit_cache: phony associative_container\hash_table\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build associative_container\hash_table\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\hash_table && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SE:\proj\mp_os_labs -BE:\proj\mp_os_labs\out\build\x64-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build associative_container\hash_table\rebuild_cache: phony associative_container\hash_table\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build associative_container\hash_table\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build associative_container\hash_table\CMakeFiles\install.util: CUSTOM_COMMAND associative_container\hash_table\all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\hash_table && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build associative_container\hash_table\install: phony associative_container\hash_table\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build associative_container\hash_table\CMakeFiles\install\local.util: CUSTOM_COMMAND associative_container\hash_table\all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\hash_table && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build associative_container\hash_table\install\local: phony associative_container\hash_table\CMakeFiles\install\local.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# E:/proj/mp_os_labs/associative_container/hash_table/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target mp_os_assctv_cntnr_hsh_tbl_tests
+
+
+#############################################
+# Order-only phony target for mp_os_assctv_cntnr_hsh_tbl_tests
+
+build cmake_object_order_depends_target_mp_os_assctv_cntnr_hsh_tbl_tests: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main cmake_object_order_depends_target_mp_os_allctr_allctr cmake_object_order_depends_target_mp_os_assctv_cntnr cmake_object_order_depends_target_mp_os_assctv_cntnr_hsh_tbl cmake_object_order_depends_target_mp_os_cmmn cmake_object_order_depends_target_mp_os_lggr_clnt_lggr cmake_object_order_depends_target_mp_os_lggr_lggr
+
+build associative_container\hash_table\tests\CMakeFiles\mp_os_assctv_cntnr_hsh_tbl_tests.dir\hash_table_tests.cpp.obj: CXX_COMPILER__mp_os_assctv_cntnr_hsh_tbl_tests_unscanned_Debug E$:\proj\mp_os_labs\associative_container\hash_table\tests\hash_table_tests.cpp || cmake_object_order_depends_target_mp_os_assctv_cntnr_hsh_tbl_tests
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++14 -MDd
+  INCLUDES = -IE:\proj\mp_os_labs\logger\logger\.\include -IE:\proj\mp_os_labs\logger\client_logger\.\include -IE:\proj\mp_os_labs\common\.\include -IE:\proj\mp_os_labs\out\build\x64-Debug\_deps\json-src\include -IE:\proj\mp_os_labs\associative_container\hash_table\.\include -IE:\proj\mp_os_labs\allocator\allocator\.\include -IE:\proj\mp_os_labs\associative_container\.\include -external:IE:\proj\mp_os_labs\out\build\x64-Debug\_deps\googletest-src\googletest\include -external:IE:\proj\mp_os_labs\out\build\x64-Debug\_deps\googletest-src\googletest -external:W0
+  OBJECT_DIR = associative_container\hash_table\tests\CMakeFiles\mp_os_assctv_cntnr_hsh_tbl_tests.dir
+  OBJECT_FILE_DIR = associative_container\hash_table\tests\CMakeFiles\mp_os_assctv_cntnr_hsh_tbl_tests.dir
+  TARGET_COMPILE_PDB = associative_container\hash_table\tests\CMakeFiles\mp_os_assctv_cntnr_hsh_tbl_tests.dir\
+  TARGET_PDB = associative_container\hash_table\tests\mp_os_assctv_cntnr_hsh_tbl_tests.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target mp_os_assctv_cntnr_hsh_tbl_tests
+
+
+#############################################
+# Link the executable associative_container\hash_table\tests\mp_os_assctv_cntnr_hsh_tbl_tests.exe
+
+build associative_container\hash_table\tests\mp_os_assctv_cntnr_hsh_tbl_tests.exe: CXX_EXECUTABLE_LINKER__mp_os_assctv_cntnr_hsh_tbl_tests_Debug associative_container\hash_table\tests\CMakeFiles\mp_os_assctv_cntnr_hsh_tbl_tests.dir\hash_table_tests.cpp.obj | lib\gtest_main.lib logger\logger\mp_os_lggr_lggr.lib logger\client_logger\mp_os_lggr_clnt_lggr.lib associative_container\hash_table\mp_os_assctv_cntnr_hsh_tbl.lib lib\gtest.lib logger\logger\mp_os_lggr_lggr.lib allocator\allocator\mp_os_allctr_allctr.lib associative_container\mp_os_assctv_cntnr.lib common\mp_os_cmmn.lib || allocator\allocator\mp_os_allctr_allctr.lib associative_container\hash_table\mp_os_assctv_cntnr_hsh_tbl.lib associative_container\mp_os_assctv_cntnr.lib common\mp_os_cmmn.lib lib\gtest.lib lib\gtest_main.lib logger\client_logger\mp_os_lggr_clnt_lggr.lib logger\logger\mp_os_lggr_lggr.lib
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = lib\gtest_main.lib  logger\logger\mp_os_lggr_lggr.lib  logger\client_logger\mp_os_lggr_clnt_lggr.lib  associative_container\hash_table\mp_os_assctv_cntnr_hsh_tbl.lib  lib\gtest.lib  logger\logger\mp_os_lggr_lggr.lib  allocator\allocator\mp_os_allctr_allctr.lib  associative_container\mp_os_assctv_cntnr.lib  common\mp_os_cmmn.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = associative_container\hash_table\tests\CMakeFiles\mp_os_assctv_cntnr_hsh_tbl_tests.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = associative_container\hash_table\tests\CMakeFiles\mp_os_assctv_cntnr_hsh_tbl_tests.dir\
+  TARGET_FILE = associative_container\hash_table\tests\mp_os_assctv_cntnr_hsh_tbl_tests.exe
+  TARGET_IMPLIB = associative_container\hash_table\tests\mp_os_assctv_cntnr_hsh_tbl_tests.lib
+  TARGET_PDB = associative_container\hash_table\tests\mp_os_assctv_cntnr_hsh_tbl_tests.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build associative_container\hash_table\tests\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\hash_table\tests && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build associative_container\hash_table\tests\edit_cache: phony associative_container\hash_table\tests\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build associative_container\hash_table\tests\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\hash_table\tests && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SE:\proj\mp_os_labs -BE:\proj\mp_os_labs\out\build\x64-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build associative_container\hash_table\tests\rebuild_cache: phony associative_container\hash_table\tests\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build associative_container\hash_table\tests\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build associative_container\hash_table\tests\CMakeFiles\install.util: CUSTOM_COMMAND associative_container\hash_table\tests\all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\hash_table\tests && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build associative_container\hash_table\tests\install: phony associative_container\hash_table\tests\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build associative_container\hash_table\tests\CMakeFiles\install\local.util: CUSTOM_COMMAND associative_container\hash_table\tests\all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\hash_table\tests && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build associative_container\hash_table\tests\install\local: phony associative_container\hash_table\tests\CMakeFiles\install\local.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# E:/proj/mp_os_labs/associative_container/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
 # Object build statements for STATIC_LIBRARY target mp_os_assctv_cntnr_srch_tr
 
 
@@ -3622,11 +3802,11 @@ build associative_container\search_tree\binary_search_tree\splay_tree\install\lo
 #############################################
 # Order-only phony target for mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests
 
-build cmake_object_order_depends_target_mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main cmake_object_order_depends_target_mp_os_allctr_allctr cmake_object_order_depends_target_mp_os_allctr_allctr_glbl_hp cmake_object_order_depends_target_mp_os_assctv_cntnr cmake_object_order_depends_target_mp_os_assctv_cntnr_srch_tr cmake_object_order_depends_target_mp_os_assctv_cntnr_srch_tr_bnr_srch_tr cmake_object_order_depends_target_mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr cmake_object_order_depends_target_mp_os_cmmn cmake_object_order_depends_target_mp_os_lggr_clnt_lggr cmake_object_order_depends_target_mp_os_lggr_lggr
+build cmake_object_order_depends_target_mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main cmake_object_order_depends_target_mp_os_allctr_allctr cmake_object_order_depends_target_mp_os_allctr_allctr_bdds_sstm cmake_object_order_depends_target_mp_os_allctr_allctr_bndr_tgs cmake_object_order_depends_target_mp_os_allctr_allctr_glbl_hp cmake_object_order_depends_target_mp_os_allctr_allctr_srtd_lst cmake_object_order_depends_target_mp_os_assctv_cntnr cmake_object_order_depends_target_mp_os_assctv_cntnr_srch_tr cmake_object_order_depends_target_mp_os_assctv_cntnr_srch_tr_bnr_srch_tr cmake_object_order_depends_target_mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr cmake_object_order_depends_target_mp_os_cmmn cmake_object_order_depends_target_mp_os_lggr_clnt_lggr cmake_object_order_depends_target_mp_os_lggr_lggr
 
 build associative_container\search_tree\binary_search_tree\splay_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests.dir\splay_tree_tests.cpp.obj: CXX_COMPILER__mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests_unscanned_Debug E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\splay_tree\tests\splay_tree_tests.cpp || cmake_object_order_depends_target_mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++latest -MDd
-  INCLUDES = -IE:\proj\mp_os_labs\common\.\include -IE:\proj\mp_os_labs\logger\client_logger\.\include -IE:\proj\mp_os_labs\logger\logger\.\include -IE:\proj\mp_os_labs\out\build\x64-Debug\_deps\json-src\include -IE:\proj\mp_os_labs\allocator\allocator\.\include -IE:\proj\mp_os_labs\allocator\allocator_global_heap\.\include -IE:\proj\mp_os_labs\associative_container\.\include -IE:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\splay_tree\.\include -IE:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\.\include -IE:\proj\mp_os_labs\associative_container\search_tree\.\include -external:IE:\proj\mp_os_labs\out\build\x64-Debug\_deps\googletest-src\googletest\include -external:IE:\proj\mp_os_labs\out\build\x64-Debug\_deps\googletest-src\googletest -external:W0
+  INCLUDES = -IE:\proj\mp_os_labs\common\.\include -IE:\proj\mp_os_labs\logger\client_logger\.\include -IE:\proj\mp_os_labs\logger\logger\.\include -IE:\proj\mp_os_labs\out\build\x64-Debug\_deps\json-src\include -IE:\proj\mp_os_labs\allocator\allocator\.\include -IE:\proj\mp_os_labs\allocator\allocator_sorted_list\.\include -IE:\proj\mp_os_labs\allocator\allocator_buddies_system\.\include -IE:\proj\mp_os_labs\allocator\allocator_global_heap\.\include -IE:\proj\mp_os_labs\allocator\allocator_boundary_tags\.\include -IE:\proj\mp_os_labs\associative_container\.\include -IE:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\splay_tree\.\include -IE:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\.\include -IE:\proj\mp_os_labs\associative_container\search_tree\.\include -external:IE:\proj\mp_os_labs\out\build\x64-Debug\_deps\googletest-src\googletest\include -external:IE:\proj\mp_os_labs\out\build\x64-Debug\_deps\googletest-src\googletest -external:W0
   OBJECT_DIR = associative_container\search_tree\binary_search_tree\splay_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests.dir
   OBJECT_FILE_DIR = associative_container\search_tree\binary_search_tree\splay_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests.dir
   TARGET_COMPILE_PDB = associative_container\search_tree\binary_search_tree\splay_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests.dir\
@@ -3640,10 +3820,10 @@ build associative_container\search_tree\binary_search_tree\splay_tree\tests\CMak
 #############################################
 # Link the executable associative_container\search_tree\binary_search_tree\splay_tree\tests\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests.exe
 
-build associative_container\search_tree\binary_search_tree\splay_tree\tests\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests.exe: CXX_EXECUTABLE_LINKER__mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests_Debug associative_container\search_tree\binary_search_tree\splay_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests.dir\splay_tree_tests.cpp.obj | lib\gtest_main.lib common\mp_os_cmmn.lib logger\client_logger\mp_os_lggr_clnt_lggr.lib allocator\allocator\mp_os_allctr_allctr.lib allocator\allocator_global_heap\mp_os_allctr_allctr_glbl_hp.lib associative_container\mp_os_assctv_cntnr.lib associative_container\search_tree\binary_search_tree\splay_tree\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr.lib lib\gtest.lib associative_container\search_tree\binary_search_tree\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.lib associative_container\search_tree\mp_os_assctv_cntnr_srch_tr.lib allocator\allocator\mp_os_allctr_allctr.lib associative_container\mp_os_assctv_cntnr.lib common\mp_os_cmmn.lib logger\logger\mp_os_lggr_lggr.lib || allocator\allocator\mp_os_allctr_allctr.lib allocator\allocator_global_heap\mp_os_allctr_allctr_glbl_hp.lib associative_container\mp_os_assctv_cntnr.lib associative_container\search_tree\binary_search_tree\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.lib associative_container\search_tree\binary_search_tree\splay_tree\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr.lib associative_container\search_tree\mp_os_assctv_cntnr_srch_tr.lib common\mp_os_cmmn.lib lib\gtest.lib lib\gtest_main.lib logger\client_logger\mp_os_lggr_clnt_lggr.lib logger\logger\mp_os_lggr_lggr.lib
+build associative_container\search_tree\binary_search_tree\splay_tree\tests\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests.exe: CXX_EXECUTABLE_LINKER__mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests_Debug associative_container\search_tree\binary_search_tree\splay_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests.dir\splay_tree_tests.cpp.obj | lib\gtest_main.lib common\mp_os_cmmn.lib logger\client_logger\mp_os_lggr_clnt_lggr.lib allocator\allocator\mp_os_allctr_allctr.lib allocator\allocator_sorted_list\mp_os_allctr_allctr_srtd_lst.lib allocator\allocator_buddies_system\mp_os_allctr_allctr_bdds_sstm.lib allocator\allocator_global_heap\mp_os_allctr_allctr_glbl_hp.lib allocator\allocator_boundary_tags\mp_os_allctr_allctr_bndr_tgs.lib associative_container\mp_os_assctv_cntnr.lib associative_container\search_tree\binary_search_tree\splay_tree\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr.lib lib\gtest.lib associative_container\search_tree\binary_search_tree\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.lib associative_container\search_tree\mp_os_assctv_cntnr_srch_tr.lib allocator\allocator\mp_os_allctr_allctr.lib associative_container\mp_os_assctv_cntnr.lib common\mp_os_cmmn.lib logger\logger\mp_os_lggr_lggr.lib || allocator\allocator\mp_os_allctr_allctr.lib allocator\allocator_boundary_tags\mp_os_allctr_allctr_bndr_tgs.lib allocator\allocator_buddies_system\mp_os_allctr_allctr_bdds_sstm.lib allocator\allocator_global_heap\mp_os_allctr_allctr_glbl_hp.lib allocator\allocator_sorted_list\mp_os_allctr_allctr_srtd_lst.lib associative_container\mp_os_assctv_cntnr.lib associative_container\search_tree\binary_search_tree\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.lib associative_container\search_tree\binary_search_tree\splay_tree\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr.lib associative_container\search_tree\mp_os_assctv_cntnr_srch_tr.lib common\mp_os_cmmn.lib lib\gtest.lib lib\gtest_main.lib logger\client_logger\mp_os_lggr_clnt_lggr.lib logger\logger\mp_os_lggr_lggr.lib
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = lib\gtest_main.lib  common\mp_os_cmmn.lib  logger\client_logger\mp_os_lggr_clnt_lggr.lib  allocator\allocator\mp_os_allctr_allctr.lib  allocator\allocator_global_heap\mp_os_allctr_allctr_glbl_hp.lib  associative_container\mp_os_assctv_cntnr.lib  associative_container\search_tree\binary_search_tree\splay_tree\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr.lib  lib\gtest.lib  associative_container\search_tree\binary_search_tree\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.lib  associative_container\search_tree\mp_os_assctv_cntnr_srch_tr.lib  allocator\allocator\mp_os_allctr_allctr.lib  associative_container\mp_os_assctv_cntnr.lib  common\mp_os_cmmn.lib  logger\logger\mp_os_lggr_lggr.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_LIBRARIES = lib\gtest_main.lib  common\mp_os_cmmn.lib  logger\client_logger\mp_os_lggr_clnt_lggr.lib  allocator\allocator\mp_os_allctr_allctr.lib  allocator\allocator_sorted_list\mp_os_allctr_allctr_srtd_lst.lib  allocator\allocator_buddies_system\mp_os_allctr_allctr_bdds_sstm.lib  allocator\allocator_global_heap\mp_os_allctr_allctr_glbl_hp.lib  allocator\allocator_boundary_tags\mp_os_allctr_allctr_bndr_tgs.lib  associative_container\mp_os_assctv_cntnr.lib  associative_container\search_tree\binary_search_tree\splay_tree\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr.lib  lib\gtest.lib  associative_container\search_tree\binary_search_tree\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.lib  associative_container\search_tree\mp_os_assctv_cntnr_srch_tr.lib  allocator\allocator\mp_os_allctr_allctr.lib  associative_container\mp_os_assctv_cntnr.lib  common\mp_os_cmmn.lib  logger\logger\mp_os_lggr_lggr.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = associative_container\search_tree\binary_search_tree\splay_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -3717,11 +3897,11 @@ build associative_container\search_tree\binary_search_tree\splay_tree\tests\inst
 #############################################
 # Order-only phony target for mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests
 
-build cmake_object_order_depends_target_mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main cmake_object_order_depends_target_mp_os_allctr_allctr cmake_object_order_depends_target_mp_os_allctr_allctr_srtd_lst cmake_object_order_depends_target_mp_os_assctv_cntnr cmake_object_order_depends_target_mp_os_assctv_cntnr_srch_tr cmake_object_order_depends_target_mp_os_assctv_cntnr_srch_tr_bnr_srch_tr cmake_object_order_depends_target_mp_os_cmmn cmake_object_order_depends_target_mp_os_lggr_clnt_lggr cmake_object_order_depends_target_mp_os_lggr_lggr
+build cmake_object_order_depends_target_mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main cmake_object_order_depends_target_mp_os_allctr_allctr cmake_object_order_depends_target_mp_os_allctr_allctr_bdds_sstm cmake_object_order_depends_target_mp_os_allctr_allctr_bndr_tgs cmake_object_order_depends_target_mp_os_allctr_allctr_glbl_hp cmake_object_order_depends_target_mp_os_allctr_allctr_srtd_lst cmake_object_order_depends_target_mp_os_assctv_cntnr cmake_object_order_depends_target_mp_os_assctv_cntnr_srch_tr cmake_object_order_depends_target_mp_os_assctv_cntnr_srch_tr_bnr_srch_tr cmake_object_order_depends_target_mp_os_cmmn cmake_object_order_depends_target_mp_os_lggr_clnt_lggr cmake_object_order_depends_target_mp_os_lggr_lggr
 
 build associative_container\search_tree\binary_search_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir\binary_search_tree_tests.cpp.obj: CXX_COMPILER__mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests_unscanned_Debug E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\tests\binary_search_tree_tests.cpp || cmake_object_order_depends_target_mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++latest -MDd
-  INCLUDES = -IE:\proj\mp_os_labs\logger\logger\.\include -IE:\proj\mp_os_labs\logger\client_logger\.\include -IE:\proj\mp_os_labs\common\.\include -IE:\proj\mp_os_labs\out\build\x64-Debug\_deps\json-src\include -IE:\proj\mp_os_labs\associative_container\.\include -IE:\proj\mp_os_labs\allocator\allocator_sorted_list\.\include -IE:\proj\mp_os_labs\allocator\allocator\.\include -IE:\proj\mp_os_labs\associative_container\search_tree\.\include -IE:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\.\include -external:IE:\proj\mp_os_labs\out\build\x64-Debug\_deps\googletest-src\googletest\include -external:IE:\proj\mp_os_labs\out\build\x64-Debug\_deps\googletest-src\googletest -external:W0
+  INCLUDES = -IE:\proj\mp_os_labs\logger\logger\.\include -IE:\proj\mp_os_labs\logger\client_logger\.\include -IE:\proj\mp_os_labs\common\.\include -IE:\proj\mp_os_labs\out\build\x64-Debug\_deps\json-src\include -IE:\proj\mp_os_labs\allocator\allocator_sorted_list\.\include -IE:\proj\mp_os_labs\allocator\allocator\.\include -IE:\proj\mp_os_labs\allocator\allocator_buddies_system\.\include -IE:\proj\mp_os_labs\allocator\allocator_global_heap\.\include -IE:\proj\mp_os_labs\allocator\allocator_boundary_tags\.\include -IE:\proj\mp_os_labs\associative_container\.\include -IE:\proj\mp_os_labs\associative_container\search_tree\.\include -IE:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\.\include -external:IE:\proj\mp_os_labs\out\build\x64-Debug\_deps\googletest-src\googletest\include -external:IE:\proj\mp_os_labs\out\build\x64-Debug\_deps\googletest-src\googletest -external:W0
   OBJECT_DIR = associative_container\search_tree\binary_search_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir
   OBJECT_FILE_DIR = associative_container\search_tree\binary_search_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir
   TARGET_COMPILE_PDB = associative_container\search_tree\binary_search_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir\
@@ -3735,10 +3915,10 @@ build associative_container\search_tree\binary_search_tree\tests\CMakeFiles\mp_o
 #############################################
 # Link the executable associative_container\search_tree\binary_search_tree\tests\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.exe
 
-build associative_container\search_tree\binary_search_tree\tests\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.exe: CXX_EXECUTABLE_LINKER__mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests_Debug associative_container\search_tree\binary_search_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir\binary_search_tree_tests.cpp.obj | lib\gtest_main.lib logger\logger\mp_os_lggr_lggr.lib logger\client_logger\mp_os_lggr_clnt_lggr.lib associative_container\mp_os_assctv_cntnr.lib allocator\allocator_sorted_list\mp_os_allctr_allctr_srtd_lst.lib associative_container\search_tree\mp_os_assctv_cntnr_srch_tr.lib associative_container\search_tree\binary_search_tree\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.lib lib\gtest.lib associative_container\search_tree\mp_os_assctv_cntnr_srch_tr.lib logger\logger\mp_os_lggr_lggr.lib associative_container\mp_os_assctv_cntnr.lib common\mp_os_cmmn.lib allocator\allocator\mp_os_allctr_allctr.lib || allocator\allocator\mp_os_allctr_allctr.lib allocator\allocator_sorted_list\mp_os_allctr_allctr_srtd_lst.lib associative_container\mp_os_assctv_cntnr.lib associative_container\search_tree\binary_search_tree\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.lib associative_container\search_tree\mp_os_assctv_cntnr_srch_tr.lib common\mp_os_cmmn.lib lib\gtest.lib lib\gtest_main.lib logger\client_logger\mp_os_lggr_clnt_lggr.lib logger\logger\mp_os_lggr_lggr.lib
+build associative_container\search_tree\binary_search_tree\tests\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.exe: CXX_EXECUTABLE_LINKER__mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests_Debug associative_container\search_tree\binary_search_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir\binary_search_tree_tests.cpp.obj | lib\gtest_main.lib logger\logger\mp_os_lggr_lggr.lib logger\client_logger\mp_os_lggr_clnt_lggr.lib allocator\allocator_sorted_list\mp_os_allctr_allctr_srtd_lst.lib allocator\allocator_buddies_system\mp_os_allctr_allctr_bdds_sstm.lib allocator\allocator_global_heap\mp_os_allctr_allctr_glbl_hp.lib allocator\allocator_boundary_tags\mp_os_allctr_allctr_bndr_tgs.lib associative_container\mp_os_assctv_cntnr.lib associative_container\search_tree\mp_os_assctv_cntnr_srch_tr.lib associative_container\search_tree\binary_search_tree\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.lib lib\gtest.lib associative_container\search_tree\mp_os_assctv_cntnr_srch_tr.lib logger\logger\mp_os_lggr_lggr.lib associative_container\mp_os_assctv_cntnr.lib common\mp_os_cmmn.lib allocator\allocator\mp_os_allctr_allctr.lib || allocator\allocator\mp_os_allctr_allctr.lib allocator\allocator_boundary_tags\mp_os_allctr_allctr_bndr_tgs.lib allocator\allocator_buddies_system\mp_os_allctr_allctr_bdds_sstm.lib allocator\allocator_global_heap\mp_os_allctr_allctr_glbl_hp.lib allocator\allocator_sorted_list\mp_os_allctr_allctr_srtd_lst.lib associative_container\mp_os_assctv_cntnr.lib associative_container\search_tree\binary_search_tree\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.lib associative_container\search_tree\mp_os_assctv_cntnr_srch_tr.lib common\mp_os_cmmn.lib lib\gtest.lib lib\gtest_main.lib logger\client_logger\mp_os_lggr_clnt_lggr.lib logger\logger\mp_os_lggr_lggr.lib
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = lib\gtest_main.lib  logger\logger\mp_os_lggr_lggr.lib  logger\client_logger\mp_os_lggr_clnt_lggr.lib  associative_container\mp_os_assctv_cntnr.lib  allocator\allocator_sorted_list\mp_os_allctr_allctr_srtd_lst.lib  associative_container\search_tree\mp_os_assctv_cntnr_srch_tr.lib  associative_container\search_tree\binary_search_tree\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.lib  lib\gtest.lib  associative_container\search_tree\mp_os_assctv_cntnr_srch_tr.lib  logger\logger\mp_os_lggr_lggr.lib  associative_container\mp_os_assctv_cntnr.lib  common\mp_os_cmmn.lib  allocator\allocator\mp_os_allctr_allctr.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_LIBRARIES = lib\gtest_main.lib  logger\logger\mp_os_lggr_lggr.lib  logger\client_logger\mp_os_lggr_clnt_lggr.lib  allocator\allocator_sorted_list\mp_os_allctr_allctr_srtd_lst.lib  allocator\allocator_buddies_system\mp_os_allctr_allctr_bdds_sstm.lib  allocator\allocator_global_heap\mp_os_allctr_allctr_glbl_hp.lib  allocator\allocator_boundary_tags\mp_os_allctr_allctr_bndr_tgs.lib  associative_container\mp_os_assctv_cntnr.lib  associative_container\search_tree\mp_os_assctv_cntnr_srch_tr.lib  associative_container\search_tree\binary_search_tree\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.lib  lib\gtest.lib  associative_container\search_tree\mp_os_assctv_cntnr_srch_tr.lib  logger\logger\mp_os_lggr_lggr.lib  associative_container\mp_os_assctv_cntnr.lib  common\mp_os_cmmn.lib  allocator\allocator\mp_os_allctr_allctr.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = associative_container\search_tree\binary_search_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -3799,6 +3979,784 @@ build associative_container\search_tree\binary_search_tree\tests\CMakeFiles\inst
   restat = 1
 
 build associative_container\search_tree\binary_search_tree\tests\install\local: phony associative_container\search_tree\binary_search_tree\tests\CMakeFiles\install\local.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# E:/proj/mp_os_labs/associative_container/search_tree/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
+build associative_container\search_tree\indexing_tree\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\search_tree\indexing_tree && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build associative_container\search_tree\indexing_tree\edit_cache: phony associative_container\search_tree\indexing_tree\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build associative_container\search_tree\indexing_tree\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\search_tree\indexing_tree && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SE:\proj\mp_os_labs -BE:\proj\mp_os_labs\out\build\x64-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build associative_container\search_tree\indexing_tree\rebuild_cache: phony associative_container\search_tree\indexing_tree\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build associative_container\search_tree\indexing_tree\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build associative_container\search_tree\indexing_tree\CMakeFiles\install.util: CUSTOM_COMMAND associative_container\search_tree\indexing_tree\all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\search_tree\indexing_tree && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build associative_container\search_tree\indexing_tree\install: phony associative_container\search_tree\indexing_tree\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build associative_container\search_tree\indexing_tree\CMakeFiles\install\local.util: CUSTOM_COMMAND associative_container\search_tree\indexing_tree\all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\search_tree\indexing_tree && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build associative_container\search_tree\indexing_tree\install\local: phony associative_container\search_tree\indexing_tree\CMakeFiles\install\local.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# E:/proj/mp_os_labs/associative_container/search_tree/indexing_tree/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr
+
+
+#############################################
+# Order-only phony target for mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr
+
+build cmake_object_order_depends_target_mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr: phony || cmake_object_order_depends_target_mp_os_allctr_allctr cmake_object_order_depends_target_mp_os_assctv_cntnr cmake_object_order_depends_target_mp_os_assctv_cntnr_srch_tr cmake_object_order_depends_target_mp_os_cmmn cmake_object_order_depends_target_mp_os_lggr_clnt_lggr cmake_object_order_depends_target_mp_os_lggr_lggr
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr
+
+
+#############################################
+# Link the static library associative_container\search_tree\indexing_tree\b_plus_tree\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr.lib
+
+build associative_container\search_tree\indexing_tree\b_plus_tree\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr.lib: CXX_STATIC_LIBRARY_LINKER__mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_Debug || allocator\allocator\mp_os_allctr_allctr.lib associative_container\mp_os_assctv_cntnr.lib associative_container\search_tree\mp_os_assctv_cntnr_srch_tr.lib common\mp_os_cmmn.lib logger\client_logger\mp_os_lggr_clnt_lggr.lib logger\logger\mp_os_lggr_lggr.lib
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64
+  OBJECT_DIR = associative_container\search_tree\indexing_tree\b_plus_tree\CMakeFiles\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = associative_container\search_tree\indexing_tree\b_plus_tree\CMakeFiles\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr.dir\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr.pdb
+  TARGET_FILE = associative_container\search_tree\indexing_tree\b_plus_tree\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr.lib
+  TARGET_PDB = associative_container\search_tree\indexing_tree\b_plus_tree\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build associative_container\search_tree\indexing_tree\b_plus_tree\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\search_tree\indexing_tree\b_plus_tree && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build associative_container\search_tree\indexing_tree\b_plus_tree\edit_cache: phony associative_container\search_tree\indexing_tree\b_plus_tree\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build associative_container\search_tree\indexing_tree\b_plus_tree\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\search_tree\indexing_tree\b_plus_tree && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SE:\proj\mp_os_labs -BE:\proj\mp_os_labs\out\build\x64-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build associative_container\search_tree\indexing_tree\b_plus_tree\rebuild_cache: phony associative_container\search_tree\indexing_tree\b_plus_tree\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build associative_container\search_tree\indexing_tree\b_plus_tree\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build associative_container\search_tree\indexing_tree\b_plus_tree\CMakeFiles\install.util: CUSTOM_COMMAND associative_container\search_tree\indexing_tree\b_plus_tree\all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\search_tree\indexing_tree\b_plus_tree && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build associative_container\search_tree\indexing_tree\b_plus_tree\install: phony associative_container\search_tree\indexing_tree\b_plus_tree\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build associative_container\search_tree\indexing_tree\b_plus_tree\CMakeFiles\install\local.util: CUSTOM_COMMAND associative_container\search_tree\indexing_tree\b_plus_tree\all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\search_tree\indexing_tree\b_plus_tree && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build associative_container\search_tree\indexing_tree\b_plus_tree\install\local: phony associative_container\search_tree\indexing_tree\b_plus_tree\CMakeFiles\install\local.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# E:/proj/mp_os_labs/associative_container/search_tree/indexing_tree/b_plus_tree/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests
+
+
+#############################################
+# Order-only phony target for mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests
+
+build cmake_object_order_depends_target_mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main cmake_object_order_depends_target_mp_os_allctr_allctr cmake_object_order_depends_target_mp_os_assctv_cntnr cmake_object_order_depends_target_mp_os_assctv_cntnr_srch_tr cmake_object_order_depends_target_mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr cmake_object_order_depends_target_mp_os_cmmn cmake_object_order_depends_target_mp_os_lggr_clnt_lggr cmake_object_order_depends_target_mp_os_lggr_lggr
+
+build associative_container\search_tree\indexing_tree\b_plus_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests.dir\b_plus_tree_tests.cpp.obj: CXX_COMPILER__mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests_unscanned_Debug E$:\proj\mp_os_labs\associative_container\search_tree\indexing_tree\b_plus_tree\tests\b_plus_tree_tests.cpp || cmake_object_order_depends_target_mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++14 -MDd
+  INCLUDES = -IE:\proj\mp_os_labs\logger\logger\.\include -IE:\proj\mp_os_labs\logger\client_logger\.\include -IE:\proj\mp_os_labs\common\.\include -IE:\proj\mp_os_labs\out\build\x64-Debug\_deps\json-src\include -IE:\proj\mp_os_labs\associative_container\search_tree\indexing_tree\b_plus_tree\.\include -IE:\proj\mp_os_labs\associative_container\.\include -IE:\proj\mp_os_labs\associative_container\search_tree\.\include -IE:\proj\mp_os_labs\allocator\allocator\.\include -external:IE:\proj\mp_os_labs\out\build\x64-Debug\_deps\googletest-src\googletest\include -external:IE:\proj\mp_os_labs\out\build\x64-Debug\_deps\googletest-src\googletest -external:W0
+  OBJECT_DIR = associative_container\search_tree\indexing_tree\b_plus_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests.dir
+  OBJECT_FILE_DIR = associative_container\search_tree\indexing_tree\b_plus_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests.dir
+  TARGET_COMPILE_PDB = associative_container\search_tree\indexing_tree\b_plus_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests.dir\
+  TARGET_PDB = associative_container\search_tree\indexing_tree\b_plus_tree\tests\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests
+
+
+#############################################
+# Link the executable associative_container\search_tree\indexing_tree\b_plus_tree\tests\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests.exe
+
+build associative_container\search_tree\indexing_tree\b_plus_tree\tests\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests.exe: CXX_EXECUTABLE_LINKER__mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests_Debug associative_container\search_tree\indexing_tree\b_plus_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests.dir\b_plus_tree_tests.cpp.obj | lib\gtest_main.lib logger\logger\mp_os_lggr_lggr.lib logger\client_logger\mp_os_lggr_clnt_lggr.lib associative_container\search_tree\indexing_tree\b_plus_tree\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr.lib lib\gtest.lib logger\client_logger\mp_os_lggr_clnt_lggr.lib associative_container\search_tree\mp_os_assctv_cntnr_srch_tr.lib logger\logger\mp_os_lggr_lggr.lib associative_container\mp_os_assctv_cntnr.lib common\mp_os_cmmn.lib allocator\allocator\mp_os_allctr_allctr.lib || allocator\allocator\mp_os_allctr_allctr.lib associative_container\mp_os_assctv_cntnr.lib associative_container\search_tree\indexing_tree\b_plus_tree\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr.lib associative_container\search_tree\mp_os_assctv_cntnr_srch_tr.lib common\mp_os_cmmn.lib lib\gtest.lib lib\gtest_main.lib logger\client_logger\mp_os_lggr_clnt_lggr.lib logger\logger\mp_os_lggr_lggr.lib
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = lib\gtest_main.lib  logger\logger\mp_os_lggr_lggr.lib  logger\client_logger\mp_os_lggr_clnt_lggr.lib  associative_container\search_tree\indexing_tree\b_plus_tree\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr.lib  lib\gtest.lib  logger\client_logger\mp_os_lggr_clnt_lggr.lib  associative_container\search_tree\mp_os_assctv_cntnr_srch_tr.lib  logger\logger\mp_os_lggr_lggr.lib  associative_container\mp_os_assctv_cntnr.lib  common\mp_os_cmmn.lib  allocator\allocator\mp_os_allctr_allctr.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = associative_container\search_tree\indexing_tree\b_plus_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = associative_container\search_tree\indexing_tree\b_plus_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests.dir\
+  TARGET_FILE = associative_container\search_tree\indexing_tree\b_plus_tree\tests\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests.exe
+  TARGET_IMPLIB = associative_container\search_tree\indexing_tree\b_plus_tree\tests\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests.lib
+  TARGET_PDB = associative_container\search_tree\indexing_tree\b_plus_tree\tests\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build associative_container\search_tree\indexing_tree\b_plus_tree\tests\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\search_tree\indexing_tree\b_plus_tree\tests && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build associative_container\search_tree\indexing_tree\b_plus_tree\tests\edit_cache: phony associative_container\search_tree\indexing_tree\b_plus_tree\tests\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build associative_container\search_tree\indexing_tree\b_plus_tree\tests\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\search_tree\indexing_tree\b_plus_tree\tests && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SE:\proj\mp_os_labs -BE:\proj\mp_os_labs\out\build\x64-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build associative_container\search_tree\indexing_tree\b_plus_tree\tests\rebuild_cache: phony associative_container\search_tree\indexing_tree\b_plus_tree\tests\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build associative_container\search_tree\indexing_tree\b_plus_tree\tests\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build associative_container\search_tree\indexing_tree\b_plus_tree\tests\CMakeFiles\install.util: CUSTOM_COMMAND associative_container\search_tree\indexing_tree\b_plus_tree\tests\all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\search_tree\indexing_tree\b_plus_tree\tests && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build associative_container\search_tree\indexing_tree\b_plus_tree\tests\install: phony associative_container\search_tree\indexing_tree\b_plus_tree\tests\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build associative_container\search_tree\indexing_tree\b_plus_tree\tests\CMakeFiles\install\local.util: CUSTOM_COMMAND associative_container\search_tree\indexing_tree\b_plus_tree\tests\all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\search_tree\indexing_tree\b_plus_tree\tests && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build associative_container\search_tree\indexing_tree\b_plus_tree\tests\install\local: phony associative_container\search_tree\indexing_tree\b_plus_tree\tests\CMakeFiles\install\local.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# E:/proj/mp_os_labs/associative_container/search_tree/indexing_tree/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr
+
+
+#############################################
+# Order-only phony target for mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr
+
+build cmake_object_order_depends_target_mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr: phony || cmake_object_order_depends_target_mp_os_allctr_allctr cmake_object_order_depends_target_mp_os_assctv_cntnr cmake_object_order_depends_target_mp_os_assctv_cntnr_srch_tr cmake_object_order_depends_target_mp_os_cmmn cmake_object_order_depends_target_mp_os_lggr_clnt_lggr cmake_object_order_depends_target_mp_os_lggr_lggr
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr
+
+
+#############################################
+# Link the static library associative_container\search_tree\indexing_tree\b_star_plus_tree\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr.lib
+
+build associative_container\search_tree\indexing_tree\b_star_plus_tree\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr.lib: CXX_STATIC_LIBRARY_LINKER__mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_Debug || allocator\allocator\mp_os_allctr_allctr.lib associative_container\mp_os_assctv_cntnr.lib associative_container\search_tree\mp_os_assctv_cntnr_srch_tr.lib common\mp_os_cmmn.lib logger\client_logger\mp_os_lggr_clnt_lggr.lib logger\logger\mp_os_lggr_lggr.lib
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64
+  OBJECT_DIR = associative_container\search_tree\indexing_tree\b_star_plus_tree\CMakeFiles\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = associative_container\search_tree\indexing_tree\b_star_plus_tree\CMakeFiles\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr.dir\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr.pdb
+  TARGET_FILE = associative_container\search_tree\indexing_tree\b_star_plus_tree\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr.lib
+  TARGET_PDB = associative_container\search_tree\indexing_tree\b_star_plus_tree\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build associative_container\search_tree\indexing_tree\b_star_plus_tree\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\search_tree\indexing_tree\b_star_plus_tree && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build associative_container\search_tree\indexing_tree\b_star_plus_tree\edit_cache: phony associative_container\search_tree\indexing_tree\b_star_plus_tree\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build associative_container\search_tree\indexing_tree\b_star_plus_tree\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\search_tree\indexing_tree\b_star_plus_tree && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SE:\proj\mp_os_labs -BE:\proj\mp_os_labs\out\build\x64-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build associative_container\search_tree\indexing_tree\b_star_plus_tree\rebuild_cache: phony associative_container\search_tree\indexing_tree\b_star_plus_tree\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build associative_container\search_tree\indexing_tree\b_star_plus_tree\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build associative_container\search_tree\indexing_tree\b_star_plus_tree\CMakeFiles\install.util: CUSTOM_COMMAND associative_container\search_tree\indexing_tree\b_star_plus_tree\all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\search_tree\indexing_tree\b_star_plus_tree && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build associative_container\search_tree\indexing_tree\b_star_plus_tree\install: phony associative_container\search_tree\indexing_tree\b_star_plus_tree\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build associative_container\search_tree\indexing_tree\b_star_plus_tree\CMakeFiles\install\local.util: CUSTOM_COMMAND associative_container\search_tree\indexing_tree\b_star_plus_tree\all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\search_tree\indexing_tree\b_star_plus_tree && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build associative_container\search_tree\indexing_tree\b_star_plus_tree\install\local: phony associative_container\search_tree\indexing_tree\b_star_plus_tree\CMakeFiles\install\local.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# E:/proj/mp_os_labs/associative_container/search_tree/indexing_tree/b_star_plus_tree/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests
+
+
+#############################################
+# Order-only phony target for mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests
+
+build cmake_object_order_depends_target_mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main cmake_object_order_depends_target_mp_os_allctr_allctr cmake_object_order_depends_target_mp_os_assctv_cntnr cmake_object_order_depends_target_mp_os_assctv_cntnr_srch_tr cmake_object_order_depends_target_mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr cmake_object_order_depends_target_mp_os_cmmn cmake_object_order_depends_target_mp_os_lggr_clnt_lggr cmake_object_order_depends_target_mp_os_lggr_lggr
+
+build associative_container\search_tree\indexing_tree\b_star_plus_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir\b_star_plus_tree_tests.cpp.obj: CXX_COMPILER__mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests_unscanned_Debug E$:\proj\mp_os_labs\associative_container\search_tree\indexing_tree\b_star_plus_tree\tests\b_star_plus_tree_tests.cpp || cmake_object_order_depends_target_mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++14 -MDd
+  INCLUDES = -IE:\proj\mp_os_labs\logger\logger\.\include -IE:\proj\mp_os_labs\logger\client_logger\.\include -IE:\proj\mp_os_labs\common\.\include -IE:\proj\mp_os_labs\out\build\x64-Debug\_deps\json-src\include -IE:\proj\mp_os_labs\associative_container\search_tree\indexing_tree\b_star_plus_tree\.\include -IE:\proj\mp_os_labs\associative_container\.\include -IE:\proj\mp_os_labs\associative_container\search_tree\.\include -IE:\proj\mp_os_labs\allocator\allocator\.\include -external:IE:\proj\mp_os_labs\out\build\x64-Debug\_deps\googletest-src\googletest\include -external:IE:\proj\mp_os_labs\out\build\x64-Debug\_deps\googletest-src\googletest -external:W0
+  OBJECT_DIR = associative_container\search_tree\indexing_tree\b_star_plus_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir
+  OBJECT_FILE_DIR = associative_container\search_tree\indexing_tree\b_star_plus_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir
+  TARGET_COMPILE_PDB = associative_container\search_tree\indexing_tree\b_star_plus_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir\
+  TARGET_PDB = associative_container\search_tree\indexing_tree\b_star_plus_tree\tests\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests
+
+
+#############################################
+# Link the executable associative_container\search_tree\indexing_tree\b_star_plus_tree\tests\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.exe
+
+build associative_container\search_tree\indexing_tree\b_star_plus_tree\tests\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.exe: CXX_EXECUTABLE_LINKER__mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests_Debug associative_container\search_tree\indexing_tree\b_star_plus_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir\b_star_plus_tree_tests.cpp.obj | lib\gtest_main.lib logger\logger\mp_os_lggr_lggr.lib logger\client_logger\mp_os_lggr_clnt_lggr.lib associative_container\search_tree\indexing_tree\b_star_plus_tree\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr.lib lib\gtest.lib logger\client_logger\mp_os_lggr_clnt_lggr.lib associative_container\search_tree\mp_os_assctv_cntnr_srch_tr.lib logger\logger\mp_os_lggr_lggr.lib associative_container\mp_os_assctv_cntnr.lib common\mp_os_cmmn.lib allocator\allocator\mp_os_allctr_allctr.lib || allocator\allocator\mp_os_allctr_allctr.lib associative_container\mp_os_assctv_cntnr.lib associative_container\search_tree\indexing_tree\b_star_plus_tree\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr.lib associative_container\search_tree\mp_os_assctv_cntnr_srch_tr.lib common\mp_os_cmmn.lib lib\gtest.lib lib\gtest_main.lib logger\client_logger\mp_os_lggr_clnt_lggr.lib logger\logger\mp_os_lggr_lggr.lib
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = lib\gtest_main.lib  logger\logger\mp_os_lggr_lggr.lib  logger\client_logger\mp_os_lggr_clnt_lggr.lib  associative_container\search_tree\indexing_tree\b_star_plus_tree\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr.lib  lib\gtest.lib  logger\client_logger\mp_os_lggr_clnt_lggr.lib  associative_container\search_tree\mp_os_assctv_cntnr_srch_tr.lib  logger\logger\mp_os_lggr_lggr.lib  associative_container\mp_os_assctv_cntnr.lib  common\mp_os_cmmn.lib  allocator\allocator\mp_os_allctr_allctr.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = associative_container\search_tree\indexing_tree\b_star_plus_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = associative_container\search_tree\indexing_tree\b_star_plus_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir\
+  TARGET_FILE = associative_container\search_tree\indexing_tree\b_star_plus_tree\tests\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.exe
+  TARGET_IMPLIB = associative_container\search_tree\indexing_tree\b_star_plus_tree\tests\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.lib
+  TARGET_PDB = associative_container\search_tree\indexing_tree\b_star_plus_tree\tests\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build associative_container\search_tree\indexing_tree\b_star_plus_tree\tests\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\search_tree\indexing_tree\b_star_plus_tree\tests && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build associative_container\search_tree\indexing_tree\b_star_plus_tree\tests\edit_cache: phony associative_container\search_tree\indexing_tree\b_star_plus_tree\tests\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build associative_container\search_tree\indexing_tree\b_star_plus_tree\tests\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\search_tree\indexing_tree\b_star_plus_tree\tests && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SE:\proj\mp_os_labs -BE:\proj\mp_os_labs\out\build\x64-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build associative_container\search_tree\indexing_tree\b_star_plus_tree\tests\rebuild_cache: phony associative_container\search_tree\indexing_tree\b_star_plus_tree\tests\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build associative_container\search_tree\indexing_tree\b_star_plus_tree\tests\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build associative_container\search_tree\indexing_tree\b_star_plus_tree\tests\CMakeFiles\install.util: CUSTOM_COMMAND associative_container\search_tree\indexing_tree\b_star_plus_tree\tests\all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\search_tree\indexing_tree\b_star_plus_tree\tests && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build associative_container\search_tree\indexing_tree\b_star_plus_tree\tests\install: phony associative_container\search_tree\indexing_tree\b_star_plus_tree\tests\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build associative_container\search_tree\indexing_tree\b_star_plus_tree\tests\CMakeFiles\install\local.util: CUSTOM_COMMAND associative_container\search_tree\indexing_tree\b_star_plus_tree\tests\all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\search_tree\indexing_tree\b_star_plus_tree\tests && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build associative_container\search_tree\indexing_tree\b_star_plus_tree\tests\install\local: phony associative_container\search_tree\indexing_tree\b_star_plus_tree\tests\CMakeFiles\install\local.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# E:/proj/mp_os_labs/associative_container/search_tree/indexing_tree/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr
+
+
+#############################################
+# Order-only phony target for mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr
+
+build cmake_object_order_depends_target_mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr: phony || cmake_object_order_depends_target_mp_os_allctr_allctr cmake_object_order_depends_target_mp_os_assctv_cntnr cmake_object_order_depends_target_mp_os_assctv_cntnr_srch_tr cmake_object_order_depends_target_mp_os_cmmn cmake_object_order_depends_target_mp_os_lggr_clnt_lggr cmake_object_order_depends_target_mp_os_lggr_lggr
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr
+
+
+#############################################
+# Link the static library associative_container\search_tree\indexing_tree\b_star_tree\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr.lib
+
+build associative_container\search_tree\indexing_tree\b_star_tree\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr.lib: CXX_STATIC_LIBRARY_LINKER__mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_Debug || allocator\allocator\mp_os_allctr_allctr.lib associative_container\mp_os_assctv_cntnr.lib associative_container\search_tree\mp_os_assctv_cntnr_srch_tr.lib common\mp_os_cmmn.lib logger\client_logger\mp_os_lggr_clnt_lggr.lib logger\logger\mp_os_lggr_lggr.lib
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64
+  OBJECT_DIR = associative_container\search_tree\indexing_tree\b_star_tree\CMakeFiles\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = associative_container\search_tree\indexing_tree\b_star_tree\CMakeFiles\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr.dir\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr.pdb
+  TARGET_FILE = associative_container\search_tree\indexing_tree\b_star_tree\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr.lib
+  TARGET_PDB = associative_container\search_tree\indexing_tree\b_star_tree\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build associative_container\search_tree\indexing_tree\b_star_tree\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\search_tree\indexing_tree\b_star_tree && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build associative_container\search_tree\indexing_tree\b_star_tree\edit_cache: phony associative_container\search_tree\indexing_tree\b_star_tree\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build associative_container\search_tree\indexing_tree\b_star_tree\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\search_tree\indexing_tree\b_star_tree && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SE:\proj\mp_os_labs -BE:\proj\mp_os_labs\out\build\x64-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build associative_container\search_tree\indexing_tree\b_star_tree\rebuild_cache: phony associative_container\search_tree\indexing_tree\b_star_tree\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build associative_container\search_tree\indexing_tree\b_star_tree\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build associative_container\search_tree\indexing_tree\b_star_tree\CMakeFiles\install.util: CUSTOM_COMMAND associative_container\search_tree\indexing_tree\b_star_tree\all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\search_tree\indexing_tree\b_star_tree && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build associative_container\search_tree\indexing_tree\b_star_tree\install: phony associative_container\search_tree\indexing_tree\b_star_tree\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build associative_container\search_tree\indexing_tree\b_star_tree\CMakeFiles\install\local.util: CUSTOM_COMMAND associative_container\search_tree\indexing_tree\b_star_tree\all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\search_tree\indexing_tree\b_star_tree && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build associative_container\search_tree\indexing_tree\b_star_tree\install\local: phony associative_container\search_tree\indexing_tree\b_star_tree\CMakeFiles\install\local.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# E:/proj/mp_os_labs/associative_container/search_tree/indexing_tree/b_star_tree/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests
+
+
+#############################################
+# Order-only phony target for mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests
+
+build cmake_object_order_depends_target_mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main cmake_object_order_depends_target_mp_os_allctr_allctr cmake_object_order_depends_target_mp_os_assctv_cntnr cmake_object_order_depends_target_mp_os_assctv_cntnr_srch_tr cmake_object_order_depends_target_mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr cmake_object_order_depends_target_mp_os_cmmn cmake_object_order_depends_target_mp_os_lggr_clnt_lggr cmake_object_order_depends_target_mp_os_lggr_lggr
+
+build associative_container\search_tree\indexing_tree\b_star_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests.dir\b_star_tree_tests.cpp.obj: CXX_COMPILER__mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests_unscanned_Debug E$:\proj\mp_os_labs\associative_container\search_tree\indexing_tree\b_star_tree\tests\b_star_tree_tests.cpp || cmake_object_order_depends_target_mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++14 -MDd
+  INCLUDES = -IE:\proj\mp_os_labs\logger\logger\.\include -IE:\proj\mp_os_labs\logger\client_logger\.\include -IE:\proj\mp_os_labs\common\.\include -IE:\proj\mp_os_labs\out\build\x64-Debug\_deps\json-src\include -IE:\proj\mp_os_labs\associative_container\search_tree\indexing_tree\b_star_tree\.\include -IE:\proj\mp_os_labs\associative_container\.\include -IE:\proj\mp_os_labs\associative_container\search_tree\.\include -IE:\proj\mp_os_labs\allocator\allocator\.\include -external:IE:\proj\mp_os_labs\out\build\x64-Debug\_deps\googletest-src\googletest\include -external:IE:\proj\mp_os_labs\out\build\x64-Debug\_deps\googletest-src\googletest -external:W0
+  OBJECT_DIR = associative_container\search_tree\indexing_tree\b_star_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests.dir
+  OBJECT_FILE_DIR = associative_container\search_tree\indexing_tree\b_star_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests.dir
+  TARGET_COMPILE_PDB = associative_container\search_tree\indexing_tree\b_star_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests.dir\
+  TARGET_PDB = associative_container\search_tree\indexing_tree\b_star_tree\tests\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests
+
+
+#############################################
+# Link the executable associative_container\search_tree\indexing_tree\b_star_tree\tests\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests.exe
+
+build associative_container\search_tree\indexing_tree\b_star_tree\tests\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests.exe: CXX_EXECUTABLE_LINKER__mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests_Debug associative_container\search_tree\indexing_tree\b_star_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests.dir\b_star_tree_tests.cpp.obj | lib\gtest_main.lib logger\logger\mp_os_lggr_lggr.lib logger\client_logger\mp_os_lggr_clnt_lggr.lib associative_container\search_tree\indexing_tree\b_star_tree\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr.lib lib\gtest.lib logger\client_logger\mp_os_lggr_clnt_lggr.lib associative_container\search_tree\mp_os_assctv_cntnr_srch_tr.lib logger\logger\mp_os_lggr_lggr.lib associative_container\mp_os_assctv_cntnr.lib common\mp_os_cmmn.lib allocator\allocator\mp_os_allctr_allctr.lib || allocator\allocator\mp_os_allctr_allctr.lib associative_container\mp_os_assctv_cntnr.lib associative_container\search_tree\indexing_tree\b_star_tree\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr.lib associative_container\search_tree\mp_os_assctv_cntnr_srch_tr.lib common\mp_os_cmmn.lib lib\gtest.lib lib\gtest_main.lib logger\client_logger\mp_os_lggr_clnt_lggr.lib logger\logger\mp_os_lggr_lggr.lib
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = lib\gtest_main.lib  logger\logger\mp_os_lggr_lggr.lib  logger\client_logger\mp_os_lggr_clnt_lggr.lib  associative_container\search_tree\indexing_tree\b_star_tree\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr.lib  lib\gtest.lib  logger\client_logger\mp_os_lggr_clnt_lggr.lib  associative_container\search_tree\mp_os_assctv_cntnr_srch_tr.lib  logger\logger\mp_os_lggr_lggr.lib  associative_container\mp_os_assctv_cntnr.lib  common\mp_os_cmmn.lib  allocator\allocator\mp_os_allctr_allctr.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = associative_container\search_tree\indexing_tree\b_star_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = associative_container\search_tree\indexing_tree\b_star_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests.dir\
+  TARGET_FILE = associative_container\search_tree\indexing_tree\b_star_tree\tests\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests.exe
+  TARGET_IMPLIB = associative_container\search_tree\indexing_tree\b_star_tree\tests\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests.lib
+  TARGET_PDB = associative_container\search_tree\indexing_tree\b_star_tree\tests\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build associative_container\search_tree\indexing_tree\b_star_tree\tests\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\search_tree\indexing_tree\b_star_tree\tests && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build associative_container\search_tree\indexing_tree\b_star_tree\tests\edit_cache: phony associative_container\search_tree\indexing_tree\b_star_tree\tests\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build associative_container\search_tree\indexing_tree\b_star_tree\tests\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\search_tree\indexing_tree\b_star_tree\tests && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SE:\proj\mp_os_labs -BE:\proj\mp_os_labs\out\build\x64-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build associative_container\search_tree\indexing_tree\b_star_tree\tests\rebuild_cache: phony associative_container\search_tree\indexing_tree\b_star_tree\tests\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build associative_container\search_tree\indexing_tree\b_star_tree\tests\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build associative_container\search_tree\indexing_tree\b_star_tree\tests\CMakeFiles\install.util: CUSTOM_COMMAND associative_container\search_tree\indexing_tree\b_star_tree\tests\all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\search_tree\indexing_tree\b_star_tree\tests && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build associative_container\search_tree\indexing_tree\b_star_tree\tests\install: phony associative_container\search_tree\indexing_tree\b_star_tree\tests\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build associative_container\search_tree\indexing_tree\b_star_tree\tests\CMakeFiles\install\local.util: CUSTOM_COMMAND associative_container\search_tree\indexing_tree\b_star_tree\tests\all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\search_tree\indexing_tree\b_star_tree\tests && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build associative_container\search_tree\indexing_tree\b_star_tree\tests\install\local: phony associative_container\search_tree\indexing_tree\b_star_tree\tests\CMakeFiles\install\local.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# E:/proj/mp_os_labs/associative_container/search_tree/indexing_tree/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr
+
+
+#############################################
+# Order-only phony target for mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr
+
+build cmake_object_order_depends_target_mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr: phony || cmake_object_order_depends_target_mp_os_allctr_allctr cmake_object_order_depends_target_mp_os_assctv_cntnr cmake_object_order_depends_target_mp_os_assctv_cntnr_srch_tr cmake_object_order_depends_target_mp_os_cmmn cmake_object_order_depends_target_mp_os_lggr_clnt_lggr cmake_object_order_depends_target_mp_os_lggr_lggr
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr
+
+
+#############################################
+# Link the static library associative_container\search_tree\indexing_tree\b_tree\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr.lib
+
+build associative_container\search_tree\indexing_tree\b_tree\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr.lib: CXX_STATIC_LIBRARY_LINKER__mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_Debug || allocator\allocator\mp_os_allctr_allctr.lib associative_container\mp_os_assctv_cntnr.lib associative_container\search_tree\mp_os_assctv_cntnr_srch_tr.lib common\mp_os_cmmn.lib logger\client_logger\mp_os_lggr_clnt_lggr.lib logger\logger\mp_os_lggr_lggr.lib
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64
+  OBJECT_DIR = associative_container\search_tree\indexing_tree\b_tree\CMakeFiles\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = associative_container\search_tree\indexing_tree\b_tree\CMakeFiles\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr.pdb
+  TARGET_FILE = associative_container\search_tree\indexing_tree\b_tree\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr.lib
+  TARGET_PDB = associative_container\search_tree\indexing_tree\b_tree\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build associative_container\search_tree\indexing_tree\b_tree\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\search_tree\indexing_tree\b_tree && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build associative_container\search_tree\indexing_tree\b_tree\edit_cache: phony associative_container\search_tree\indexing_tree\b_tree\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build associative_container\search_tree\indexing_tree\b_tree\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\search_tree\indexing_tree\b_tree && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SE:\proj\mp_os_labs -BE:\proj\mp_os_labs\out\build\x64-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build associative_container\search_tree\indexing_tree\b_tree\rebuild_cache: phony associative_container\search_tree\indexing_tree\b_tree\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build associative_container\search_tree\indexing_tree\b_tree\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build associative_container\search_tree\indexing_tree\b_tree\CMakeFiles\install.util: CUSTOM_COMMAND associative_container\search_tree\indexing_tree\b_tree\all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\search_tree\indexing_tree\b_tree && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build associative_container\search_tree\indexing_tree\b_tree\install: phony associative_container\search_tree\indexing_tree\b_tree\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build associative_container\search_tree\indexing_tree\b_tree\CMakeFiles\install\local.util: CUSTOM_COMMAND associative_container\search_tree\indexing_tree\b_tree\all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\search_tree\indexing_tree\b_tree && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build associative_container\search_tree\indexing_tree\b_tree\install\local: phony associative_container\search_tree\indexing_tree\b_tree\CMakeFiles\install\local.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# E:/proj/mp_os_labs/associative_container/search_tree/indexing_tree/b_tree/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests
+
+
+#############################################
+# Order-only phony target for mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests
+
+build cmake_object_order_depends_target_mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main cmake_object_order_depends_target_mp_os_allctr_allctr cmake_object_order_depends_target_mp_os_assctv_cntnr cmake_object_order_depends_target_mp_os_assctv_cntnr_srch_tr cmake_object_order_depends_target_mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr cmake_object_order_depends_target_mp_os_cmmn cmake_object_order_depends_target_mp_os_lggr_clnt_lggr cmake_object_order_depends_target_mp_os_lggr_lggr
+
+build associative_container\search_tree\indexing_tree\b_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests.dir\b_tree_tests.cpp.obj: CXX_COMPILER__mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests_unscanned_Debug E$:\proj\mp_os_labs\associative_container\search_tree\indexing_tree\b_tree\tests\b_tree_tests.cpp || cmake_object_order_depends_target_mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++14 -MDd
+  INCLUDES = -IE:\proj\mp_os_labs\logger\logger\.\include -IE:\proj\mp_os_labs\logger\client_logger\.\include -IE:\proj\mp_os_labs\common\.\include -IE:\proj\mp_os_labs\out\build\x64-Debug\_deps\json-src\include -IE:\proj\mp_os_labs\associative_container\search_tree\indexing_tree\b_tree\.\include -IE:\proj\mp_os_labs\associative_container\.\include -IE:\proj\mp_os_labs\associative_container\search_tree\.\include -IE:\proj\mp_os_labs\allocator\allocator\.\include -external:IE:\proj\mp_os_labs\out\build\x64-Debug\_deps\googletest-src\googletest\include -external:IE:\proj\mp_os_labs\out\build\x64-Debug\_deps\googletest-src\googletest -external:W0
+  OBJECT_DIR = associative_container\search_tree\indexing_tree\b_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests.dir
+  OBJECT_FILE_DIR = associative_container\search_tree\indexing_tree\b_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests.dir
+  TARGET_COMPILE_PDB = associative_container\search_tree\indexing_tree\b_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests.dir\
+  TARGET_PDB = associative_container\search_tree\indexing_tree\b_tree\tests\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests
+
+
+#############################################
+# Link the executable associative_container\search_tree\indexing_tree\b_tree\tests\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests.exe
+
+build associative_container\search_tree\indexing_tree\b_tree\tests\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests.exe: CXX_EXECUTABLE_LINKER__mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests_Debug associative_container\search_tree\indexing_tree\b_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests.dir\b_tree_tests.cpp.obj | lib\gtest_main.lib logger\logger\mp_os_lggr_lggr.lib logger\client_logger\mp_os_lggr_clnt_lggr.lib associative_container\search_tree\indexing_tree\b_tree\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr.lib lib\gtest.lib logger\client_logger\mp_os_lggr_clnt_lggr.lib associative_container\search_tree\mp_os_assctv_cntnr_srch_tr.lib logger\logger\mp_os_lggr_lggr.lib associative_container\mp_os_assctv_cntnr.lib common\mp_os_cmmn.lib allocator\allocator\mp_os_allctr_allctr.lib || allocator\allocator\mp_os_allctr_allctr.lib associative_container\mp_os_assctv_cntnr.lib associative_container\search_tree\indexing_tree\b_tree\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr.lib associative_container\search_tree\mp_os_assctv_cntnr_srch_tr.lib common\mp_os_cmmn.lib lib\gtest.lib lib\gtest_main.lib logger\client_logger\mp_os_lggr_clnt_lggr.lib logger\logger\mp_os_lggr_lggr.lib
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = lib\gtest_main.lib  logger\logger\mp_os_lggr_lggr.lib  logger\client_logger\mp_os_lggr_clnt_lggr.lib  associative_container\search_tree\indexing_tree\b_tree\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr.lib  lib\gtest.lib  logger\client_logger\mp_os_lggr_clnt_lggr.lib  associative_container\search_tree\mp_os_assctv_cntnr_srch_tr.lib  logger\logger\mp_os_lggr_lggr.lib  associative_container\mp_os_assctv_cntnr.lib  common\mp_os_cmmn.lib  allocator\allocator\mp_os_allctr_allctr.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = associative_container\search_tree\indexing_tree\b_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = associative_container\search_tree\indexing_tree\b_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests.dir\
+  TARGET_FILE = associative_container\search_tree\indexing_tree\b_tree\tests\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests.exe
+  TARGET_IMPLIB = associative_container\search_tree\indexing_tree\b_tree\tests\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests.lib
+  TARGET_PDB = associative_container\search_tree\indexing_tree\b_tree\tests\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build associative_container\search_tree\indexing_tree\b_tree\tests\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\search_tree\indexing_tree\b_tree\tests && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build associative_container\search_tree\indexing_tree\b_tree\tests\edit_cache: phony associative_container\search_tree\indexing_tree\b_tree\tests\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build associative_container\search_tree\indexing_tree\b_tree\tests\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\search_tree\indexing_tree\b_tree\tests && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SE:\proj\mp_os_labs -BE:\proj\mp_os_labs\out\build\x64-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build associative_container\search_tree\indexing_tree\b_tree\tests\rebuild_cache: phony associative_container\search_tree\indexing_tree\b_tree\tests\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build associative_container\search_tree\indexing_tree\b_tree\tests\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build associative_container\search_tree\indexing_tree\b_tree\tests\CMakeFiles\install.util: CUSTOM_COMMAND associative_container\search_tree\indexing_tree\b_tree\tests\all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\search_tree\indexing_tree\b_tree\tests && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build associative_container\search_tree\indexing_tree\b_tree\tests\install: phony associative_container\search_tree\indexing_tree\b_tree\tests\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build associative_container\search_tree\indexing_tree\b_tree\tests\CMakeFiles\install\local.util: CUSTOM_COMMAND associative_container\search_tree\indexing_tree\b_tree\tests\all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\proj\mp_os_labs\out\build\x64-Debug\associative_container\search_tree\indexing_tree\b_tree\tests && "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build associative_container\search_tree\indexing_tree\b_tree\tests\install\local: phony associative_container\search_tree\indexing_tree\b_tree\tests\CMakeFiles\install\local.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -4662,6 +5620,14 @@ build mp_os_assctv_cntnr: phony associative_container\mp_os_assctv_cntnr.lib
 
 build mp_os_assctv_cntnr.lib: phony associative_container\mp_os_assctv_cntnr.lib
 
+build mp_os_assctv_cntnr_hsh_tbl: phony associative_container\hash_table\mp_os_assctv_cntnr_hsh_tbl.lib
+
+build mp_os_assctv_cntnr_hsh_tbl.lib: phony associative_container\hash_table\mp_os_assctv_cntnr_hsh_tbl.lib
+
+build mp_os_assctv_cntnr_hsh_tbl_tests: phony associative_container\hash_table\tests\mp_os_assctv_cntnr_hsh_tbl_tests.exe
+
+build mp_os_assctv_cntnr_hsh_tbl_tests.exe: phony associative_container\hash_table\tests\mp_os_assctv_cntnr_hsh_tbl_tests.exe
+
 build mp_os_assctv_cntnr_srch_tr: phony associative_container\search_tree\mp_os_assctv_cntnr_srch_tr.lib
 
 build mp_os_assctv_cntnr_srch_tr.lib: phony associative_container\search_tree\mp_os_assctv_cntnr_srch_tr.lib
@@ -4705,6 +5671,38 @@ build mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests.exe: phony associative
 build mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests: phony associative_container\search_tree\binary_search_tree\tests\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.exe
 
 build mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.exe: phony associative_container\search_tree\binary_search_tree\tests\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.exe
+
+build mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr: phony associative_container\search_tree\indexing_tree\b_plus_tree\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr.lib
+
+build mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr.lib: phony associative_container\search_tree\indexing_tree\b_plus_tree\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr.lib
+
+build mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests: phony associative_container\search_tree\indexing_tree\b_plus_tree\tests\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests.exe
+
+build mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests.exe: phony associative_container\search_tree\indexing_tree\b_plus_tree\tests\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests.exe
+
+build mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr: phony associative_container\search_tree\indexing_tree\b_star_plus_tree\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr.lib
+
+build mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr.lib: phony associative_container\search_tree\indexing_tree\b_star_plus_tree\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr.lib
+
+build mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests: phony associative_container\search_tree\indexing_tree\b_star_plus_tree\tests\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.exe
+
+build mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.exe: phony associative_container\search_tree\indexing_tree\b_star_plus_tree\tests\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.exe
+
+build mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr: phony associative_container\search_tree\indexing_tree\b_star_tree\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr.lib
+
+build mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr.lib: phony associative_container\search_tree\indexing_tree\b_star_tree\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr.lib
+
+build mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests: phony associative_container\search_tree\indexing_tree\b_star_tree\tests\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests.exe
+
+build mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests.exe: phony associative_container\search_tree\indexing_tree\b_star_tree\tests\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests.exe
+
+build mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr: phony associative_container\search_tree\indexing_tree\b_tree\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr.lib
+
+build mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr.lib: phony associative_container\search_tree\indexing_tree\b_tree\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr.lib
+
+build mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests: phony associative_container\search_tree\indexing_tree\b_tree\tests\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests.exe
+
+build mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests.exe: phony associative_container\search_tree\indexing_tree\b_tree\tests\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests.exe
 
 build mp_os_cmmn: phony common\mp_os_cmmn.lib
 
@@ -4959,14 +5957,28 @@ build arithmetic\fraction\tests\all: phony
 #############################################
 # Folder: E:/proj/mp_os_labs/out/build/x64-Debug/associative_container
 
-build associative_container\all: phony associative_container\mp_os_assctv_cntnr.lib associative_container\search_tree\all
+build associative_container\all: phony associative_container\mp_os_assctv_cntnr.lib associative_container\hash_table\all associative_container\search_tree\all
+
+# =============================================================================
+
+#############################################
+# Folder: E:/proj/mp_os_labs/out/build/x64-Debug/associative_container/hash_table
+
+build associative_container\hash_table\all: phony associative_container\hash_table\mp_os_assctv_cntnr_hsh_tbl.lib associative_container\hash_table\tests\all
+
+# =============================================================================
+
+#############################################
+# Folder: E:/proj/mp_os_labs/out/build/x64-Debug/associative_container/hash_table/tests
+
+build associative_container\hash_table\tests\all: phony associative_container\hash_table\tests\mp_os_assctv_cntnr_hsh_tbl_tests.exe
 
 # =============================================================================
 
 #############################################
 # Folder: E:/proj/mp_os_labs/out/build/x64-Debug/associative_container/search_tree
 
-build associative_container\search_tree\all: phony associative_container\search_tree\mp_os_assctv_cntnr_srch_tr.lib associative_container\search_tree\binary_search_tree\all
+build associative_container\search_tree\all: phony associative_container\search_tree\mp_os_assctv_cntnr_srch_tr.lib associative_container\search_tree\binary_search_tree\all associative_container\search_tree\indexing_tree\all
 
 # =============================================================================
 
@@ -5041,6 +6053,69 @@ build associative_container\search_tree\binary_search_tree\tests\all: phony asso
 # =============================================================================
 
 #############################################
+# Folder: E:/proj/mp_os_labs/out/build/x64-Debug/associative_container/search_tree/indexing_tree
+
+build associative_container\search_tree\indexing_tree\all: phony associative_container\search_tree\indexing_tree\b_plus_tree\all associative_container\search_tree\indexing_tree\b_star_plus_tree\all associative_container\search_tree\indexing_tree\b_star_tree\all associative_container\search_tree\indexing_tree\b_tree\all
+
+# =============================================================================
+
+#############################################
+# Folder: E:/proj/mp_os_labs/out/build/x64-Debug/associative_container/search_tree/indexing_tree/b_plus_tree
+
+build associative_container\search_tree\indexing_tree\b_plus_tree\all: phony associative_container\search_tree\indexing_tree\b_plus_tree\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr.lib associative_container\search_tree\indexing_tree\b_plus_tree\tests\all
+
+# =============================================================================
+
+#############################################
+# Folder: E:/proj/mp_os_labs/out/build/x64-Debug/associative_container/search_tree/indexing_tree/b_plus_tree/tests
+
+build associative_container\search_tree\indexing_tree\b_plus_tree\tests\all: phony associative_container\search_tree\indexing_tree\b_plus_tree\tests\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests.exe
+
+# =============================================================================
+
+#############################################
+# Folder: E:/proj/mp_os_labs/out/build/x64-Debug/associative_container/search_tree/indexing_tree/b_star_plus_tree
+
+build associative_container\search_tree\indexing_tree\b_star_plus_tree\all: phony associative_container\search_tree\indexing_tree\b_star_plus_tree\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr.lib associative_container\search_tree\indexing_tree\b_star_plus_tree\tests\all
+
+# =============================================================================
+
+#############################################
+# Folder: E:/proj/mp_os_labs/out/build/x64-Debug/associative_container/search_tree/indexing_tree/b_star_plus_tree/tests
+
+build associative_container\search_tree\indexing_tree\b_star_plus_tree\tests\all: phony associative_container\search_tree\indexing_tree\b_star_plus_tree\tests\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.exe
+
+# =============================================================================
+
+#############################################
+# Folder: E:/proj/mp_os_labs/out/build/x64-Debug/associative_container/search_tree/indexing_tree/b_star_tree
+
+build associative_container\search_tree\indexing_tree\b_star_tree\all: phony associative_container\search_tree\indexing_tree\b_star_tree\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr.lib associative_container\search_tree\indexing_tree\b_star_tree\tests\all
+
+# =============================================================================
+
+#############################################
+# Folder: E:/proj/mp_os_labs/out/build/x64-Debug/associative_container/search_tree/indexing_tree/b_star_tree/tests
+
+build associative_container\search_tree\indexing_tree\b_star_tree\tests\all: phony associative_container\search_tree\indexing_tree\b_star_tree\tests\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests.exe
+
+# =============================================================================
+
+#############################################
+# Folder: E:/proj/mp_os_labs/out/build/x64-Debug/associative_container/search_tree/indexing_tree/b_tree
+
+build associative_container\search_tree\indexing_tree\b_tree\all: phony associative_container\search_tree\indexing_tree\b_tree\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr.lib associative_container\search_tree\indexing_tree\b_tree\tests\all
+
+# =============================================================================
+
+#############################################
+# Folder: E:/proj/mp_os_labs/out/build/x64-Debug/associative_container/search_tree/indexing_tree/b_tree/tests
+
+build associative_container\search_tree\indexing_tree\b_tree\tests\all: phony associative_container\search_tree\indexing_tree\b_tree\tests\mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests.exe
+
+# =============================================================================
+
+#############################################
 # Folder: E:/proj/mp_os_labs/out/build/x64-Debug/common
 
 build common\all: phony common\mp_os_cmmn.lib
@@ -5094,14 +6169,14 @@ build logger\server_logger\tests\all: phony logger\server_logger\tests\mp_os_lgg
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDependentOption.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckLibraryExists.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\ExternalProject.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\ExternalProject\shared_internal_commands.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FetchContent.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FetchContent\CMakeLists.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindPackageMessage.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindPython.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindPython\Support.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindThreads.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\GNUInstallDirs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles\3.28.0-msvc1\CMakeCCompiler.cmake CMakeFiles\3.28.0-msvc1\CMakeCXXCompiler.cmake CMakeFiles\3.28.0-msvc1\CMakeRCCompiler.cmake CMakeFiles\3.28.0-msvc1\CMakeSystem.cmake E$:\proj\mp_os_labs\CMakeLists.txt E$:\proj\mp_os_labs\allocator\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator_boundary_tags\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator_boundary_tags\tests\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator_buddies_system\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator_buddies_system\tests\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator_global_heap\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator_global_heap\tests\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator_red_black_tree\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator_red_black_tree\tests\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator_sorted_list\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator_sorted_list\tests\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\big_integer\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\big_integer\tests\Burnikel_Ziegler_division\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\big_integer\tests\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\big_integer\tests\Karatsuba_multiplication\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\big_integer\tests\Newton_division\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\big_integer\tests\Schonhage_Strassen_multiplication\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\big_integer\tests\big_integer\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\big_integer\tests\trivial_division\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\big_integer\tests\trivial_multiplication\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\continued_fraction\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\continued_fraction\tests\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\fraction\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\fraction\tests\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\AVL_tree\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\AVL_tree\tests\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\red_black_tree\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\red_black_tree\tests\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\scapegoat_tree\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\scapegoat_tree\tests\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\splay_tree\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\splay_tree\tests\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\tests\CMakeLists.txt E$:\proj\mp_os_labs\common\CMakeLists.txt E$:\proj\mp_os_labs\logger\CMakeLists.txt E$:\proj\mp_os_labs\logger\client_logger\CMakeLists.txt E$:\proj\mp_os_labs\logger\client_logger\tests\CMakeLists.txt E$:\proj\mp_os_labs\logger\client_logger\tests\config.json E$:\proj\mp_os_labs\logger\logger\CMakeLists.txt E$:\proj\mp_os_labs\logger\server_logger\CMakeLists.txt E$:\proj\mp_os_labs\logger\server_logger\tests\CMakeLists.txt _deps\googletest-src\CMakeLists.txt _deps\googletest-src\googlemock\CMakeLists.txt _deps\googletest-src\googlemock\cmake\gmock.pc.in _deps\googletest-src\googlemock\cmake\gmock_main.pc.in _deps\googletest-src\googletest\CMakeLists.txt _deps\googletest-src\googletest\cmake\Config.cmake.in _deps\googletest-src\googletest\cmake\gtest.pc.in _deps\googletest-src\googletest\cmake\gtest_main.pc.in _deps\googletest-src\googletest\cmake\internal_utils.cmake _deps\json-src\CMakeLists.txt _deps\json-src\cmake\config.cmake.in _deps\json-src\cmake\nlohmann_jsonConfigVersion.cmake.in _deps\json-src\cmake\pkg-config.pc.in
+build build.ninja: RERUN_CMAKE | C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDependentOption.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckLibraryExists.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\ExternalProject.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\ExternalProject\shared_internal_commands.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FetchContent.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FetchContent\CMakeLists.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindPackageMessage.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindPython.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindPython\Support.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindThreads.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\GNUInstallDirs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles\3.28.0-msvc1\CMakeCCompiler.cmake CMakeFiles\3.28.0-msvc1\CMakeCXXCompiler.cmake CMakeFiles\3.28.0-msvc1\CMakeRCCompiler.cmake CMakeFiles\3.28.0-msvc1\CMakeSystem.cmake E$:\proj\mp_os_labs\CMakeLists.txt E$:\proj\mp_os_labs\allocator\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator_boundary_tags\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator_boundary_tags\tests\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator_buddies_system\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator_buddies_system\tests\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator_global_heap\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator_global_heap\tests\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator_red_black_tree\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator_red_black_tree\tests\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator_sorted_list\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator_sorted_list\tests\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\big_integer\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\big_integer\tests\Burnikel_Ziegler_division\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\big_integer\tests\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\big_integer\tests\Karatsuba_multiplication\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\big_integer\tests\Newton_division\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\big_integer\tests\Schonhage_Strassen_multiplication\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\big_integer\tests\big_integer\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\big_integer\tests\trivial_division\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\big_integer\tests\trivial_multiplication\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\continued_fraction\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\continued_fraction\tests\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\fraction\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\fraction\tests\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\hash_table\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\hash_table\tests\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\AVL_tree\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\AVL_tree\tests\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\red_black_tree\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\red_black_tree\tests\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\scapegoat_tree\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\scapegoat_tree\tests\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\splay_tree\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\splay_tree\tests\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\tests\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\indexing_tree\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\indexing_tree\b_plus_tree\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\indexing_tree\b_plus_tree\tests\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\indexing_tree\b_star_plus_tree\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\indexing_tree\b_star_plus_tree\tests\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\indexing_tree\b_star_tree\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\indexing_tree\b_star_tree\tests\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\indexing_tree\b_tree\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\indexing_tree\b_tree\tests\CMakeLists.txt E$:\proj\mp_os_labs\common\CMakeLists.txt E$:\proj\mp_os_labs\logger\CMakeLists.txt E$:\proj\mp_os_labs\logger\client_logger\CMakeLists.txt E$:\proj\mp_os_labs\logger\client_logger\tests\CMakeLists.txt E$:\proj\mp_os_labs\logger\client_logger\tests\config.json E$:\proj\mp_os_labs\logger\logger\CMakeLists.txt E$:\proj\mp_os_labs\logger\server_logger\CMakeLists.txt E$:\proj\mp_os_labs\logger\server_logger\tests\CMakeLists.txt _deps\googletest-src\CMakeLists.txt _deps\googletest-src\googlemock\CMakeLists.txt _deps\googletest-src\googlemock\cmake\gmock.pc.in _deps\googletest-src\googlemock\cmake\gmock_main.pc.in _deps\googletest-src\googletest\CMakeLists.txt _deps\googletest-src\googletest\cmake\Config.cmake.in _deps\googletest-src\googletest\cmake\gtest.pc.in _deps\googletest-src\googletest\cmake\gtest_main.pc.in _deps\googletest-src\googletest\cmake\internal_utils.cmake _deps\json-src\CMakeLists.txt _deps\json-src\cmake\config.cmake.in _deps\json-src\cmake\nlohmann_jsonConfigVersion.cmake.in _deps\json-src\cmake\pkg-config.pc.in
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDependentOption.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckLibraryExists.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\ExternalProject.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\ExternalProject\shared_internal_commands.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FetchContent.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FetchContent\CMakeLists.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindPackageMessage.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindPython.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindPython\Support.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindThreads.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\GNUInstallDirs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles\3.28.0-msvc1\CMakeCCompiler.cmake CMakeFiles\3.28.0-msvc1\CMakeCXXCompiler.cmake CMakeFiles\3.28.0-msvc1\CMakeRCCompiler.cmake CMakeFiles\3.28.0-msvc1\CMakeSystem.cmake E$:\proj\mp_os_labs\CMakeLists.txt E$:\proj\mp_os_labs\allocator\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator_boundary_tags\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator_boundary_tags\tests\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator_buddies_system\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator_buddies_system\tests\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator_global_heap\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator_global_heap\tests\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator_red_black_tree\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator_red_black_tree\tests\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator_sorted_list\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator_sorted_list\tests\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\big_integer\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\big_integer\tests\Burnikel_Ziegler_division\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\big_integer\tests\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\big_integer\tests\Karatsuba_multiplication\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\big_integer\tests\Newton_division\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\big_integer\tests\Schonhage_Strassen_multiplication\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\big_integer\tests\big_integer\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\big_integer\tests\trivial_division\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\big_integer\tests\trivial_multiplication\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\continued_fraction\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\continued_fraction\tests\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\fraction\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\fraction\tests\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\AVL_tree\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\AVL_tree\tests\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\red_black_tree\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\red_black_tree\tests\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\scapegoat_tree\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\scapegoat_tree\tests\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\splay_tree\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\splay_tree\tests\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\tests\CMakeLists.txt E$:\proj\mp_os_labs\common\CMakeLists.txt E$:\proj\mp_os_labs\logger\CMakeLists.txt E$:\proj\mp_os_labs\logger\client_logger\CMakeLists.txt E$:\proj\mp_os_labs\logger\client_logger\tests\CMakeLists.txt E$:\proj\mp_os_labs\logger\client_logger\tests\config.json E$:\proj\mp_os_labs\logger\logger\CMakeLists.txt E$:\proj\mp_os_labs\logger\server_logger\CMakeLists.txt E$:\proj\mp_os_labs\logger\server_logger\tests\CMakeLists.txt _deps\googletest-src\CMakeLists.txt _deps\googletest-src\googlemock\CMakeLists.txt _deps\googletest-src\googlemock\cmake\gmock.pc.in _deps\googletest-src\googlemock\cmake\gmock_main.pc.in _deps\googletest-src\googletest\CMakeLists.txt _deps\googletest-src\googletest\cmake\Config.cmake.in _deps\googletest-src\googletest\cmake\gtest.pc.in _deps\googletest-src\googletest\cmake\gtest_main.pc.in _deps\googletest-src\googletest\cmake\internal_utils.cmake _deps\json-src\CMakeLists.txt _deps\json-src\cmake\config.cmake.in _deps\json-src\cmake\nlohmann_jsonConfigVersion.cmake.in _deps\json-src\cmake\pkg-config.pc.in: phony
+build C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDependentOption.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckLibraryExists.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\ExternalProject.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\ExternalProject\shared_internal_commands.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FetchContent.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FetchContent\CMakeLists.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindPackageMessage.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindPython.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindPython\Support.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindThreads.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\GNUInstallDirs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles\3.28.0-msvc1\CMakeCCompiler.cmake CMakeFiles\3.28.0-msvc1\CMakeCXXCompiler.cmake CMakeFiles\3.28.0-msvc1\CMakeRCCompiler.cmake CMakeFiles\3.28.0-msvc1\CMakeSystem.cmake E$:\proj\mp_os_labs\CMakeLists.txt E$:\proj\mp_os_labs\allocator\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator_boundary_tags\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator_boundary_tags\tests\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator_buddies_system\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator_buddies_system\tests\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator_global_heap\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator_global_heap\tests\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator_red_black_tree\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator_red_black_tree\tests\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator_sorted_list\CMakeLists.txt E$:\proj\mp_os_labs\allocator\allocator_sorted_list\tests\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\big_integer\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\big_integer\tests\Burnikel_Ziegler_division\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\big_integer\tests\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\big_integer\tests\Karatsuba_multiplication\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\big_integer\tests\Newton_division\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\big_integer\tests\Schonhage_Strassen_multiplication\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\big_integer\tests\big_integer\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\big_integer\tests\trivial_division\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\big_integer\tests\trivial_multiplication\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\continued_fraction\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\continued_fraction\tests\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\fraction\CMakeLists.txt E$:\proj\mp_os_labs\arithmetic\fraction\tests\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\hash_table\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\hash_table\tests\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\AVL_tree\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\AVL_tree\tests\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\red_black_tree\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\red_black_tree\tests\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\scapegoat_tree\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\scapegoat_tree\tests\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\splay_tree\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\splay_tree\tests\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\binary_search_tree\tests\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\indexing_tree\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\indexing_tree\b_plus_tree\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\indexing_tree\b_plus_tree\tests\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\indexing_tree\b_star_plus_tree\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\indexing_tree\b_star_plus_tree\tests\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\indexing_tree\b_star_tree\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\indexing_tree\b_star_tree\tests\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\indexing_tree\b_tree\CMakeLists.txt E$:\proj\mp_os_labs\associative_container\search_tree\indexing_tree\b_tree\tests\CMakeLists.txt E$:\proj\mp_os_labs\common\CMakeLists.txt E$:\proj\mp_os_labs\logger\CMakeLists.txt E$:\proj\mp_os_labs\logger\client_logger\CMakeLists.txt E$:\proj\mp_os_labs\logger\client_logger\tests\CMakeLists.txt E$:\proj\mp_os_labs\logger\client_logger\tests\config.json E$:\proj\mp_os_labs\logger\logger\CMakeLists.txt E$:\proj\mp_os_labs\logger\server_logger\CMakeLists.txt E$:\proj\mp_os_labs\logger\server_logger\tests\CMakeLists.txt _deps\googletest-src\CMakeLists.txt _deps\googletest-src\googlemock\CMakeLists.txt _deps\googletest-src\googlemock\cmake\gmock.pc.in _deps\googletest-src\googlemock\cmake\gmock_main.pc.in _deps\googletest-src\googletest\CMakeLists.txt _deps\googletest-src\googletest\cmake\Config.cmake.in _deps\googletest-src\googletest\cmake\gtest.pc.in _deps\googletest-src\googletest\cmake\gtest_main.pc.in _deps\googletest-src\googletest\cmake\internal_utils.cmake _deps\json-src\CMakeLists.txt _deps\json-src\cmake\config.cmake.in _deps\json-src\cmake\nlohmann_jsonConfigVersion.cmake.in _deps\json-src\cmake\pkg-config.pc.in: phony
 
 
 #############################################

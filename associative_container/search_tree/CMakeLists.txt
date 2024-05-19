@@ -2,13 +2,12 @@ cmake_minimum_required(VERSION 3.21)
 project(mp_os_assctv_cntnr_srch_tr)
 
 add_subdirectory(binary_search_tree)
+add_subdirectory(indexing_tree)
 #add_subdirectory(b_tree)
-#add_subdirectory(indexing_tree)
 add_library(
         mp_os_assctv_cntnr_srch_tr
         include/search_tree.h
-        src/hhh.cpp
-)
+        src/hhh.cpp)
 target_include_directories(
         mp_os_assctv_cntnr_srch_tr
         PUBLIC
