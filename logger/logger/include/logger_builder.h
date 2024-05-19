@@ -9,6 +9,7 @@ class logger_builder
 public:
 
     virtual ~logger_builder() noexcept = default;
+    virtual void set_format(std::string const& new_format) = 0;
 
 public:
 

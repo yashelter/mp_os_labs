@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.21)
 project(mp_os_assctv_cntnr)
 
-add_subdirectory(hash_table)
 add_subdirectory(search_tree)
 add_library(
         mp_os_assctv_cntnr
-        include/associative_container.h)
+        include/associative_container.h
+        src/hhh.cpp)
 target_include_directories(
         mp_os_assctv_cntnr
         PUBLIC
@@ -20,6 +20,6 @@ set_target_properties(
         DESCRIPTION "associative container interface library"
         LANGUAGES CXX
         LINKER_LANGUAGE CXX
-        CXX_STANDARD 14
+        CXX_STANDARD 23
         CXX_STANDARD_REQUIRED ON
         CXX_EXTENSIONS OFF)

@@ -37,8 +37,3 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("E:/proj/mp_os_labs/out/build/x64-Debug/associative_container/search_tree/binary_search_tree/cmake_install.cmake")
 endif()
 
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("E:/proj/mp_os_labs/out/build/x64-Debug/associative_container/search_tree/indexing_tree/cmake_install.cmake")
-endif()
-
