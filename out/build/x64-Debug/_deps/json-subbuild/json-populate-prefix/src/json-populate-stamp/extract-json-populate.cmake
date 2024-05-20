@@ -5,8 +5,8 @@ cmake_minimum_required(VERSION 3.5)
 
 # Make file names absolute:
 #
-get_filename_component(filename "E:/proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json.tar.xz" ABSOLUTE)
-get_filename_component(directory "E:/proj/mp_os_labs/out/build/x64-Debug/_deps/json-src" ABSOLUTE)
+get_filename_component(filename "C:/Proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json.tar.xz" ABSOLUTE)
+get_filename_component(directory "C:/Proj/mp_os_labs/out/build/x64-Debug/_deps/json-src" ABSOLUTE)
 
 message(STATUS "extracting...
      src='${filename}'

@@ -1,8 +1,8 @@
-# Install script for directory: E:/proj/mp_os_labs/allocator/allocator_red_black_tree/tests
+# Install script for directory: C:/Proj/mp_os_labs/allocator/allocator_red_black_tree/tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "E:/proj/mp_os_labs/out/install/x64-Debug")
+  set(CMAKE_INSTALL_PREFIX "C:/Proj/mp_os_labs/out/install/x64-Debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

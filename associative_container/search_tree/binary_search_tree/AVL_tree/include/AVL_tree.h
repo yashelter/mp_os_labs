@@ -11,82 +11,82 @@ class AVL_tree final:
 {
 
 private:
-    
+
     struct node final:
         binary_search_tree<tkey, tvalue>::node
     {
-        
+
         // TODO: think about it!
-        
+
     };
 
 public:
-    
+
     struct iterator_data final:
         public binary_search_tree<tkey, tvalue>::iterator_data
     {
-    
+
     public:
-        
+
         size_t subtree_height;
-    
+
     public:
-        
+
         explicit iterator_data(
             unsigned int depth,
             tkey const &key,
             tvalue const &value,
             size_t subtree_height);
-        
+
     };
 
 private:
-    
+
     class insertion_template_method final:
         public binary_search_tree<tkey, tvalue>::insertion_template_method
     {
-    
+
     public:
-        
+
         explicit insertion_template_method(
             AVL_tree<tkey, tvalue> *tree,
             typename binary_search_tree<tkey, tvalue>::insertion_of_existent_key_attempt_strategy insertion_strategy);
-    
+
     private:
-        
+
         // TODO: think about it!
-        
+
     };
-    
+
     class obtaining_template_method final:
         public binary_search_tree<tkey, tvalue>::obtaining_template_method
     {
-    
+
     public:
-        
+
         explicit obtaining_template_method(
             AVL_tree<tkey, tvalue> *tree);
-        
+
         // TODO: think about it!
-        
+
     };
-    
+
     class disposal_template_method final:
         public binary_search_tree<tkey, tvalue>::disposal_template_method
     {
-    
+
     public:
-        
+
         explicit disposal_template_method(
             AVL_tree<tkey, tvalue> *tree,
             typename binary_search_tree<tkey, tvalue>::disposal_of_nonexistent_key_attempt_strategy disposal_strategy);
-        
+
         // TODO: think about it!
-        
+
     };
 
 public:
-    
+
     explicit AVL_tree(
         allocator *allocator = nullptr,
         logger *logger = nullptr,
@@ -94,21 +94,21 @@ public:
         typename binary_search_tree<tkey, tvalue>::disposal_of_nonexistent_key_attempt_strategy disposal_strategy = binary_search_tree<tkey, tvalue>::disposal_of_nonexistent_key_attempt_strategy::throw_an_exception);
 
 public:
-    
+
     ~AVL_tree() noexcept final;
-    
+
     AVL_tree(
         AVL_tree<tkey, tvalue> const &other);
-    
+
     AVL_tree<tkey, tvalue> &operator=(
         AVL_tree<tkey, tvalue> const &other);
-    
+
     AVL_tree(
         AVL_tree<tkey, tvalue> &&other) noexcept;
-    
+
     AVL_tree<tkey, tvalue> &operator=(
         AVL_tree<tkey, tvalue> &&other) noexcept;
-    
+
 };
 
 template<

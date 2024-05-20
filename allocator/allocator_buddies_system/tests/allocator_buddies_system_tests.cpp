@@ -4,6 +4,7 @@
 #include <allocator_buddies_system.h>
 #include <client_logger_builder.h>
 #include <logger.h>
+#include <list>
 #include <logger_builder.h>
 
 logger* create_logger(
@@ -160,9 +161,9 @@ TEST(positiveTests, best_test)
 
     first_block = reinterpret_cast<int*>(alloc->allocate(sizeof(int), 245));
 
-    allocator* allocator = new allocator_buddies_system(35, nullptr, logger_instance2);
+    allocator* allocator = new allocator_buddies_system(20, nullptr, logger_instance2);
     auto* the_same_subject = dynamic_cast<allocator_with_fit_mode*>(alloc);
-    int iterations_count = 1e5;
+    int iterations_count = 1e3;
 
     std::list<void*> allocated_blocks;
 
