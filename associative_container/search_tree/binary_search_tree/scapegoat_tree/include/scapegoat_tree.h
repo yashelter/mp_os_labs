@@ -106,7 +106,7 @@ tvalue scapegoat_tree<tkey, tvalue>::dispose_inner(std::stack<typename binary_se
 
         tmp->right_subtree = current_node->right_subtree;
 
-        if (!saved_path.empty())
+        if (!saved_path.empty()) // we don't go to right subtree
         {
             node_path.push(&(*node_path.top())->left_subtree);
             saved_path.pop();
