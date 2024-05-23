@@ -34,7 +34,19 @@ target_link_libraries(
 target_link_libraries(
         mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr_tests
         PUBLIC
+        mp_os_allctr_allctr_srtd_lst)
+target_link_libraries(
+        mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr_tests
+        PUBLIC
+        mp_os_allctr_allctr_bdds_sstm)
+target_link_libraries(
+        mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr_tests
+        PUBLIC
         mp_os_allctr_allctr_glbl_hp)
+target_link_libraries(
+        mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr_tests
+        PUBLIC
+        mp_os_allctr_allctr_bndr_tgs)
 target_link_libraries(
         mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr_tests
         PUBLIC
@@ -47,7 +59,7 @@ set_target_properties(
         mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr_tests PROPERTIES
         LANGUAGES CXX
         LINKER_LANGUAGE CXX
-        CXX_STANDARD 14
+        CXX_STANDARD 23
         CXX_STANDARD_REQUIRED ON
         CXX_EXTENSIONS OFF
         VERSION 1.0

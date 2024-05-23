@@ -47,12 +47,10 @@ public:
         if (first > second)
         {
             return 1;
-        }
-        else if (first < second)
+        } else if (first < second)
         {
             return -1;
-        }
-        else
+        } else
         {
             return 0;
         }
@@ -101,7 +99,8 @@ bool infix_iterator_test(
     for (auto const &item: expected_result)
     {
         if ((*it)->depth != item.depth || (*it)->key != item.key || (*it)->value != item.value ||
-            reinterpret_cast<typename AVL_tree<tkey, tvalue>::iterator_data const *>(*it)->subtree_height != item.subtree_height)
+            reinterpret_cast<typename AVL_tree<tkey, tvalue>::iterator_data const *>(*it)->subtree_height !=
+            item.subtree_height)
         {
             return false;
         }
@@ -125,7 +124,8 @@ bool prefix_iterator_test(
     for (auto const &item: expected_result)
     {
         if ((*it)->depth != item.depth || (*it)->key != item.key || (*it)->value != item.value ||
-            reinterpret_cast<typename AVL_tree<tkey, tvalue>::iterator_data const *>(*it)->subtree_height != item.subtree_height)
+            reinterpret_cast<typename AVL_tree<tkey, tvalue>::iterator_data const *>(*it)->subtree_height !=
+            item.subtree_height)
         {
             return false;
         }
@@ -148,7 +148,8 @@ bool postfix_iterator_test(
     for (auto const &item: expected_result)
     {
         if ((*it)->depth != item.depth || (*it)->key != item.key || (*it)->value != item.value ||
-            reinterpret_cast<typename AVL_tree<tkey, tvalue>::iterator_data const *>(*it)->subtree_height != item.subtree_height)
+            reinterpret_cast<typename AVL_tree<tkey, tvalue>::iterator_data const *>(*it)->subtree_height !=
+            item.subtree_height)
         {
             return false;
         }
@@ -585,7 +586,7 @@ TEST(AVLTreePositiveTests, test11)
 
     search_tree<int, std::string> *avl = new AVL_tree<int, std::string>(key_comparer(), nullptr, logger);
 
-    auto d = static_cast<AVL_tree<int, std::string>*>(avl)->begin_prefix();
+    auto d = static_cast<AVL_tree<int, std::string> *>(avl)->begin_prefix();
 
     avl->insert(6, "l");
     avl->insert(8, "c");
@@ -596,15 +597,17 @@ TEST(AVLTreePositiveTests, test11)
     avl->insert(4, "b");
     avl->insert(18, "e");
 
-    std::vector<associative_container<int, std::string>::key_value_pair> actual_result = avl->obtain_between(2, 10, true, false);
+    std::vector<associative_container<int, std::string>::key_value_pair> actual_result = avl->obtain_between(2, 10,
+                                                                                                             true,
+                                                                                                             false);
 
     std::vector<associative_container<int, std::string>::key_value_pair> expected_result =
             {
-                    { 2, "e" },
-                    { 4, "b" },
-                    { 6, "l" },
-                    { 8, "c" },
-                    { 9, "h" }
+                    {2, "e"},
+                    {4, "b"},
+                    {6, "l"},
+                    {8, "c"},
+                    {9, "h"}
             };
 
     EXPECT_TRUE(compare_results(expected_result, actual_result));

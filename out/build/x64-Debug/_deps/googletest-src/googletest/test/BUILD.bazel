@@ -57,7 +57,7 @@ cc_test(
             "googletest-param-test-test.cc",
             "googletest-param-test2-test.cc",
             "googletest-catch-exceptions-test_.cc",
-            "googletest-color-test_.cc",
+            "googletest-_color-test_.cc",
             "googletest-env-var-test_.cc",
             "googletest-failfast-unittest_.cc",
             "googletest-filter-unittest_.cc",
@@ -205,17 +205,17 @@ py_test(
 )
 
 cc_binary(
-    name = "googletest-color-test_",
+    name = "googletest-_color-test_",
     testonly = 1,
-    srcs = ["googletest-color-test_.cc"],
+    srcs = ["googletest-_color-test_.cc"],
     deps = ["//:gtest"],
 )
 
 py_test(
-    name = "googletest-color-test",
+    name = "googletest-_color-test",
     size = "small",
-    srcs = ["googletest-color-test.py"],
-    data = [":googletest-color-test_"],
+    srcs = ["googletest-_color-test.py"],
+    data = [":googletest-_color-test_"],
     deps = [":gtest_test_utils"],
 )
 
