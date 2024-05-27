@@ -14,7 +14,8 @@ FetchContent_MakeAvailable(
 
 add_executable(
         mp_os_arthmtc_bg_intgr_tests_Newton_dvsn
-        Newton_division_tests.cpp)
+        Newton_division_tests.cpp
+        ../../include/big_int.h)
 target_link_libraries(
         mp_os_arthmtc_bg_intgr_tests_Newton_dvsn
         PRIVATE
