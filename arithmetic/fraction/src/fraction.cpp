@@ -8,6 +8,10 @@ fraction::fraction(
         _denominator(denominator)
 {
 	simplify(*this);
+	if (_denominator == 0_bi)
+	{
+		throw std::invalid_argument("Fraction is zero in denominator");
+	}
 }
 
 
@@ -133,21 +137,30 @@ std::istream &operator>>(
     std::istream &stream,
     fraction &obj)
 {
+	std::string s, str;
 	std::string a, b;
-	char slash;
-	stream >> a;
+	int i = 0;
+	stream >> s;
 
-	// Считываем разделитель '/'
-	stream >> slash;
-	if (slash != '/') {
-		stream.setstate(std::ios::failbit); // Устанавливаем флаг ошибки
-		return stream;
+	std::stringstream ss(s);
+
+	// Use while loop to check the getline() function condition.
+	while (getline(ss, str, '/'))
+	{
+		if (i == 0)
+		{
+			a = str;
+		}
+		if (i == 1)
+		{
+			b = str;
+		}
+		++i;
 	}
-
-	stream >> b;
-	obj = fraction(big_int(a), big_int(b));
+	obj = fraction(big_int(a),big_int(b));
 	return stream;
 }
+
 fraction fraction::sin(fraction const &epsilon) const
 {
 	fraction result = fraction(big_int("0"), big_int("1"));
@@ -192,8 +205,7 @@ fraction fraction::tg(fraction const &epsilon) const
 	return result;
 }
 
-fraction fraction::ctg(
-	fraction const &epsilon) const
+fraction fraction::ctg(fraction const &epsilon) const
 {
 	fraction sin_value = this->sin(epsilon / fraction(big_int("2"), big_int("1")));
 	fraction cos_value = this->cos(epsilon / fraction(big_int("2"), big_int("1")));
@@ -201,8 +213,7 @@ fraction fraction::ctg(
 	return result;
 }
 
-fraction fraction::sec(
-	fraction const &epsilon) const
+fraction fraction::sec(fraction const &epsilon) const
 {
 
 	fraction cos_value = this->cos(epsilon / fraction(big_int("2"), big_int("1")));
@@ -210,8 +221,7 @@ fraction fraction::sec(
 	return result;
 }
 
-fraction fraction::cosec(
-	fraction const &epsilon) const
+fraction fraction::cosec(fraction const &epsilon) const
 {
 	fraction sin_value = this->sin(epsilon / fraction(big_int("2"), big_int("1")));
 	fraction result = fraction(big_int("1"), big_int("1"))/ sin_value;
@@ -247,34 +257,38 @@ fraction fraction::arcsin(
 	return result;
 }
 
-fraction fraction::arccos(
-    fraction const &epsilon) const
+fraction fraction::arccos(fraction const &epsilon) const
 {
-    throw not_implemented("fraction fraction::arccos(fraction const &) const", "your code should be here...");
+	fraction temp = ((fraction(1_bi, 1_bi) - (*this)) * fraction(1_bi, 2_bi)).root(2, epsilon);
+    return fraction(2_bi, 1_bi) * (temp).arcsin(epsilon);
 }
 
-fraction fraction::arctg(
-    fraction const &epsilon) const
+fraction fraction::arctg(fraction const &epsilon) const
 {
-    throw not_implemented("fraction fraction::arctg(fraction const &) const", "your code should be here...");
+	fraction num = fraction(*this);
+	fraction den_without_root = this->pow(2) + fraction(big_int("1"), big_int("1"));
+	fraction den = den_without_root.root(2, epsilon);
+	fraction drob = num / den;
+	fraction arcsin_value = drob.arcsin(epsilon);
+	return arcsin_value;
 }
 
-fraction fraction::arcctg(
-    fraction const &epsilon) const
+
+fraction fraction::arcctg(fraction const &epsilon) const
 {
-    throw not_implemented("fraction fraction::arcctg(fraction const &) const", "your code should be here...");
+	fraction t = ((*this) * (*this) + fraction(1_bi, 1_bi));
+	fraction temp = (*this) * ((fraction(1_bi, 1_bi) / (t.root(2, epsilon))));
+    return temp.arccos(epsilon);
 }
 
-fraction fraction::arcsec(
-    fraction const &epsilon) const
+fraction fraction::arcsec(fraction const &epsilon) const
 {
-    throw not_implemented("fraction fraction::arcsec(fraction const &) const", "your code should be here...");
+	return (fraction(1_bi, 1_bi) / (*this)).arccos(epsilon);
 }
 
-fraction fraction::arccosec(
-    fraction const &epsilon) const
+fraction fraction::arccosec(fraction const &epsilon) const
 {
-    throw not_implemented("fraction fraction::arccosec(fraction const &) const", "your code should be here...");
+    return (fraction(1_bi, 1_bi) / (*this)).arcsin(epsilon);
 }
 
 fraction fraction::pow(size_t degree) const
@@ -308,7 +322,7 @@ fraction fraction::root(
     fraction const &epsilon) const
 {
 	fraction x = (*this);
-	bool swapped;
+	bool swapped = false;
 	if (x._numerator > x._denominator)
 	{
 		std::swap(x._numerator, x._denominator);
@@ -320,42 +334,72 @@ fraction fraction::root(
 	fraction result = fraction(big_int("1"), big_int("1"));
 	fraction term = fraction(big_int("2"), big_int("1")) * epsilon;
 	size_t iteration = 1;
+	fraction precalc = alpha;
 
 	while (term.abs() > epsilon)
 	{
-		fraction precalc = alpha;
-		for (int i = 1; i < iteration; ++i)
-		{
-			precalc *= (alpha - fraction(big_int(std::to_string(i)), 1_bi));
-		}
-
 		term = precalc;
 		term *= x.pow(iteration);
 		term *= fraction(1_bi, big_int::factorial(iteration));
 		//std::cout<<term << '\n';
 		result += term;
+		precalc *= (alpha - fraction(big_int(std::to_string(iteration)), 1_bi));
 		++iteration;
+
 	}
 	if (swapped)
 	{
 		std::swap(result._denominator, result._numerator);
 	}
+	simplify(result);
 	return result;
 }
 
 fraction fraction::log2(fraction const &epsilon) const
 {
-    throw not_implemented("fraction fraction::log2(fraction const &) const", "your code should be here...");
+    return ln(epsilon) / (fraction(2_bi, 1_bi)).ln(epsilon);
 }
 
 fraction fraction::ln(fraction const &epsilon) const
 {
-    throw not_implemented("fraction fraction::ln(fraction const &) const", "your code should be here...");
+	fraction x = (*this);
+
+
+	bool swapped = false;
+	if (x._numerator > x._denominator)
+	{
+		std::swap(x._numerator, x._denominator);
+		swapped = true;
+	}
+	x -= fraction(big_int("1"), big_int("1"));
+
+	fraction result = fraction(big_int("0"), big_int("1"));
+	fraction term = fraction(big_int("2"), big_int("1")) * epsilon;
+	size_t iteration = 1;
+	int i = 1;
+
+	while (term.abs() > epsilon)
+	{
+		term =  x.pow(iteration);
+		term *= fraction(big_int(std::to_string(i)), iteration);
+
+		result += term;
+		++iteration;
+		i *= -1;
+	}
+	if (swapped)
+	{
+		result *= fraction(big_int("-1"), big_int("1"));
+	}
+	simplify(result);
+	return result;
 }
 
 fraction fraction::lg(fraction const &epsilon) const
 {
-    throw not_implemented("fraction fraction::lg(fraction const &) const", "your code should be here...");
+	fraction temp = ln(epsilon) / (fraction(10_bi, 1_bi)).ln(epsilon);
+	simplify(temp);
+	return temp;
 }
 
 void fraction::simplify(fraction &f)
