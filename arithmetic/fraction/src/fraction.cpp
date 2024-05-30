@@ -162,7 +162,6 @@ fraction fraction::sin(fraction const &epsilon) const
 		result += term;
 		++iteration;
 		i *= -1;
-		std::cout << term._numerator  << ' '  << term._denominator << std::endl;
 	}
 	return result;
 }
@@ -181,38 +180,71 @@ fraction fraction::cos(fraction const &epsilon) const
 		result += term;
 		++iteration;
 		i *= -1;
-		std::cout << term._numerator  << ' '  << term._denominator << std::endl;
 	}
 	return result;
 }
 
 fraction fraction::tg(fraction const &epsilon) const
 {
-    throw not_implemented("fraction fraction::tg(fraction const &) const", "your code should be here...");
+	fraction sin_value = this->sin(epsilon / fraction(big_int("2"), big_int("1")));
+	fraction cos_value = this->cos(epsilon / fraction(big_int("2"), big_int("1")));
+	fraction result = sin_value / cos_value;
+	return result;
 }
 
 fraction fraction::ctg(
-    fraction const &epsilon) const
+	fraction const &epsilon) const
 {
-    throw not_implemented("fraction fraction::ctg(fraction const &) const", "your code should be here...");
+	fraction sin_value = this->sin(epsilon / fraction(big_int("2"), big_int("1")));
+	fraction cos_value = this->cos(epsilon / fraction(big_int("2"), big_int("1")));
+	fraction result = cos_value / sin_value;
+	return result;
 }
 
 fraction fraction::sec(
-    fraction const &epsilon) const
+	fraction const &epsilon) const
 {
-    throw not_implemented("fraction fraction::sec(fraction const &) const", "your code should be here...");
+
+	fraction cos_value = this->cos(epsilon / fraction(big_int("2"), big_int("1")));
+	fraction result = fraction(big_int("1"), big_int("1"))/ cos_value;
+	return result;
 }
 
 fraction fraction::cosec(
-    fraction const &epsilon) const
+	fraction const &epsilon) const
 {
-    throw not_implemented("fraction fraction::cosec(fraction const &) const", "your code should be here...");
+	fraction sin_value = this->sin(epsilon / fraction(big_int("2"), big_int("1")));
+	fraction result = fraction(big_int("1"), big_int("1"))/ sin_value;
+	return result;
 }
 
 fraction fraction::arcsin(
     fraction const &epsilon) const
 {
-    throw not_implemented("fraction fraction::arcsin(fraction const &) const", "your code should be here...");
+	fraction result =  *this;
+	fraction term = fraction(1_bi, 1_bi);
+	size_t iteration = 1;
+
+	while (term.abs() > epsilon)
+	{
+		size_t precalc = 1;
+		for (size_t i = 1; i < 2 * i - 1; i+=2)
+		{
+			precalc *= i;
+		}
+
+		term = fraction(2_bi, 1_bi).pow(iteration);
+		term *= fraction(big_int::factorial(iteration), 1_bi);
+		term *= fraction((2 * iteration + 1), 1_bi);
+		term = fraction(1_bi, 1_bi) / term;
+
+		term *= fraction(precalc, 1_bi);
+		term *= pow(2 * iteration + 1);
+
+		result += term;
+		++iteration;
+	}
+	return result;
 }
 
 fraction fraction::arccos(
@@ -275,7 +307,40 @@ fraction fraction::root(
     size_t degree,
     fraction const &epsilon) const
 {
-    throw not_implemented("fraction fraction::root(size_t, fraction const &) const", "your code should be here...");
+	fraction x = (*this);
+	bool swapped;
+	if (x._numerator > x._denominator)
+	{
+		std::swap(x._numerator, x._denominator);
+		swapped = true;
+	}
+	fraction alpha = fraction(1_bi, big_int(std::to_string(degree)));
+	x -= fraction(big_int("1"), big_int("1"));
+
+	fraction result = fraction(big_int("1"), big_int("1"));
+	fraction term = fraction(big_int("2"), big_int("1")) * epsilon;
+	size_t iteration = 1;
+
+	while (term.abs() > epsilon)
+	{
+		fraction precalc = alpha;
+		for (int i = 1; i < iteration; ++i)
+		{
+			precalc *= (alpha - fraction(big_int(std::to_string(i)), 1_bi));
+		}
+
+		term = precalc;
+		term *= x.pow(iteration);
+		term *= fraction(1_bi, big_int::factorial(iteration));
+		//std::cout<<term << '\n';
+		result += term;
+		++iteration;
+	}
+	if (swapped)
+	{
+		std::swap(result._denominator, result._numerator);
+	}
+	return result;
 }
 
 fraction fraction::log2(fraction const &epsilon) const

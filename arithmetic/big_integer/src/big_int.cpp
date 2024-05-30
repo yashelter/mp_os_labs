@@ -1,7 +1,5 @@
 #include "../include/big_int.h"
 
-
-
 std::strong_ordering big_int::operator<=>(const big_int &other) const noexcept
 {
 	return compare(other, 0);

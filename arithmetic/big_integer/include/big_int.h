@@ -55,27 +55,21 @@ class big_int
 	static const constexpr unsigned int mask = __detail::generate_half_mask();
 
 	static void plus_assign_no_sign(std::vector<unsigned int>& lhs, const std::vector<unsigned int>& rhs, size_t shift = 0);
-
 	static void minus_assign_no_sign(std::vector<unsigned int>& lhs, const std::vector<unsigned int>& rhs, size_t shift = 0);
-
 	void minus_assign_no_sign_reverse(const std::vector<unsigned int>& lhs, std::vector<unsigned int>& rhs, size_t shift = 0);
-
 	void multiply_assign_no_sign(std::vector<unsigned int>& lhs, const std::vector<unsigned int>& rhs) const;
 
 	std::vector<unsigned int> multiply_common(const std::vector<unsigned int>& lhs, const std::vector<unsigned int>& rhs) const;
-
 	std::vector<unsigned int> multiply_karatsuba(const std::vector<unsigned int>& lhs, const std::vector<unsigned int>& rhs) const;
 
 	void divide_assign_no_sign(std::vector<unsigned int>& lhs, const std::vector<unsigned int>& rhs) const;
 
 	std::vector<unsigned int> divide_common(const std::vector<unsigned int>& lhs, const std::vector<unsigned int>& rhs) const;
-
 	std::vector<unsigned int> divide_newton(const std::vector<unsigned int>& lhs, const std::vector<unsigned int>& rhs) const;
 
 	void optimise() noexcept; // erases leading zeros, if number equals 0 sets _sign to true
 
 	static std::strong_ordering compare_no_sign(const std::vector<unsigned int>& lhs, const std::vector<unsigned int>& rhs, size_t shift = 0) noexcept;
-
 	std::strong_ordering compare(const big_int& other, size_t shift = 0) const noexcept; // shifts other right by _digits(2^(8*sizeof(unsigned int)))
 
 	bool need_karatsuba() const noexcept;
