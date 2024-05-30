@@ -54,7 +54,7 @@ class big_int
 
 	static const constexpr unsigned int mask = __detail::generate_half_mask();
 
-	constexpr static void plus_assign_no_sign(std::vector<unsigned int>& lhs, const std::vector<unsigned int>& rhs, size_t shift = 0);
+	static void plus_assign_no_sign(std::vector<unsigned int>& lhs, const std::vector<unsigned int>& rhs, size_t shift = 0);
 
 	static void minus_assign_no_sign(std::vector<unsigned int>& lhs, const std::vector<unsigned int>& rhs, size_t shift = 0);
 
@@ -72,7 +72,7 @@ class big_int
 
 	std::vector<unsigned int> divide_newton(const std::vector<unsigned int>& lhs, const std::vector<unsigned int>& rhs) const;
 
-	constexpr void optimise() noexcept; // erases leading zeros, if number equals 0 sets _sign to true
+	void optimise() noexcept; // erases leading zeros, if number equals 0 sets _sign to true
 
 	static std::strong_ordering compare_no_sign(const std::vector<unsigned int>& lhs, const std::vector<unsigned int>& rhs, size_t shift = 0) noexcept;
 
@@ -102,23 +102,24 @@ class big_int
 
 public:
 
-	constexpr explicit big_int(const std::vector<unsigned int> &digits, bool sign = true);
-	constexpr explicit big_int(std::vector<unsigned int> &&digits, bool sign = true);
+	explicit big_int(const std::vector<unsigned int> &digits, bool sign = true);
+	explicit big_int(std::vector<unsigned int> &&digits, bool sign = true);
 
-	constexpr explicit big_int(const std::string& num, unsigned int radix = 10);
+	explicit big_int(const std::string& num, unsigned int radix = 10);
 
-	constexpr big_int(const big_int&) =default;
-	constexpr big_int(big_int&&) =default;
+	big_int(const big_int&) =default;
 
-	constexpr big_int& operator=(const big_int&) =default;
-	constexpr big_int& operator=(big_int&&) =default;
+	big_int(big_int&&) =default;
+
+	big_int& operator=(const big_int&) =default;
+	big_int& operator=(big_int&&) =default;
 
 	template<std::integral Num>
-	constexpr big_int(Num d);
+	big_int(Num d);
 
-	constexpr big_int();
+	big_int();
 
-	explicit operator bool(); //false if 0 , else true
+	operator bool(); //false if 0 , else true
 
 	big_int& operator++();
 	big_int operator++(int);
@@ -126,9 +127,9 @@ public:
 	big_int& operator--();
 	big_int operator--(int);
 
-	constexpr big_int& operator+=(const big_int& other);
+	big_int& operator+=(const big_int& other);
 
-	constexpr big_int& plus_assign(const big_int& other, size_t shift = 0);
+	big_int& plus_assign(const big_int& other, size_t shift = 0);
 
 
 	big_int& operator-=(const big_int& other);
@@ -151,12 +152,12 @@ public:
 
 	bool operator==(const big_int& other) const noexcept;
 
-	constexpr big_int& operator<<=(size_t shift);
-	constexpr big_int& operator>>=(size_t shift);
+	big_int& operator<<=(size_t shift);
+	big_int& operator>>=(size_t shift);
 
 
-	constexpr big_int operator<<(size_t shift) const;
-	constexpr big_int operator>>(size_t shift) const;
+	big_int operator<<(size_t shift) const;
+	big_int operator>>(size_t shift) const;
 
 	big_int operator~() const;
 	big_int& operator&=(const big_int& other);

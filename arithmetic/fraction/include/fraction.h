@@ -6,7 +6,7 @@
 class fraction final
 {
 
-private:
+public:
 
 	big_int _numerator;
 	big_int _denominator;
@@ -17,17 +17,7 @@ public:
 		big_int &&numerator,
 		big_int &&denominator);
 
-public:
 
-    ~fraction() noexcept;
-
-    fraction(fraction const &other);
-
-    fraction &operator=(fraction const &other);
-
-    fraction(fraction &&other) noexcept;
-
-    fraction &operator=(fraction &&other) noexcept;
 
 public:
 
@@ -63,7 +53,7 @@ public:
         fraction &obj);
 
 public:
-
+	fraction abs() const;
     fraction sin(fraction const &epsilon) const;
     fraction cos(fraction const &epsilon) const;
     fraction tg(fraction const &epsilon) const;
@@ -80,7 +70,8 @@ public:
 public:
     fraction pow(size_t degree) const;
 private:
-	static fraction simplify(fraction &f);
+
+	static void simplify(fraction &f);
 	static big_int find_denominator(const fraction &a, const fraction &b);
 
 public:

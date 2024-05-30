@@ -6,7 +6,8 @@ add_subdirectory(tests)
 add_library(
         mp_os_arthmtc_frctn
         src/fraction.cpp
-        ../big_integer/include/big_int.h)
+        ../big_integer/include/big_int.h
+        tests/tests_fractions.cpp)
 target_include_directories(
         mp_os_arthmtc_frctn
         PUBLIC
