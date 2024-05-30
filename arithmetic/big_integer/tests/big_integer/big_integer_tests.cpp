@@ -38,15 +38,6 @@ int main(
     //testing::InitGoogleTest(&argc, argv);
     //return RUN_ALL_TESTS();
 
-    big_int a({0, 1, 2, 3});
-	big_int b({1, 2, 3});
-	auto res = a.compare(b, 1);
 
-	if (res == std::strong_ordering::equal) {
-		std::cout << "a is equal to b" << std::endl;
-	} else if (res == std::strong_ordering::greater) {
-		std::cout << "a is greater than b" << std::endl;
-	} else {
-		std::cout << "a is less than b" << std::endl;
-	}
+
 }
