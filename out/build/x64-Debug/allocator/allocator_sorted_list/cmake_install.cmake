@@ -1,8 +1,8 @@
-# Install script for directory: C:/Proj/mp_os_labs/allocator/allocator_sorted_list
+# Install script for directory: E:/proj/mp_os_labs/allocator/allocator_sorted_list
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Proj/mp_os_labs/out/install/x64-Debug")
+  set(CMAKE_INSTALL_PREFIX "E:/proj/mp_os_labs/out/install/x64-Debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,6 +34,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Proj/mp_os_labs/out/build/x64-Debug/allocator/allocator_sorted_list/tests/cmake_install.cmake")
+  include("E:/proj/mp_os_labs/out/build/x64-Debug/allocator/allocator_sorted_list/tests/cmake_install.cmake")
 endif()
 

@@ -2,37 +2,37 @@
 	"sources" : 
 	[
 		{
-			"file" : "C:/Proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/CMakeFiles/json-populate"
+			"file" : "E:/proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/CMakeFiles/json-populate"
 		},
 		{
-			"file" : "C:/Proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/CMakeFiles/json-populate.rule"
+			"file" : "E:/proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/CMakeFiles/json-populate.rule"
 		},
 		{
-			"file" : "C:/Proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/CMakeFiles/json-populate-complete.rule"
+			"file" : "E:/proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/CMakeFiles/json-populate-complete.rule"
 		},
 		{
-			"file" : "C:/Proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-build.rule"
+			"file" : "E:/proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-build.rule"
 		},
 		{
-			"file" : "C:/Proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-configure.rule"
+			"file" : "E:/proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-configure.rule"
 		},
 		{
-			"file" : "C:/Proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-download.rule"
+			"file" : "E:/proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-download.rule"
 		},
 		{
-			"file" : "C:/Proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-install.rule"
+			"file" : "E:/proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-install.rule"
 		},
 		{
-			"file" : "C:/Proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-mkdir.rule"
+			"file" : "E:/proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-mkdir.rule"
 		},
 		{
-			"file" : "C:/Proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-patch.rule"
+			"file" : "E:/proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-patch.rule"
 		},
 		{
-			"file" : "C:/Proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-test.rule"
+			"file" : "E:/proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-test.rule"
 		},
 		{
-			"file" : "C:/Proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-update.rule"
+			"file" : "E:/proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-update.rule"
 		}
 	],
 	"target" : 

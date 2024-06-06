@@ -1994,21 +1994,21 @@ googletest can use colors in its terminal output to make it easier to spot the
 important information:
 
 <pre>...
-<font _color="green">[----------]</font> 1 test from FooTest
-<font _color="green">[ RUN      ]</font> FooTest.DoesAbc
-<font _color="green">[       OK ]</font> FooTest.DoesAbc
-<font _color="green">[----------]</font> 2 tests from BarTest
-<font _color="green">[ RUN      ]</font> BarTest.HasXyzProperty
-<font _color="green">[       OK ]</font> BarTest.HasXyzProperty
-<font _color="green">[ RUN      ]</font> BarTest.ReturnsTrueOnSuccess
+<font color="green">[----------]</font> 1 test from FooTest
+<font color="green">[ RUN      ]</font> FooTest.DoesAbc
+<font color="green">[       OK ]</font> FooTest.DoesAbc
+<font color="green">[----------]</font> 2 tests from BarTest
+<font color="green">[ RUN      ]</font> BarTest.HasXyzProperty
+<font color="green">[       OK ]</font> BarTest.HasXyzProperty
+<font color="green">[ RUN      ]</font> BarTest.ReturnsTrueOnSuccess
 ... some error messages ...
-<font _color="red">[   FAILED ]</font> BarTest.ReturnsTrueOnSuccess
+<font color="red">[   FAILED ]</font> BarTest.ReturnsTrueOnSuccess
 ...
-<font _color="green">[==========]</font> 30 tests from 14 test suites ran.
-<font _color="green">[   PASSED ]</font> 28 tests.
-<font _color="red">[   FAILED ]</font> 2 tests, listed below:
-<font _color="red">[   FAILED ]</font> BarTest.ReturnsTrueOnSuccess
-<font _color="red">[   FAILED ]</font> AnotherTest.DoesXyz
+<font color="green">[==========]</font> 30 tests from 14 test suites ran.
+<font color="green">[   PASSED ]</font> 28 tests.
+<font color="red">[   FAILED ]</font> 2 tests, listed below:
+<font color="red">[   FAILED ]</font> BarTest.ReturnsTrueOnSuccess
+<font color="red">[   FAILED ]</font> AnotherTest.DoesXyz
 
  2 FAILED TESTS
 </pre>
@@ -2017,7 +2017,7 @@ You can set the `GTEST_COLOR` environment variable or the `--gtest_color`
 command line flag to `yes`, `no`, or `auto` (the default) to enable colors,
 disable colors, or let googletest decide. When the value is `auto`, googletest
 will use colors if and only if the output goes to a terminal and (on non-Windows
-platforms) the `TERM` environment variable is set to `xterm` or `xterm-_color`.
+platforms) the `TERM` environment variable is set to `xterm` or `xterm-color`.
 
 #### Suppressing test passes
 

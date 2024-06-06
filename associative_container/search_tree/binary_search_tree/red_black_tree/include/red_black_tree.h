@@ -15,8 +15,8 @@ public:
 
     enum class node_color : unsigned char
     {
-        RED,
-        BLACK
+        Red,
+        Black
     };
 
 private:
@@ -53,7 +53,7 @@ public:
                 unsigned int depth = 0,
                 tkey const &key = tkey(),
                 tvalue const &value = tvalue(),
-                node_color _color = node_color::RED);
+                node_color _color = node_color::Red);
 
     };
 
@@ -270,7 +270,7 @@ void red_black_tree<tkey, tvalue>::balance_black_leaf(
     // https://habr.com/ru/articles/573502/
     if (node_path.size() == 1 && *node_path.top() != nullptr)
     {
-        static_cast<node *>(*node_path.top())->color = node_color::BLACK;
+        static_cast<node *>(*node_path.top())->color = node_color::Black;
     } else if (node_path.size() > 1)
     {
         typename binary_search_tree<tkey, tvalue>::node *current_node = *node_path.top();
@@ -283,7 +283,7 @@ void red_black_tree<tkey, tvalue>::balance_black_leaf(
         typename binary_search_tree<tkey, tvalue>::node *brother_node = from_left ? parent_node->right_subtree
                                                                                   : parent_node->left_subtree;
 
-        if (static_cast<node *>(brother_node)->color == node_color::RED)
+        if (static_cast<node *>(brother_node)->color == node_color::Red)
         {
             if (from_left)
             {
@@ -296,8 +296,8 @@ void red_black_tree<tkey, tvalue>::balance_black_leaf(
                 node_path.push(&((*node_path.top())->right_subtree));
                 node_path.push(&((*node_path.top())->right_subtree));
             }
-            static_cast<node *>(parent_node)->color = node_color::RED;
-            static_cast<node *>(brother_node)->color = node_color::BLACK;
+            static_cast<node *>(parent_node)->color = node_color::Red;
+            static_cast<node *>(brother_node)->color = node_color::Black;
 
             balance_black_leaf(node_path);
         } else
@@ -307,7 +307,7 @@ void red_black_tree<tkey, tvalue>::balance_black_leaf(
             typename binary_search_tree<tkey, tvalue>::node *near_nephew = from_left ? brother_node->left_subtree
                                                                                      : brother_node->right_subtree;
 
-            if (far_nephew != nullptr && static_cast<node *>(far_nephew)->color == node_color::RED)
+            if (far_nephew != nullptr && static_cast<node *>(far_nephew)->color == node_color::Red)
             {
                 if (from_left)
                 {
@@ -318,9 +318,9 @@ void red_black_tree<tkey, tvalue>::balance_black_leaf(
                 }
 
                 static_cast<node *>(brother_node)->color = static_cast<node *>(parent_node)->color;
-                static_cast<node *>(parent_node)->color = node_color::BLACK;
-                static_cast<node *>(far_nephew)->color = node_color::BLACK;
-            } else if (near_nephew != nullptr && static_cast<node *>(near_nephew)->color == node_color::RED)
+                static_cast<node *>(parent_node)->color = node_color::Black;
+                static_cast<node *>(far_nephew)->color = node_color::Black;
+            } else if (near_nephew != nullptr && static_cast<node *>(near_nephew)->color == node_color::Red)
             {
                 if (from_left)
                 {
@@ -331,14 +331,14 @@ void red_black_tree<tkey, tvalue>::balance_black_leaf(
                 }
 
                 static_cast<node *>(near_nephew)->color = static_cast<node *>(parent_node)->color;
-                static_cast<node *>(parent_node)->color = node_color::BLACK;
+                static_cast<node *>(parent_node)->color = node_color::Black;
             } else
             {
-                static_cast<node *>(brother_node)->color = node_color::RED;
+                static_cast<node *>(brother_node)->color = node_color::Red;
 
-                if (static_cast<node *>(parent_node)->color == node_color::RED)
+                if (static_cast<node *>(parent_node)->color == node_color::Red)
                 {
-                    static_cast<node *>(parent_node)->color = node_color::BLACK;
+                    static_cast<node *>(parent_node)->color = node_color::Black;
                 } else
                 {
                     balance_black_leaf(node_path);
@@ -390,13 +390,13 @@ red_black_tree<tkey, tvalue>::insert_inner_t(std::stack<typename binary_search_t
 
         if (node_path.size() == 1)
         {
-            static_cast<node *>(*node_path.top())->color = node_color::BLACK;
-        } else if (node_path.size() >= 3 && static_cast<node *>(*node_path.top())->color == node_color::RED)
+            static_cast<node *>(*node_path.top())->color = node_color::Black;
+        } else if (node_path.size() >= 3 && static_cast<node *>(*node_path.top())->color == node_color::Red)
         {
             typename binary_search_tree<tkey, tvalue>::node *child_node = *node_path.top();
             node_path.pop();
 
-            if (static_cast<node *>(*node_path.top())->color == node_color::RED) // double red
+            if (static_cast<node *>(*node_path.top())->color == node_color::Red) // double red
             {
                 typename binary_search_tree<tkey, tvalue>::node *parent_node = *node_path.top();
                 bool second_turn_left = binary_search_tree<tkey, tvalue>::is_left_subtree(child_node, parent_node);
@@ -411,37 +411,37 @@ red_black_tree<tkey, tvalue>::insert_inner_t(std::stack<typename binary_search_t
                                                                               ? (*node_path.top())->right_subtree
                                                                               : (*node_path.top())->left_subtree;
 
-                if (uncle_node == nullptr || static_cast<node *>(uncle_node)->color == node_color::BLACK)
+                if (uncle_node == nullptr || static_cast<node *>(uncle_node)->color == node_color::Black)
                 {
                     if (first_turn_left)
                     {
                         if (second_turn_left)
                         {
                             binary_search_tree<tkey, tvalue>::small_right_rotation(*node_path.top());
-                            static_cast<node *>(child_node)->color = node_color::RED;
-                            static_cast<node *>(parent_node)->color = node_color::BLACK;
-                            static_cast<node *>(grandparent_node)->color = node_color::RED;
+                            static_cast<node *>(child_node)->color = node_color::Red;
+                            static_cast<node *>(parent_node)->color = node_color::Black;
+                            static_cast<node *>(grandparent_node)->color = node_color::Red;
                         } else
                         {
                             binary_search_tree<tkey, tvalue>::big_right_rotation(*node_path.top());
-                            static_cast<node *>(child_node)->color = node_color::BLACK;
-                            static_cast<node *>(parent_node)->color = node_color::RED;
-                            static_cast<node *>(grandparent_node)->color = node_color::RED;
+                            static_cast<node *>(child_node)->color = node_color::Black;
+                            static_cast<node *>(parent_node)->color = node_color::Red;
+                            static_cast<node *>(grandparent_node)->color = node_color::Red;
                         }
                     } else
                     {
                         if (!second_turn_left)
                         {
                             binary_search_tree<tkey, tvalue>::small_left_rotation(*node_path.top());
-                            static_cast<node *>(child_node)->color = node_color::RED;
-                            static_cast<node *>(parent_node)->color = node_color::BLACK;
-                            static_cast<node *>(grandparent_node)->color = node_color::RED;
+                            static_cast<node *>(child_node)->color = node_color::Red;
+                            static_cast<node *>(parent_node)->color = node_color::Black;
+                            static_cast<node *>(grandparent_node)->color = node_color::Red;
                         } else
                         {
                             binary_search_tree<tkey, tvalue>::big_left_rotation(*node_path.top());
-                            static_cast<node *>(child_node)->color = node_color::BLACK;
-                            static_cast<node *>(parent_node)->color = node_color::RED;
-                            static_cast<node *>(grandparent_node)->color = node_color::RED;
+                            static_cast<node *>(child_node)->color = node_color::Black;
+                            static_cast<node *>(parent_node)->color = node_color::Red;
+                            static_cast<node *>(grandparent_node)->color = node_color::Red;
                         }
                     }
                 }
@@ -449,9 +449,9 @@ red_black_tree<tkey, tvalue>::insert_inner_t(std::stack<typename binary_search_t
                 {
                     need_continue = true;
 
-                    static_cast<node *>(uncle_node)->color = node_color::BLACK;
-                    static_cast<node *>(parent_node)->color = node_color::BLACK;
-                    static_cast<node *>(grandparent_node)->color = node_color::RED;
+                    static_cast<node *>(uncle_node)->color = node_color::Black;
+                    static_cast<node *>(parent_node)->color = node_color::Black;
+                    static_cast<node *>(grandparent_node)->color = node_color::Red;
                 }
 
             }
@@ -470,7 +470,7 @@ tvalue red_black_tree<tkey, tvalue>::dispose_inner(std::stack<typename binary_se
 
     if (current_node->right_subtree == nullptr && current_node->left_subtree == nullptr)
     {
-        bad_way = static_cast<node *>(*node_path.top())->color == node_color::BLACK; // black leaf ^_^
+        bad_way = static_cast<node *>(*node_path.top())->color == node_color::Black; // black leaf ^_^
         *node_path.top() = nullptr;
     } else if (current_node->right_subtree == nullptr || current_node->left_subtree == nullptr)
     {
@@ -480,9 +480,9 @@ tvalue red_black_tree<tkey, tvalue>::dispose_inner(std::stack<typename binary_se
 
         node_color color = static_cast<node *>(*node_path.top())->color;
 
-        if (color == node_color::BLACK)
+        if (color == node_color::Black)
         {
-            static_cast<node *>(current_current)->color = node_color::BLACK;
+            static_cast<node *>(current_current)->color = node_color::Black;
         }
 
         *node_path.top() = current_current;
@@ -500,13 +500,13 @@ tvalue red_black_tree<tkey, tvalue>::dispose_inner(std::stack<typename binary_se
 
         typename binary_search_tree<tkey, tvalue>::node *tmp = *current_current;
 
-        bad_way = static_cast<node *>(tmp)->color == node_color::BLACK && tmp->left_subtree == nullptr &&
+        bad_way = static_cast<node *>(tmp)->color == node_color::Black && tmp->left_subtree == nullptr &&
                          tmp->right_subtree == nullptr;
 
-        if (static_cast<node *>(tmp)->color == node_color::BLACK && tmp->left_subtree != nullptr)
+        if (static_cast<node *>(tmp)->color == node_color::Black && tmp->left_subtree != nullptr)
         {
             typename binary_search_tree<tkey, tvalue>::node *bottom_node = tmp->left_subtree;
-            static_cast<node *>(bottom_node)->color = node_color::BLACK;
+            static_cast<node *>(bottom_node)->color = node_color::Black;
         }
 
         std::swap(static_cast<node *>(*current_current)->color, static_cast<node *>(current_node)->color);
@@ -583,12 +583,12 @@ void red_black_tree<tkey, tvalue>::copy_subtree(typename binary_search_tree<tkey
 
 template<typename tkey, typename tvalue>
 red_black_tree<tkey, tvalue>::node::node(const tkey &key_, tvalue &&value_) : binary_search_tree<tkey, tvalue>::node(
-        key_, std::move(value_)), color(node_color::RED)
+        key_, std::move(value_)), color(node_color::Red)
 {}
 
 template<typename tkey, typename tvalue>
 red_black_tree<tkey, tvalue>::node::node(const tkey &key_, const tvalue &value_)
-        : binary_search_tree<tkey, tvalue>::node(key_, value_), color(node_color::RED)
+        : binary_search_tree<tkey, tvalue>::node(key_, value_), color(node_color::Red)
 {}
 
 template<typename tkey, typename tvalue>

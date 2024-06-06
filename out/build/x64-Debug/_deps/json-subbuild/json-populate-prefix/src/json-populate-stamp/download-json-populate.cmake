@@ -22,14 +22,14 @@ function(check_file_hash has_hash hash_is_good)
   set("${has_hash}" TRUE PARENT_SCOPE)
 
   message(STATUS "verifying file...
-       file='C:/Proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json.tar.xz'")
+       file='E:/proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json.tar.xz'")
 
-  file("" "C:/Proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json.tar.xz" actual_value)
+  file("" "E:/proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json.tar.xz" actual_value)
 
   if(NOT "${actual_value}" STREQUAL "")
     set("${hash_is_good}" FALSE PARENT_SCOPE)
     message(STATUS " hash of
-    C:/Proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json.tar.xz
+    E:/proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json.tar.xz
   does not match expected value
     expected: ''
       actual: '${actual_value}'")
@@ -71,7 +71,7 @@ function(sleep_before_download attempt)
   execute_process(COMMAND "${CMAKE_COMMAND}" -E sleep "${sleep_seconds}")
 endfunction()
 
-if("C:/Proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json.tar.xz" STREQUAL "")
+if("E:/proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json.tar.xz" STREQUAL "")
   message(FATAL_ERROR "LOCAL can't be empty")
 endif()
 
@@ -79,32 +79,32 @@ if("https://github.com/nlohmann/json/releases/download/v3.11.2/json.tar.xz" STRE
   message(FATAL_ERROR "REMOTE can't be empty")
 endif()
 
-if(EXISTS "C:/Proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json.tar.xz")
+if(EXISTS "E:/proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json.tar.xz")
   check_file_hash(has_hash hash_is_good)
   if(has_hash)
     if(hash_is_good)
       message(STATUS "File already exists and hash match (skip download):
-  file='C:/Proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json.tar.xz'
+  file='E:/proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json.tar.xz'
   =''"
       )
       return()
     else()
       message(STATUS "File already exists but hash mismatch. Removing...")
-      file(REMOVE "C:/Proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json.tar.xz")
+      file(REMOVE "E:/proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json.tar.xz")
     endif()
   else()
     message(STATUS "File already exists but no hash specified (use URL_HASH):
-  file='C:/Proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json.tar.xz'
+  file='E:/proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json.tar.xz'
 Old file will be removed and new file downloaded from URL."
     )
-    file(REMOVE "C:/Proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json.tar.xz")
+    file(REMOVE "E:/proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json.tar.xz")
   endif()
 endif()
 
 set(retry_number 5)
 
 message(STATUS "Downloading...
-   dst='C:/Proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json.tar.xz'
+   dst='E:/proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json.tar.xz'
    timeout='none'
    inactivity timeout='none'"
 )
@@ -126,7 +126,7 @@ foreach(i RANGE ${retry_number})
 
       file(
         DOWNLOAD
-        "${url}" "C:/Proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json.tar.xz"
+        "${url}" "E:/proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json.tar.xz"
         SHOW_PROGRESS
         # no TIMEOUT
         # no INACTIVITY_TIMEOUT
@@ -143,7 +143,7 @@ foreach(i RANGE ${retry_number})
         check_file_hash(has_hash hash_is_good)
         if(has_hash AND NOT hash_is_good)
           message(STATUS "Hash mismatch, removing...")
-          file(REMOVE "C:/Proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json.tar.xz")
+          file(REMOVE "E:/proj/mp_os_labs/out/build/x64-Debug/_deps/json-subbuild/json-populate-prefix/src/json.tar.xz")
         else()
           message(STATUS "Downloading... done")
           return()

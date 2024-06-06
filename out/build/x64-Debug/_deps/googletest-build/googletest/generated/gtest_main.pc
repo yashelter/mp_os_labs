@@ -1,5 +1,5 @@
-libdir=C:/Proj/mp_os_labs/out/install/x64-Debug/lib
-includedir=C:/Proj/mp_os_labs/out/install/x64-Debug/include
+libdir=E:/proj/mp_os_labs/out/install/x64-Debug/lib
+includedir=E:/proj/mp_os_labs/out/install/x64-Debug/include
 
 Name: gtest_main
 Description: GoogleTest (with main() function)
